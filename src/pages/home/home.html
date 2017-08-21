@@ -1,0 +1,138 @@
+<ion-header>
+  <ion-navbar>
+    <div class="navbar-profile-space">
+
+        <div class="profile-avatar profile-avatar_navbar">
+          <div class="party-avatar"></div>
+        </div>
+
+        <div class="navbar-profile-score">
+          <span class="score-item icon-right">12<ion-icon name="heart-circle"></ion-icon></span>
+          <span class="score-item icon-right">22.2k<ion-icon name="money-circle"></ion-icon></span>
+          <span class="score-item icon-right">120<ion-icon name="users-circle"></ion-icon></span>
+          <span class="score-item icon-right">13<ion-icon name="bolt-circle"></ion-icon></span>
+        </div>
+
+
+      </div>
+
+      <ion-buttons end class="buttons-menu">
+        <button ion-button icon-only>
+          <ion-icon name="bell"></ion-icon>
+        </button>
+        <button ion-button icon-only>
+          <ion-icon name="trophy"></ion-icon>
+        </button>
+    </ion-buttons>
+  </ion-navbar>
+  <div class="header-segment">
+    <ion-segment [(ngModel)]="tripPage" (ionchange)="onSegmentChange($event)">
+      <ion-segment-button value="actions">Activités</ion-segment-button>
+      <ion-segment-button value="ressources">Ressources</ion-segment-button>
+      <ion-segment-button value="investments">Investissements</ion-segment-button>
+      <ion-segment-button value="international">International</ion-segment-button>
+      <ion-segment-button value="president">Président</ion-segment-button>
+    </ion-segment>
+
+    </div>
+</ion-header>
+
+<ion-content padding class="sand-bg">
+
+
+  <div class="card-top-elements">
+    <h4 class="card-title-top">Classement général</h4>
+  </div>
+
+  <ion-card class="card card_list">
+    <button ion-item class="item_profile">
+      <span item-start class="item-position">1.</span>
+      <ion-avatar item-start>
+        <img src="../assets/img/profile-avatar.png">
+      </ion-avatar>
+      <h2>mrobert</h2>
+      <span item-right class="score-item score-item_list text-small text-muted">10k <ion-icon name="money-circle"></ion-icon></span>
+    </button>
+    <button ion-item class="item_profile">
+      <span item-start class="item-position">2.</span>
+      <ion-avatar item-start>
+        <img src="../assets/img/profile-avatar.png">
+      </ion-avatar>
+      <h2>jlavergne</h2>
+      <span item-right class="score-item score-item_list text-small text-muted">10k <ion-icon name="money-circle"></ion-icon></span>
+    </button>
+    <button ion-item class="item_profile">
+      <span item-start class="item-position">3.</span>
+      <ion-avatar item-start>
+        <img src="../assets/img/profile-avatar.png">
+      </ion-avatar>
+      <h2>msalles</h2>
+      <span item-right class="score-item score-item_list text-small text-muted">10k <ion-icon name="money-circle"></ion-icon></span>
+    </button>
+  </ion-card>
+
+  <ion-card class="card card_action">
+
+    <ion-item text-wrap>
+      <h2 class="card-title">Distribuer des tracts <span class="score-item score-item_reward icon-left"><ion-icon name="users-circle"></ion-icon>+</span> <span class="score-item score-item_reward icon-left"><ion-icon name="bolt-circle"></ion-icon>++</span></h2>
+
+      <p class="card-description">Donec id elit non mi porta gravida at eget metus. Duis mollis, est non commodo luctus, nisi erat porttitor ligula, eget lacinia odio sem nec elit. Cum sociis natoque penatibus et magnis dis parturient montes,...</p>
+    </ion-item>
+    <ion-item>
+
+      <span item-right class="score-item score-item_price score-item_is-touchable icon-right">4<ion-icon name="heart-circle"></ion-icon></span>
+
+      <span item-right class="score-item score-item_price icon-right">200<ion-icon name="money-circle"></ion-icon></span>
+      <button ion-button item-end small>
+        Action
+      </button>
+    </ion-item>
+
+
+  </ion-card>
+
+  <ion-card class="card card_action">
+
+    <ion-item text-wrap>
+      <h2 class="card-title">Distribuer des tracts <span class="score-item score-item_reward icon-left"><ion-icon name="users-circle"></ion-icon>++</span></h2>
+      <p class="card-description">Donec id elit non mi porta gravida at eget metus. Duis mollis, est non commodo luctus, nisi erat porttitor ligula, eget lacinia odio sem nec elit. Cum sociis natoque penatibus et magnis dis parturient montes,...</p>
+    </ion-item>
+    <ion-item>
+      <span item-right class="score-item score-item_price icon-right">70<ion-icon name="money-circle"></ion-icon></span>
+      <button ion-button item-end small>
+        Action
+      </button>
+    </ion-item>
+
+
+  </ion-card>
+
+  <ion-card class="card card_action">
+
+    <ion-item text-wrap>
+      <span class="card-status card-status_new">Nouveau</span>
+      <h2 class="card-title">Distribuer des tracts</h2>
+      <p class="card-description">Donec id elit non mi porta gravida at eget metus. Duis mollis, est non commodo luctus, nisi erat porttitor ligula, eget lacinia odio sem nec elit. Cum sociis natoque penatibus et magnis dis parturient montes,...</p>
+    </ion-item>
+
+    <div class="card-needs">
+      <ion-item text-wrap>
+        <span item-left class="text-small text-muted">Nécessite</span>
+        <ul class="card-needs-list">
+          <li class="card-needs-item card-needs-item_is-checked"><strong>1x</strong> camionette de campagne</li>
+          <li class="card-needs-item"><strong>1x</strong> valise d’argent sale</li>
+        </ul>
+      </ion-item>
+    </div>
+
+    <ion-item>
+      <span item-right class="score-item score-item_price icon-right">70<ion-icon name="money-circle"></ion-icon></span>
+      <button ion-button icon-left item-end small disabled>
+        <ion-icon name="lock"></ion-icon> Action
+      </button>
+    </ion-item>
+
+
+  </ion-card>
+
+</ion-content>

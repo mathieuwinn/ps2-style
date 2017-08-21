@@ -1,0 +1,510 @@
+// http://ionicframework.com/docs/theming/
+
+
+// App Global Sass
+// --------------------------------------------------
+// Put style rules here that you want to apply globally. These
+// styles are for the entire app and not just one component.
+// Additionally, this file can be also used as an entry point
+// to import other Sass files to be included in the output CSS.
+//
+// Shared Sass variables, which can be used to adjust Ionic's
+// default Sass variables, belong in "theme/variables.scss".
+//
+// To declare rules for a specific mode, create a child rule
+// for the .md, .ios, or .wp mode classes. The mode class is
+// automatically applied to the <body> element in the app.
+
+.clear {
+  clear: both;
+}
+
+
+body{
+  background-color: #F9F8F4 !important;
+}
+
+ion-app.md, ion-app.ios {
+  font-family: 'Work Sans', 'Roboto', sans-serif;
+  font-weight: 500;
+}
+
+.sand-bg {
+  background-color: color($colors, lightbg);
+}
+
+
+// Typography
+
+.text-small {
+  font-size: 1.2rem;
+}
+.text-muted {
+  color: color($colors, medium);
+}
+strong {
+  font-weight: 500;
+}
+
+// Navbar
+
+
+ion-navbar.toolbar {
+
+  padding: 0 12px;
+
+
+  .buttons-menu {
+    button {
+      font-size: 1.1rem;
+
+    }
+
+
+  }
+
+
+}
+
+
+// Profile and Party avatars
+
+.profile-avatar {
+  height: 100px;
+  width: 100px;
+  border-radius: 50%;
+  background-image: url(../assets/img/profile-avatar.png);
+  -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    background-position: center center;
+    &.profile-avatar_navbar {
+      position: relative;
+      height: 34px;
+      width: 34px;
+      & > .party-avatar {
+        position: absolute;
+        height: 18px;
+        width: 18px;
+        bottom: -4px;
+        right: -4px;
+      }
+    }
+}
+
+.party-avatar {
+  height: 100px;
+  width: 100px;
+  border-radius: 50%;
+  background-image: url(../assets/img/party-avatar.png);
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  background-position: center center;
+}
+
+
+.navbar-profile-space {
+  .profile-avatar_navbar {
+    float: left;
+  }
+
+  .navbar-profile-score {
+    position: absolute;
+    margin-left: 20px;
+    height: 34px;
+    float: left;
+    padding: 0 10px 0 28px;
+    z-index: -1;
+
+    border-radius: 0 17px 17px 0;
+    background-color: rgba(0,0,0,0.3);
+    line-height: 34px;
+    color: white;
+
+    .score-item {
+      margin-right: 4px;
+      font-size: 1.2rem;
+      color: rgba(255, 255, 255, 0.86);
+      &:last-child {
+        margin-right: 0px;
+      }
+      ion-icon {
+        color: rgba(255, 255, 255, 0.6);
+      }
+    }
+  }
+
+}
+
+
+
+// Score items
+
+.score-item {
+  ion-icon {
+    display: inline-block;
+    vertical-align: middle;
+  }
+  &.icon-right {
+    ion-icon {
+      margin-left: 3px;
+    }
+  }
+  &.icon-left {
+    ion-icon {
+      margin-right: 3px;
+    }
+  }
+
+  // Price in card items
+
+  &.score-item_price {
+    font-size: 1.4rem;
+    color: darken(color($colors, primary),5%);
+    ion-icon {
+      color: color($colors, primary);
+    }
+  }
+
+  &.score-item_reward {
+    font-size: 1.2rem;
+    color: color($colors, medium);
+    opacity: 0.7;
+    ion-icon {
+
+    }
+  }
+
+  &.score-item_is-touchable {
+    border-radius: 6px;
+    padding: 8px;
+    -moz-text-decoration-line: underline;
+     -moz-text-decoration-style: dashed;
+     -moz-text-decoration-color: lighten(color($colors, primary),10%);
+     -webkit-text-decoration-line: underline;
+     -webkit-text-decoration-style: dashed;
+     -webkit-text-decoration-color: lighten(color($colors, primary),10%);
+     text-decoration-line: underline;
+     text-decoration-style: dashed;
+     text-decoration-color: lighten(color($colors, primary),10%);
+
+  }
+
+  &.score-item_list {
+    font-size: 1.2rem;
+    color: color($colors, medium);
+    opacity: 0.7;
+    ion-icon {
+
+    }
+  }
+
+
+}
+
+
+
+
+.header-segment {
+  position: relative;
+  height: 46px;
+  overflow-x:scroll;
+  overflow-y:hidden;
+  width: 100%;
+  -webkit-overflow-scrolling: touch;
+
+  background-color: color($colors, brown);
+  &::-webkit-scrollbar {
+      display: none;
+  }
+
+  .segment-ios .segment-button{
+    border-width: 0px;
+    border-radius: 0;
+  }
+
+  .segment-md .segment-button{
+    border-width: 0px;
+    border-radius: 0;
+    color: rgba(255, 255, 255, 0.8);
+    opacity: 1;
+  }
+
+  ion-segment {
+    display: block;
+    padding: 0;
+    width: auto;
+    white-space:nowrap;
+    margin: 0;
+    height: 46px;
+    list-style-type: none;
+    color: white;
+    .segment-button {
+      line-height: 52px;
+      height: 46px;
+      width: auto;
+      display: inline-block;
+      text-transform: uppercase;
+      padding: 0 12px;
+      color: rgba(255, 255, 255, 0.8);
+      font-size: 1.2rem;
+      &:first-child {
+        margin-left: 12px;
+      }
+      &:last-child {
+        margin-right: 20px;
+      }
+      &.segment-activated {
+        color: white;
+        font-weight: 600;
+        background-color: transparent !important;
+        border-bottom: 2px solid white;
+      }
+      .ion-ios-notif, .ion-md-notif{
+        font-size: 0.8em;
+        text-shadow: 0 0 6px rgba(255,255,255,0.4);
+        animation: pulse 1.2s normal infinite;
+        margin-right: 10px;
+        color: white;
+      }
+    }
+  }
+
+
+
+}
+
+
+// CARDS
+ion-card {
+
+  padding: 2px 0;
+
+
+  &.card-ios {
+  }
+
+  ion-item {
+    padding: 4px;
+  }
+
+  .item-md {
+    background-color: rgba(0,0,0,0);
+  }
+
+
+    .card-status {
+      display: inline-block;
+      font-size: 1.2em;
+      height: 18px;
+      border-radius: 9px;
+      background-color: #F4F4F4;
+      color: color($colors, medium);
+      font-size: 1.1rem;
+      line-height: 18px;
+      padding: 0 10px;
+      margin-bottom: 4px;
+      &.card-status_new {
+        background-color: #FFF78C;
+        color: #AF720F;
+      }
+
+    }
+
+    h2.card-title {
+      font-weight: 500;
+      font-size: 1.6rem;
+    }
+    p.card-description {
+      margin-top: 5px;
+      font-weight: 400;
+      font-size: 1.2rem;
+    }
+
+
+
+
+
+  &.card_action {
+    ion-thumbnail {
+      // left, aligned top card thumbnail
+    }
+
+    .card-needs {
+
+      ion-item {
+        padding-top: 8px;
+        padding-bottom: 8px;
+        margin: 0;
+        background-color: #F9F9F9;
+        ion-label {
+          margin: 0;
+        }
+      }
+
+      ul.card-needs-list {
+        margin: 0 0 0 10px;
+        padding: 0;
+        list-style-type: none;
+
+        li.card-needs-item {
+          padding-left: 20px;
+          font-size: 1.2rem;
+          &::before {
+            position: absolute;
+            font-family: "ps2font" !important;
+            content: "\6a";
+            margin-left: -20px;
+            font-size: 1.2rem;
+
+            color: color($colors, medium);
+            opacity: 0.6;
+          }
+          &.card-needs-item_is-checked {
+            &::before {
+              content: "\69";
+              color: color($colors, success);
+              opacity: 1;
+            }
+          }
+        }
+      }
+
+    }
+  }
+
+  &.card_list {
+    margin-bottom: 30px;
+  }
+
+}
+
+// lists
+
+.card-top-elements {
+  width: 100%;
+  h4.card-title-top {
+    font-size: 1.6rem;
+  }
+
+}
+
+
+
+ion-item.item_profile, .item-md.item_profile {
+  ion-avatar {
+    min-width: 28px;
+    min-height: 28px;
+    &[item-start] {
+      margin: 8px 10px 8px 0;
+    }
+    img {
+      height: 28px;
+      width: 28px;
+    }
+  }
+
+  .item-position {
+    font-size: 1.2rem;
+    color: color($colors, medium);
+  }
+
+  h2 {
+    font-size: 1.4rem;
+  }
+
+}
+
+// PS Work Sans font
+
+@font-face {
+  font-family: "Work Sans";
+  font-style: normal;
+  font-weight: 300;
+  src: local("Work Sans"), local("WorkSans-Light"), url("../assets/fonts/WorkSans-Light.woff") format("woff"), url("../assets/fonts/WorkSans-Light.ttf") format("truetype");
+}
+
+@font-face {
+  font-family: "Work Sans";
+  font-style: normal;
+  font-weight: 400;
+  src: local("Work Sans"), local("WorkSans-Regular"), url("../assets/fonts/WorkSans-Regular.woff") format("woff"), url("../assets/fonts/WorkSans-Regular.ttf") format("truetype");
+}
+
+@font-face {
+  font-family: "Work Sans";
+  font-style: normal;
+  font-weight: 500;
+  src: local("Work Sans"), local("WorkSans-SemiBold"), url("../assets/fonts/WorkSans-SemiBold.woff") format("woff"), url("../assets/fonts/Nunito-SemiBold.ttf") format("truetype");
+}
+
+@font-face {
+  font-family: "Work Sans";
+  font-style: normal;
+  font-weight: 600;
+  src: local("Work Sans"), local("WorkSans-Bold"), url("../assets/fonts/WorkSans-Bold.woff") format("woff"), url("../assets/fonts/WorkSans-Bold.ttf") format("truetype");
+}
+
+
+
+// PS Icon font
+
+@font-face {
+  font-family: "ps2font";
+  src: url("../assets/fonts/ps2font.woff") format("woff"),
+  url("../assets/fonts/ps2font.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}
+
+.ion-md-bell:before, .ion-ios-bell:before {
+  font-family: "ps2font" !important;
+  content: "\61";
+}
+.ion-md-bolt-circle:before, .ion-ios-bolt-circle:before {
+  font-family: "ps2font" !important;
+  content: "\62";
+}
+.ion-md-check-circle:before, .ion-ios-check-circle:before {
+  font-family: "ps2font" !important;
+  content: "\63";
+}
+.ion-md-chevron-left:before, .ion-ios-chevron-left:before {
+  font-family: "ps2font" !important;
+  content: "\64";
+}
+.ion-md-heart-circle:before, .ion-ios-heart-circle:before {
+  font-family: "ps2font" !important;
+  content: "\65";
+}
+.ion-md-money-circle:before, .ion-ios-money-circle:before {
+  font-family: "ps2font" !important;
+  content: "\66";
+}
+.ion-md-users-circle:before, .ion-ios-users-circle:before {
+  font-family: "ps2font" !important;
+  content: "\67";
+}
+.ion-md-settings:before, .ion-ios-settings:before {
+  font-family: "ps2font" !important;
+  content: "\68";
+}
+.ion-md-trophy:before, .ion-ios-trophy:before {
+  font-family: "ps2font" !important;
+  content: "\6b";
+}
+.ion-md-chevron-left:before, .ion-ios-chevron-left:before {
+  font-family: "ps2font" !important;
+  content: "\64";
+}
+.ion-md-checkbox:before, .ion-ios-checkbox:before {
+  font-family: "ps2font" !important;
+  content: "\6a";
+}
+.ion-md-checkbox-checked:before, .ion-ios-checkbox-checked:before {
+  font-family: "ps2font" !important;
+  content: "\69";
+}
