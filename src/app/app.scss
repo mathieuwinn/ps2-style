@@ -48,6 +48,8 @@ strong {
 
 // Navbar
 
+// Box shadow for os header
+
 
 ion-navbar.toolbar {
 
@@ -139,7 +141,68 @@ ion-navbar.toolbar {
 
 }
 
+.banner {
+  &.banner_header-live {
+    position: absolute;
+    width: 100%;
+    max-width: 540px;
+    left: 0;
+    right: 0;
+    margin: auto;
+    z-index: -1;
+    padding-bottom: 0px;
+    padding-top: 0px;
+    height: auto;
+    background-image: linear-gradient(-180deg, #FFFFFF 0%, rgba(255,255,255,0.90) 100%);
+    box-shadow: 0 8px 20px 0 rgba(0,0,0,0.07);
+    transform: translateY(-300px);
+    transition: transform 400ms cubic-bezier(1, 0, 0, 1);
+  }
 
+  &.is-shown {
+    color: red;
+    transform: translateY(0);
+  }
+
+
+  ion-item.item-block {
+    padding: 0;
+    .item-inner {
+      border-bottom: none;
+      padding-right: 20px;
+    }
+  }
+
+  h2.banner-title {
+    font-weight: 500;
+    font-size: 1.6rem;
+  }
+
+  p.banner-text {
+    margin-top: 5px;
+    font-weight: 400;
+    font-size: 1.2rem;
+    color: color($colors, medium);
+  }
+
+  .banner-rewards {
+    text-align: center;
+    margin-top: 10px;
+  }
+
+  button.banner_btn-close {
+    position: absolute;
+    right: 4px;
+    top: 4px;
+    z-index: 10;
+
+    color: color($colors, medium);
+    opacity: 0.4;
+    font-size: 1rem;
+  }
+
+
+}
 
 // Score items
 
@@ -384,9 +447,18 @@ ion-card {
 
 // lists
 
+// Remove right arrow on buttons list
+.item-ios[detail-push] .item-inner, button.item-ios:not([detail-none]) .item-inner, a.item-ios:not([detail-none]) .item-inner {
+  background-image: none;
+  padding-right: 12px;
+}
+
+
 .card-top-elements {
   width: 100%;
+      margin-bottom: -4px;
   h4.card-title-top {
+
     font-size: 1.6rem;
   }
 
@@ -394,7 +466,11 @@ ion-card {
 
 
 
-ion-item.item_profile, .item-md.item_profile {
+
+
+.item_profile {
+
+
   ion-avatar {
     min-width: 28px;
     min-height: 28px;
@@ -488,6 +564,8 @@ ion-item.item_profile, .item-md.item_profile {
   font-family: "ps2font" !important;
   content: "\67";
 }
+
+
 .ion-md-settings:before, .ion-ios-settings:before {
   font-family: "ps2font" !important;
   content: "\68";
@@ -507,4 +585,8 @@ ion-item.item_profile, .item-md.item_profile {
 .ion-md-checkbox-checked:before, .ion-ios-checkbox-checked:before {
   font-family: "ps2font" !important;
   content: "\69";
+}
+.ion-md-chevron-up:before, .ion-ios-chevron-up:before {
+  font-family: "ps2font" !important;
+  content: "\6c";
 }

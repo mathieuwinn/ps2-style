@@ -17,14 +17,15 @@
       </div>
 
       <ion-buttons end class="buttons-menu">
-        <button ion-button icon-only>
+        <button ion-button icon-only [navPush]="notificationsPage">
           <ion-icon name="bell"></ion-icon>
         </button>
-        <button ion-button icon-only>
+        <button ion-button icon-only [navPush]="leaderboardPage">
           <ion-icon name="trophy"></ion-icon>
         </button>
     </ion-buttons>
   </ion-navbar>
+
   <div class="header-segment">
     <ion-segment [(ngModel)]="tripPage" (ionchange)="onSegmentChange($event)">
       <ion-segment-button value="actions">Activités</ion-segment-button>
@@ -33,43 +34,31 @@
       <ion-segment-button value="international">International</ion-segment-button>
       <ion-segment-button value="president">Président</ion-segment-button>
     </ion-segment>
+  </div>
 
-    </div>
+  <div class="banner banner_header-live" padding-horizontal [ngClass]="bannerShow ? 'is-shown' : ''">
+    <button ion-button clear icon-only class="banner_btn-close" (click)="closeBanner();">
+      <ion-icon name="chevron-up"></ion-icon>
+    </button>
+    <ion-item text-wrap>
+      <h4 class="banner-title">Super ! 👍</h4>
+      <p class="banner-text"><strong>Bravo !</strong> L’opération de tractage s’est bien passée! Vous recevez beaucoup d’<strong>encouragements </strong> et de <strong>nouveaux militants</strong> vous rejoignent ! </p>
+      <div class="banner-rewards">
+        <span item-right class="score-item score-item_price icon-right">+12<ion-icon name="heart-circle"></ion-icon></span>
+        <span item-right class="score-item score-item_price icon-right">+188<ion-icon name="users-circle"></ion-icon></span>
+      </div>
+    </ion-item>
+  </div>
+
+
+
+
 </ion-header>
 
 <ion-content padding class="sand-bg">
 
 
-  <div class="card-top-elements">
-    <h4 class="card-title-top">Classement général</h4>
-  </div>
 
-  <ion-card class="card card_list">
-    <button ion-item class="item_profile">
-      <span item-start class="item-position">1.</span>
-      <ion-avatar item-start>
-        <img src="../assets/img/profile-avatar.png">
-      </ion-avatar>
-      <h2>mrobert</h2>
-      <span item-right class="score-item score-item_list text-small text-muted">10k <ion-icon name="money-circle"></ion-icon></span>
-    </button>
-    <button ion-item class="item_profile">
-      <span item-start class="item-position">2.</span>
-      <ion-avatar item-start>
-        <img src="../assets/img/profile-avatar.png">
-      </ion-avatar>
-      <h2>jlavergne</h2>
-      <span item-right class="score-item score-item_list text-small text-muted">10k <ion-icon name="money-circle"></ion-icon></span>
-    </button>
-    <button ion-item class="item_profile">
-      <span item-start class="item-position">3.</span>
-      <ion-avatar item-start>
-        <img src="../assets/img/profile-avatar.png">
-      </ion-avatar>
-      <h2>msalles</h2>
-      <span item-right class="score-item score-item_list text-small text-muted">10k <ion-icon name="money-circle"></ion-icon></span>
-    </button>
-  </ion-card>
 
   <ion-card class="card card_action">
 
