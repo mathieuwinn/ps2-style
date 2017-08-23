@@ -36364,6 +36364,82 @@ ion-card.card_list {
   font-size: 1.4rem;
 }
 
+/* ACTIVITY MODAL POPUP WITH LIKES + COMMENTS */
+ion-modal {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  z-index: 1000;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  contain: strict;
+}
+
+@media (min-height: 500px) {
+  ion-modal ion-backdrop {
+    visibility: visible;
+  }
+}
+
+ion-modal .modal-wrapper {
+  z-index: 10;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  overflow-y: scroll;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  min-width: 280px;
+  max-height: 90%;
+  opacity: 0;
+  width: calc(100% - 40px);
+  height: auto;
+  max-width: 580px;
+  border-radius: 8px;
+  background-color: #fafafa;
+  -webkit-box-shadow: 0 16px 20px rgba(0, 0, 0, 0.4);
+  box-shadow: 0 16px 20px rgba(0, 0, 0, 0.4);
+}
+
+ion-modal .modal-wrapper,
+ion-modal .modal-wrapper .ion-page,
+ion-modal .modal-wrapper .ion-page .content,
+ion-modal .modal-wrapper .ion-page .content .scroll-content {
+  contain: content;
+  position: relative;
+  top: auto;
+  left: auto;
+}
+
+ion-modal .modal-wrapper .ion-page .content {
+  padding: 8px;
+}
+
+ion-modal .modal-wrapper .ion-page .content .scroll-content {
+  overflow-y: hidden;
+  padding-bottom: 10px;
+}
+
+ion-content.modal_user {
+  padding: 0 !important;
+}
+
 @font-face {
   font-family: "Work Sans";
   font-style: normal;

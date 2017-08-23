@@ -1,5 +1,6 @@
 import { Component } from '@angular/core';
-import { IonicPage, NavController, NavParams, ActionSheetController, AlertController  } from 'ionic-angular';
+import { IonicPage, NavController, NavParams, ActionSheetController, AlertController, ModalController  } from 'ionic-angular';
+import { Usermodal } from '../usermodal/usermodal';
 
 
 /**
@@ -15,11 +16,22 @@ import { IonicPage, NavController, NavParams, ActionSheetController, AlertContro
 })
 export class Leaderboard {
 
-  constructor(public navCtrl: NavController, public navParams: NavParams) {
+  constructor(public navCtrl: NavController, public navParams: NavParams,  public modalCtrl: ModalController) {
   }
 
   ionViewDidLoad() {
     console.log('ionViewDidLoad Leaderboard');
+  }
+
+
+
+  openUser1Modal() {
+      let activityModal = this.modalCtrl.create(Usermodal);
+      activityModal.present();
+    }
+
+  ngOnInit(){
+    // this.openUser1Modal();
   }
 
 }

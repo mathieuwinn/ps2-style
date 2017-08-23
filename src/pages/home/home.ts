@@ -17,6 +17,11 @@ notificationsPage = Notifications;
 
   }
 
+  ngOnInit(){
+  //  this.navCtrl.push(Leaderboard);
+  }
+
+
   bannerShow = true;
     closeBanner() {
      this.bannerShow = !this.bannerShow;

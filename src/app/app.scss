@@ -494,6 +494,85 @@ ion-card {
 
 }
 
+
+// Custom Modal (used for profile popups)
+
+
+/* ACTIVITY MODAL POPUP WITH LIKES + COMMENTS */
+
+ion-modal { // to be replaced with special class for modal popup style
+  @media (min-height: 500px) {
+    ion-backdrop {
+      visibility: visible;
+    }
+  }
+
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  z-index: $z-index-overlay;
+
+  display: flex;
+
+  align-items: center;
+  justify-content: center;
+
+  contain: strict;
+  .modal-wrapper {
+    &,
+    .ion-page,
+    .ion-page .content,
+    .ion-page .content .scroll-content {
+      contain: content;
+      position: relative;
+      top: auto;
+      left: auto;
+    }
+
+    z-index: $z-index-overlay-wrapper;
+    display: flex;
+    overflow-y: scroll;
+
+    flex-direction: column;
+
+    min-width: 280px;
+    max-height: $alert-max-height;
+
+    opacity: 0;
+
+    width: calc(100% - 40px);
+
+    height: auto;
+    max-width: 580px;
+    border-radius: $alert-md-border-radius;
+    background-color: $alert-md-background-color;
+    box-shadow: $alert-md-box-shadow;
+
+    .ion-page .content  {
+      padding: 8px;
+      .scroll-content {
+        overflow-y: hidden;
+        padding-bottom: 10px;
+      }
+    }
+  }
+}
+
+
+ion-content.modal_user {
+  padding: 0 !important;
+  .scroll-content {
+  }
+
+  .modal_user-profile {
+    
+  }
+
+}
+
+
 // PS Work Sans font
 
 @font-face {
