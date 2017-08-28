@@ -22,7 +22,7 @@ $font-path: "../assets/fonts";
 // The "primary" color is the only required color in the map.
 
 $colors: (
-  primary:    #00CEF7,
+  primary:    #886CEC,
   secondary:  #ED0200,
   brown:       #2E2C2C,
   danger:     #f53d3d,
@@ -42,6 +42,8 @@ $list-border-color : #EFEFEF;
 $list-md-border-color : #EFEFEF;
 
 
+$max-content-width : 540px;
+
 // App iOS Variables
 // --------------------------------------------------
 // iOS only Sass variables can go here
@@ -52,10 +54,14 @@ $loading-ios-spinner-color: color($colors, primary); //not working for ion-spinn
 // Toolbar
 $toolbar-ios-border-color : rgba(0,0,0,0);
 
+// FORMS
+$text-input-ios-highlight-color: color($colors, primary);
+$text-input-ios-background-color: color($colors, primary);
 
 
 // Normal button
-$button-ios-font-weight : 600;
+$button-ios-font-weight : 500;
+$button-ios-strong-font-weight : 600;
 $button-ios-border-radius : 10px;
 $button-ios-text-transform : none;
 $button-ios-font-size : 1.6rem;
@@ -68,7 +74,12 @@ $button-ios-small-padding : 1.3em 1.1em;
 // iOS outline button
 $button-ios-outline-border-width: 0;
 $button-ios-outline-text-color: color($colors, medium);
-$button-ios-outline-background-color: #FFF;
+$button-ios-outline-text-color-activated: color($colors, dark);
+$button-ios-outline-box-shadow : inset 0 0 0 2px #EEE;
+$button-ios-outline-background-color-activated : rgba(0,0,0,0.06);
+
+
+
 
 // iOS Card
 $card-ios-border-radius : 8px;
@@ -104,13 +115,13 @@ $alert-ios-button-main-font-weight : 600;
 // --------------------------------------------------
 // Material Design only Sass variables can go here
 
-$loading-md-spinner-color: red;
-$spinner-md-circles-color: red;
-$loading-md-spinner-crescent-color: red;
-$loading-md-spinner-circles-color: red;
-$loading-md-spinner-bubbles-color: red;
-$loading-md-spinner-dots-color: red;
-$loading-md-text-color: red;
+$loading-md-spinner-color: color($colors, primary);
+$spinner-md-circles-color: color($colors, primary);
+$loading-md-spinner-crescent-color: color($colors, primary);
+$loading-md-spinner-circles-color: color($colors, primary);
+$loading-md-spinner-bubbles-color: color($colors, primary);
+$loading-md-spinner-dots-color: color($colors, primary);
+$loading-md-text-color: color($colors, primary);
 $background-color: #FFF;
 
 $toolbar-md-background : color($colors, brown);
@@ -122,7 +133,7 @@ $toolbar-md-button-color: white;
 
 
 // Normal button
-$button-md-font-weight : 400;
+$button-md-font-weight : 500;
 $button-md-border-radius : 10px;
 $button-md-text-transform : none;
 $button-md-font-size : 1.6rem;
@@ -138,7 +149,7 @@ $button-md-small-padding : 1.4em 1.1em;
 // MD outline button
 $button-md-outline-border-width: 0;
 $button-md-outline-text-color: color($colors, medium);
-$button-md-outline-background-color: #FFF;
+
 $button-md-outline-ripple-background-color: color($colors, medium);
 $button-md-outline-box-shadow : inset 0 0 0 2px #EEE;
 

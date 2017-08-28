@@ -3,6 +3,9 @@ import { IonicPage, NavController, NavParams, ActionSheetController, AlertContro
 
 import { Leaderboard } from '../leaderboard/leaderboard';
 import { Notifications } from '../notifications/notifications';
+import { Signup } from '../signup/signup';
+import { Splash } from '../splash/splash';
+
 
 @Component({
   selector: 'page-home',
@@ -12,13 +15,15 @@ export class HomePage {
 
 leaderboardPage = Leaderboard;
 notificationsPage = Notifications;
+signupPage = Signup;
+splashPage = Splash;
 
   constructor(public navCtrl: NavController) {
 
   }
 
   ngOnInit(){
-  //  this.navCtrl.push(Leaderboard);
+  // this.navCtrl.push(Splash);
   }
 
 
@@ -27,4 +32,19 @@ notificationsPage = Notifications;
      this.bannerShow = !this.bannerShow;
     }
 
+    buttonActed = false;
+    buttonSuccess = false;
+    buttonFail = false;
+      buttonAct() {
+        setTimeout(() => {
+          this.buttonActed = true;
+        }, 300);
+        setTimeout(() => {
+          this.buttonSuccess = true;
+          this.buttonActed = false;
+        }, 2200);
+        setTimeout(() => {
+          this.buttonSuccess = false;
+        }, 4000);
+      }
 }

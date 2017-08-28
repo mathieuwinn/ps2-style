@@ -1,0 +1,42 @@
+
+<ion-header>
+
+  <ion-navbar>
+    <ion-title>Log in</ion-title>
+  </ion-navbar>
+
+</ion-header>
+
+
+
+<ion-content padding>
+
+
+  <ion-list no-margin class="form form_login">
+
+    <ion-item>
+      <ion-input type="text" placeholder="Username"></ion-input>
+    </ion-item>
+
+
+    <ion-item>
+      <ion-input type="password" placeholder="Password"></ion-input>
+    </ion-item>
+
+  </ion-list>
+
+  <div padding-horizontal text-right>
+    <button ion-button small clear text-right (click)="showPrompt()">Forgot password?</button>
+  </div>
+
+  <div margin text-center>
+      <button ion-button block disabled (click)="presentLoading()">Log in</button>
+    </div>
+
+    <div class="form-link-container">
+      <p padding-horizontal text-center class="text-small text-muted">Didn't sign up yet?</p>
+      <button ion-button outline small text-center [navPush]="signupPage">Create an account</button>
+    </div>
+
+
+</ion-content>

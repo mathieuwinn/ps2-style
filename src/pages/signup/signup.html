@@ -1,0 +1,70 @@
+<!--
+  Generated template for the Signup page.
+
+  See http://ionicframework.com/docs/components/#navigation for more info on
+  Ionic pages and navigation.
+-->
+<ion-header>
+
+  <ion-navbar>
+    <ion-title>Create an account</ion-title>
+  </ion-navbar>
+
+</ion-header>
+
+
+
+<ion-content padding>
+
+
+
+  <ion-list no-margin class="form form_signup">
+
+    <ion-item>
+      <ion-input type="text" placeholder="Pick a username"></ion-input>
+      <ion-icon name="check-circle" item-right class="input-icon input-icon_right input-icon_valid"></ion-icon>
+    <!--  <ion-icon name="cancel-circle" item-right class="input-icon input-icon_right input-icon_invalid"></ion-icon> -->
+
+
+    </ion-item>
+
+    <ion-item>
+      <ion-input type="email" placeholder="Email address"></ion-input>
+    </ion-item>
+
+
+    <ion-item>
+      <ion-input type="password" placeholder="Password"></ion-input>
+    </ion-item>
+
+    <ion-item>
+      <ion-label>Select your country</ion-label>
+      <ion-select [(ngModel)]="country">
+        <ion-option value="fr" selected><span class="flag-icon flag-icon-fr"></span>France</ion-option>
+        <ion-option value="us"><span class="flag-icon flag-icon-us"></span>USA</ion-option>
+        <ion-option value="en"><span class="flag-icon flag-icon-en"></span>England</ion-option>
+        <ion-option value="br"><span class="flag-icon flag-icon-br"></span>Brazil</ion-option>
+        <ion-option value="tr"><span class="flag-icon flag-icon-tr"></span>Turkey</ion-option>
+        <ion-option value="sw"><span class="flag-icon flag-icon-sw"></span>Sweden</ion-option>
+      </ion-select>
+    </ion-item>
+
+
+
+  </ion-list>
+
+
+    <div margin text-center>
+
+      <button ion-button block disabled (click)="presentLoading()">Create an account</button>
+    </div>
+
+
+    <div class="form-link-container">
+      <p padding-horizontal text-center class="text-small text-muted">Already have an account?</p>
+      <button ion-button outline small center [navPush]="loginPage">Log in</button>
+    </div>
+
+
+
+</ion-content>

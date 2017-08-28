@@ -31,7 +31,7 @@ export class Leaderboard {
     }
 
   ngOnInit(){
-    // this.openUser1Modal();
+     this.openUser1Modal();
   }
 
 }

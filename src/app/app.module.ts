@@ -9,6 +9,9 @@ import { HomePage } from '../pages/home/home';
 import { Leaderboard } from '../pages/leaderboard/leaderboard';
 import { Notifications } from '../pages/notifications/notifications';
 import { Usermodal } from '../pages/usermodal/usermodal';
+import { Signup } from '../pages/signup/signup';
+import { Splash } from '../pages/splash/splash';
+import { Login } from '../pages/login/login';
 
 
 @NgModule({
@@ -17,7 +20,10 @@ import { Usermodal } from '../pages/usermodal/usermodal';
     HomePage,
     Leaderboard,
     Notifications,
-    Usermodal
+    Usermodal,
+    Signup,
+    Splash,
+    Login
   ],
   imports: [
     BrowserModule,
@@ -29,7 +35,10 @@ import { Usermodal } from '../pages/usermodal/usermodal';
     HomePage,
     Leaderboard,
     Notifications,
-    Usermodal
+    Usermodal,
+    Signup,
+    Splash,
+    Login
   ],
   providers: [
     StatusBar,
