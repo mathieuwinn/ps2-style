@@ -776,8 +776,7 @@ ion-card {
 
 
 
-.item_profile {
-
+.item_profile , .item_notification {
 
   ion-avatar {
     min-width: 28px;
@@ -798,6 +797,10 @@ ion-card {
 
   h2 {
     font-size: 1.4rem;
+    ion-icon {
+      display: inline-block;
+      vertical-align: middle;
+    }
   }
 
 }

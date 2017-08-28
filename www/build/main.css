@@ -36647,27 +36647,32 @@ ion-card.card_list {
   width: 29px;
 }
 
-.item_profile ion-avatar {
+.item_profile ion-avatar, .item_notification ion-avatar {
   min-width: 28px;
   min-height: 28px;
 }
 
-.item_profile ion-avatar[item-start] {
+.item_profile ion-avatar[item-start], .item_notification ion-avatar[item-start] {
   margin: 8px 10px 8px 0;
 }
 
-.item_profile ion-avatar img {
+.item_profile ion-avatar img, .item_notification ion-avatar img {
   height: 28px;
   width: 28px;
 }
 
-.item_profile .item-position {
+.item_profile .item-position, .item_notification .item-position {
   font-size: 1.2rem;
   color: #626262;
 }
 
-.item_profile h2 {
+.item_profile h2, .item_notification h2 {
   font-size: 1.4rem;
+}
+
+.item_profile h2 ion-icon, .item_notification h2 ion-icon {
+  display: inline-block;
+  vertical-align: middle;
 }
 
 /* ACTIVITY MODAL POPUP WITH LIKES + COMMENTS */
