@@ -7,17 +7,29 @@
 
 <ion-content padding class="modal modal_user">
 
-  <button clear ion-button icon-only class="modal_user-settings">
-    <ion-icon name="settings"></ion-icon>
+<div class="modal_user-options">
+  <button clear ion-button icon-only>
+    <ion-icon name="share"></ion-icon>
   </button>
+
+
+</div>
+
 
   <ion-item class="modal_user-profile" text-wrap>
     <ion-avatar item-start>
       <img src="../assets/img/profile-avatar.png">
     </ion-avatar>
-    <h2>mrobert</h2>
-    <p>Membre du Parti UltraMarine depuis le 1er sept 2017</p>
+    <h2 class="modal_user-profile-title">ironsepultura92</h2>
+    <p class="modal_user-profile-description">Membre du Parti UltraMarine depuis le 1er sept 2017</p>
+    <div class="modal_user-profile-values">
+      <span class="tag tag_value">Social</span><span class="tag tag_value">Patriot</span><span class="tag tag_value">Ecolo</span>
+    </div>
+    <button outline ion-button small class="button-icon-left">
+      <ion-icon name="settings"></ion-icon>  Réglages
+    </button>
   </ion-item>
+
 
   <ion-grid class="modal_user-score">
       <ion-row>
@@ -34,7 +46,7 @@
           <strong>12.2k</strong> de monnaie
         </ion-col>
         <ion-col col-6 col-sm-6 col-lg-3>
-          <ion-icon class="modal_user-score-icon" name="money-circle"></ion-icon>
+          <ion-icon class="modal_user-score-icon" name="dirty-money-circle"></ion-icon>
           <strong>12.2k</strong> d'argent sale
         </ion-col>
         <ion-col col-6 col-sm-6 col-lg-3>
@@ -44,8 +56,24 @@
       </ion-row>
     </ion-grid>
 
-  <ion-item class="modal_user-score" text-wrap>
+  <ion-item class="modal_user-action" text-wrap>
 
+    <div class="modal_user-investigations">
+      <div class="judge-avatar"></div>
+      <strong>12 affaires judiciaires</strong> lancées contre vous.
+    </div>
+
+    <p class="modal_user-action-description">Corrompez les juges dès maintenant !</p>
+    <button ion-button item-end small>
+      Corrompre
+    </button>
+  </ion-item>
+
+  <ion-item class="modal_user-action" text-wrap>
+    <p class="modal_user-action-description">Diffamations, agressions, saccages de locaux. Tous les moyens sont bons !</p>
+    <button ion-button color="secondary" item-end small>
+      Attaquer
+    </button>
   </ion-item>
 
 

@@ -46,6 +46,20 @@ strong {
   font-weight: 500;
 }
 
+.tag {
+  &.tag_value {
+    padding: 4px 10px;
+    background: #EFEFEF;
+    border-radius: 10px;
+    height: 20px;
+    line-height: 20px;
+    color: color($colors, medium);
+    font-size: 1rem;
+
+  }
+}
+
+
 // Buttons
 
 .button-default.button-ios {
@@ -66,6 +80,18 @@ strong {
 .button-block {
   max-width: $max-content-width;
   margin: auto;
+}
+
+.button-icon-left{
+  ion-icon {
+    margin-right: 6px;
+  }
+}
+
+.button-icon-right{
+  ion-icon {
+    margin-left: 6px;
+  }
 }
 
 // Forms
@@ -97,7 +123,7 @@ strong {
 
   }
   &.list-ios > .item-block:first-child {
-    border-top: 0 solid red;
+    border-top: none;
   }
 }
 
@@ -137,7 +163,28 @@ ion-navbar.toolbar {
 
   .buttons-menu {
     button {
+      position: relative;
       font-size: 1.1rem;
+      padding-left: 6px;
+      padding-right: 6px;
+      margin-left: 0;
+      margin-right: 0;
+      &.bar-button-md {
+        padding-left: 3px;
+        padding-right: 3px;
+      }
+      &.btn-notif:after {
+          content: '';
+          position: absolute;
+          bottom: 2px;
+          right: -2px;
+          width: 6px;
+          height: 6px;
+          border-radius: 50%;
+          background-color: color($colors, primary);
+          box-shadow: 0px 0px 8px rgba(255,255,255,0.8);
+          animation: pulse 1.2s normal infinite;
+        }
 
     }
 
@@ -145,6 +192,30 @@ ion-navbar.toolbar {
   }
 
 
+}
+
+@keyframes pulse {
+  from {
+      transform: scale(1, 1);
+  }
+  50% {
+      transform: scale(1.4, 1.4);
+  }
+  to {
+      transform: scale(1, 1);
+  }
+}
+
+@-webkit-keyframes pulse {
+  from {
+      transform: scale(1, 1);
+  }
+  50% {
+      transform: scale(1.4, 1.4);
+  }
+  to {
+      transform: scale(1, 1);
+  }
 }
 
 
@@ -197,8 +268,10 @@ ion-navbar.toolbar {
     margin-left: 20px;
     height: 34px;
     float: left;
-    padding: 0 10px 0 28px;
+    padding: 0 10px 0 24px;
     z-index: -1;
+    width: auto;
+    max-width: calc(100% - 140px);
 
     border-radius: 0 17px 17px 0;
     background-color: rgba(0,0,0,0.3);
@@ -239,7 +312,6 @@ ion-navbar.toolbar {
   }
 
   &.is-shown {
-    color: red;
     transform: translateY(0);
   }
 
@@ -659,11 +731,18 @@ ion-card {
     font-size: 1.6rem;
   }
 
+  h6.card-title-top {
+    font-size: 1.2rem;
+    font-weight: 400;
+  }
+
   .flag {
+    min-width: 30px;
     float: left;
     display: table-cell;
     vertical-align: middle;
     margin-right: 10px;
+    box-shadow: 0 7px 7px 0 rgba(0,0,0,0.12);
   }
 
   .card-title-select {
@@ -684,11 +763,10 @@ ion-card {
 
 .flag {
   &.flag_big {
-    border-radius: 4px;
     overflow: hidden;
     span.flag-icon {
-      height: 30px;
-      width: 40px;
+      height: 22px;
+      width: 29px;
     }
 
   }
@@ -775,7 +853,7 @@ ion-modal {
     width: calc(100% - 60px);
 
     height: auto;
-    max-width: 580px;
+    max-width: $max-content-width;
     border-radius: $alert-md-border-radius;
     background-color: $alert-md-background-color;
     box-shadow: 0 10px 30px rgba(0,0,0,0.2);
@@ -800,16 +878,26 @@ ion-content.modal_user {
     padding-top: 0;
   }
 
-  .modal_user-settings {
+  ion-item:last-child .item-inner {
+    border-bottom: none;
+  }
+
+  .modal_user-options {
     position: absolute;
-    right: 4px;
-    top: 4px;
+    right: 10px;
+    top: 10px;
     z-index: 10;
-    font-size: 1.2rem;
-    ion-icon {
-      color: color($colors, medium);
-      opacity: 0.6;
+    button {
+      font-size: 1.1rem;
+      margin: 0;
+      margin-right: 0;
+      margin-left: 0;
+      ion-icon {
+        color: color($colors, medium);
+        opacity: 0.6;
+      }
     }
+
   }
 
   .modal_user-profile {
@@ -825,16 +913,32 @@ ion-content.modal_user {
         width: 54px;
       }
     }
-    h2 {
-      font-size: 1.8rem;
+    h2.modal_user-profile-title {
+      font-weight: 500;
+      font-size: 1.7rem;
+      max-width: 160px;
+      white-space: nowrap;
+      overflow: hidden;
+      text-overflow: ellipsis;
+    }
+    p.modal_user-profile-description {
+      font-size: 1.2rem;
+    }
+    .modal_user-profile-values {
+      .tag_value {
+        margin-right: 4px;
+      }
     }
   }
 
   .modal_user-score {
+    border-bottom: 0.55px solid #EFEFEF;
+    margin-bottom: 4px;
     ion-row {
       ion-col {
         color: color($colors, medium);
         font-weight: normal;
+        font-size: 1.2rem;
         strong {
           font-size: 1.6rem;
           color: color($colors, dark);
@@ -849,7 +953,6 @@ ion-content.modal_user {
         .modal_user-score-icon {
           display: block;
           height: 120%;
-          background-color: red;
           padding-top: 4px;
           float: left;
           margin-right: 14px;
@@ -861,6 +964,50 @@ ion-content.modal_user {
       }
     }
   }
+
+  .item-md, .item-ios {
+    background-color: rgba(0,0,0,0);
+    padding-left: 0;
+    padding-right: 0;
+    & .item-inner {
+      padding-right: 0;
+    }
+    & [item-end] {
+      margin: 0px 0 0 4px;
+    }
+  }
+
+  .modal_user-action {
+    .modal_user-action-description {
+      color: color($colors, medium);
+      font-size: 1.2rem;
+    }
+
+    .modal_user-investigations {
+      font-size: 1.2rem;
+      color: color($colors, medium);
+      margin-bottom: 10px;
+      strong {
+        color: color($colors, dark);
+      }
+      .judge-avatar {
+        float: left;
+        margin: 0 10px 0 0;
+        height: 22px;
+        width: 22px;
+        border-radius: 50%;
+        background-image: url(../assets/img/judge-avatar.png);
+        -webkit-background-size: cover;
+          -moz-background-size: cover;
+          -o-background-size: cover;
+          background-size: cover;
+          background-position: center center;
+      }
+    }
+
+  }
+
+
 
 }
 
@@ -1111,4 +1258,24 @@ ion-content.content_splash {
 .ion-md-chevron-up:before, .ion-ios-chevron-up:before {
   font-family: "ps2font" !important;
   content: "\6c";
+}
+.ion-md-share:before, .ion-ios-share:before {
+  font-family: "ps2font" !important;
+  content: "\6d";
+}
+.ion-md-cancel-circle:before, .ion-ios-cancel-circle:before {
+  font-family: "ps2font" !important;
+  content: "\6e";
+}
+.ion-md-dirty-money-circle:before, .ion-ios-dirty-money-circle:before {
+  font-family: "ps2font" !important;
+  content: "\70";
+}
+.ion-md-lock:before, .ion-ios-lock:before {
+  font-family: "ps2font" !important;
+  content: "\63";
+}
+.ion-md-check-circle:before, .ion-ios-check-circle:before {
+  font-family: "ps2font" !important;
+  content: "\6f";
 }

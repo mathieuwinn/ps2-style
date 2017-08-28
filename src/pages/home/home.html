@@ -9,6 +9,8 @@
         <div class="navbar-profile-score">
           <span class="score-item icon-right">12<ion-icon name="heart-circle"></ion-icon></span>
           <span class="score-item icon-right">22.2k<ion-icon name="money-circle"></ion-icon></span>
+          <span class="score-item icon-right">14.3k<ion-icon name="dirty-money-circle"></ion-icon></span>
+
           <span class="score-item icon-right">120<ion-icon name="users-circle"></ion-icon></span>
           <span class="score-item icon-right">13<ion-icon name="bolt-circle"></ion-icon></span>
         </div>
@@ -20,7 +22,7 @@
         <button ion-button icon-only [navPush]="notificationsPage">
           <ion-icon name="bell"></ion-icon>
         </button>
-        <button ion-button icon-only [navPush]="leaderboardPage">
+        <button ion-button icon-only [navPush]="leaderboardPage" class="btn-notif">
           <ion-icon name="trophy"></ion-icon>
         </button>
     </ion-buttons>
@@ -59,11 +61,12 @@
 
   <div class="card-top-elements card-top-elements_invest-country" padding-horizontal>
 
-        <div class="flag flag_big">
+
+        <div class="flag flag_big" (click)="buttonAct();">
           <span class="flag-icon flag-icon-fr"></span>
         </div>
 
-      <h6 class="card-title-top">Bonjour ! Vous investissez actuellement en France.</h6>
+      <h6 class="card-title-top" (click)="buttonAct();"><strong>Bonjour !</strong> Vous investissez actuellement en France.</h6>
 
       <ion-select [(ngModel)]="country" class="card-title-select">
         <ion-option value="fr" selected><span class="flag-icon flag-icon-fr"></span>France</ion-option>
@@ -107,7 +110,7 @@
 
     <ion-item text-wrap>
       <h2 class="card-title">Distribuer des tracts</h2>
-       <p class="card-rewards"><span class="score-item score-item_reward icon-left"><ion-icon name="users-circle"></ion-icon>++</span></p>
+       <p class="card-rewards"><span class="score-item score-item_reward icon-left"><ion-icon name="users-circle"></ion-icon>++</span> (Coût/heure : <span class="score-item score-item_reward icon-right">150<ion-icon name="money-circle"></ion-icon></span>)</p>
       <p class="card-description">Donec id elit non mi porta gravida at eget metus. Duis mollis, est non commodo luctus, nisi erat porttitor ligula, eget lacinia odio sem nec elit. Cum sociis natoque penatibus et magnis dis parturient montes,...</p>
     </ion-item>
     <ion-item>
@@ -127,7 +130,7 @@
 
     <ion-item text-wrap>
       <h2 class="card-title">Investissez dans les entreprises étrangères</h2>
-      <p class="card-rewards">Coût/heure : <span class="score-item score-item_reward icon-right">150<ion-icon name="money-circle"></ion-icon></span></p>
+      <p class="card-rewards">(Coût/heure : <span class="score-item score-item_reward icon-right">150<ion-icon name="money-circle"></ion-icon></span>)</p>
 
       <p class="card-description">Tant de projets à financer et si peu d’argent. Aidez les entreprises à se développer, prenez les dividendes au passage.</p>
     </ion-item>
