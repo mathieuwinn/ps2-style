@@ -6,6 +6,7 @@ import { StatusBar } from '@ionic-native/status-bar';
 
 import { MyApp } from './app.component';
 import { HomePage } from '../pages/home/home';
+import { Dashboard } from '../pages/dashboard/dashboard';
 import { Leaderboard } from '../pages/leaderboard/leaderboard';
 import { Notifications } from '../pages/notifications/notifications';
 import { Usermodal } from '../pages/usermodal/usermodal';
@@ -18,6 +19,7 @@ import { Login } from '../pages/login/login';
   declarations: [
     MyApp,
     HomePage,
+    Dashboard,
     Leaderboard,
     Notifications,
     Usermodal,
@@ -33,6 +35,7 @@ import { Login } from '../pages/login/login';
   entryComponents: [
     MyApp,
     HomePage,
+    Dashboard,
     Leaderboard,
     Notifications,
     Usermodal,

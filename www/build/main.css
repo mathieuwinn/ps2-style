@@ -36711,7 +36711,8 @@ ion-list ion-badge.badge-ios, ion-list ion-badge.badge-md, .card_list ion-badge.
 }
 
 .item_profile h2, .item_notification h2 {
-  font-size: 1.4rem;
+  font-size: 1.2rem;
+  font-weight: 400;
 }
 
 .item_profile h2 ion-icon, .item_notification h2 ion-icon {

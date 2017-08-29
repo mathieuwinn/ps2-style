@@ -1,182 +1,29 @@
 <ion-header>
+
   <ion-navbar>
-    <div class="navbar-profile-space">
-
-        <div class="profile-avatar profile-avatar_navbar">
-          <div class="party-avatar"></div>
-        </div>
-
-        <div class="navbar-profile-score">
-          <span class="score-item icon-right">12<ion-icon name="heart-circle"></ion-icon></span>
-          <span class="score-item icon-right">22.2k<ion-icon name="money-circle"></ion-icon></span>
-          <span class="score-item icon-right">14.3k<ion-icon name="dirty-money-circle"></ion-icon></span>
-
-          <span class="score-item icon-right">120<ion-icon name="users-circle"></ion-icon></span>
-          <span class="score-item icon-right">13<ion-icon name="bolt-circle"></ion-icon></span>
-        </div>
-
-
-      </div>
-
-      <ion-buttons end class="buttons-menu">
-        <button ion-button icon-only [navPush]="notificationsPage" class="btn-notif">
-          <ion-icon name="bell"></ion-icon>
-        </button>
-        <button ion-button icon-only [navPush]="leaderboardPage">
-          <ion-icon name="trophy"></ion-icon>
-        </button>
-    </ion-buttons>
+    <ion-title>Politics Simulator Style</ion-title>
   </ion-navbar>
-
-  <div class="header-segment">
-    <ion-segment [(ngModel)]="tripPage" (ionchange)="onSegmentChange($event)">
-      <ion-segment-button value="actions">Activités</ion-segment-button>
-      <ion-segment-button value="ressources">Ressources</ion-segment-button>
-      <ion-segment-button value="investments">Investissements</ion-segment-button>
-      <ion-segment-button value="international">International</ion-segment-button>
-      <ion-segment-button value="president">Président</ion-segment-button>
-    </ion-segment>
-  </div>
-
-  <div class="banner banner_header-live hide" padding-horizontal [ngClass]="bannerShow ? 'is-shown' : ''">
-    <button ion-button clear icon-only class="banner_btn-close" (click)="closeBanner();">
-      <ion-icon name="chevron-up"></ion-icon>
-    </button>
-    <ion-item text-wrap>
-      <h4 class="banner-title">Super ! 👍</h4>
-      <p class="banner-text"><strong>Bravo !</strong> L’opération de tractage s’est bien passée! Vous recevez beaucoup d’<strong>encouragements </strong> et de <strong>nouveaux militants</strong> vous rejoignent ! </p>
-      <div class="banner-rewards">
-        <span item-right class="score-item score-item_price icon-right">+12<ion-icon name="heart-circle"></ion-icon></span>
-        <span item-right class="score-item score-item_price icon-right">+188<ion-icon name="users-circle"></ion-icon></span>
-      </div>
-    </ion-item>
-  </div>
-
-
-
 
 </ion-header>
 
-<ion-content class="sand-bg">
 
-  <div class="card-top-elements card-top-elements_invest-country" padding-horizontal>
-
-
-        <div class="flag flag_big" (click)="buttonAct();">
-          <span class="flag-icon flag-icon-fr"></span>
-        </div>
-
-      <h6 class="card-title-top" (click)="buttonAct();"><strong>Bonjour !</strong> Vous investissez actuellement en France.</h6>
-
-      <ion-select [(ngModel)]="country" class="card-title-select">
-        <ion-option value="fr" selected><span class="flag-icon flag-icon-fr"></span>France</ion-option>
-        <ion-option value="us"><span class="flag-icon flag-icon-us"></span>USA</ion-option>
-        <ion-option value="en"><span class="flag-icon flag-icon-en"></span>England</ion-option>
-        <ion-option value="br"><span class="flag-icon flag-icon-br"></span>Brazil</ion-option>
-        <ion-option value="tr"><span class="flag-icon flag-icon-tr"></span>Turkey</ion-option>
-        <ion-option value="sw"><span class="flag-icon flag-icon-sw"></span>Sweden</ion-option>
-      </ion-select>
-  </div>
+<ion-content padding class="sand-bg">
 
 
 
-<div padding-horizontal>
+  <ion-card class="card card_list">
+    <button ion-item class="item_profile" [navPush]="splashPage">
+      <h2>Splash</h2>
+    </button>
+    <button ion-item class="item_profile" [navPush]="dashboardPage">
+      <h2>Dashboard</h2>
+    </button>
 
-  <ion-card class="card card_action">
-
-    <ion-item text-wrap>
-      <h2 class="card-title">Distribuer des tracts</h2>
-      <p class="card-rewards"><span class="score-item score-item_reward icon-left"><ion-icon name="users-circle"></ion-icon>++</span></p>
-      <p class="card-description">Donec id elit non mi porta gravida at eget metus. Duis mollis, est non commodo luctus, nisi erat porttitor ligula, eget lacinia odio sem nec elit. Cum sociis natoque penatibus et magnis dis parturient montes,...</p>
-    </ion-item>
-    <ion-item>
-      <div class="card-price" item-right [ngClass]="[buttonActed ? 'is-hidden' : '', buttonSuccess ? 'is-hidden' : '']">
-        <span class="score-item score-item_price score-item_is-touchable score-item_is-set icon-right">4<ion-icon name="heart-circle"></ion-icon></span>
-        <span class="score-item score-item_price icon-right">120<ion-icon name="users-circle"></ion-icon></span>
-        <span class="score-item score-item_price icon-right">200<ion-icon name="money-circle"></ion-icon></span>
-      </div>
-      <button ion-button item-end small class="button_action" (click)="buttonAct();" [ngClass]="[buttonActed ? 'button_loading' : '', buttonSuccess ? 'button_success' : '']">
-        <ion-spinner class="button-spinner" name="crescent">  </ion-spinner>
-        <span class="button_action-text">Click me</span>
-        <span class="button_action-text_success"><span class="emoji-thumb-up">👍</span> Success!</span>
-        <span class="button_action-text_fail"><span class="emoji-thumb-down">👎</span> Failed</span>
-      </button>
-    </ion-item>
-
-
-  </ion-card>
-
-  <ion-card class="card card_action">
-
-    <ion-item text-wrap>
-      <h2 class="card-title">Distribuer des tracts</h2>
-       <p class="card-rewards"><span class="score-item score-item_reward icon-left"><ion-icon name="users-circle"></ion-icon>++</span> (Coût/heure : <span class="score-item score-item_reward icon-right">150<ion-icon name="money-circle"></ion-icon></span>)</p>
-      <p class="card-description">Donec id elit non mi porta gravida at eget metus. Duis mollis, est non commodo luctus, nisi erat porttitor ligula, eget lacinia odio sem nec elit. Cum sociis natoque penatibus et magnis dis parturient montes,...</p>
-    </ion-item>
-    <ion-item>
-      <div class="card-price" item-right>
-        <span class="score-item score-item_price score-item_is-touchable icon-right">0<ion-icon name="heart-circle"></ion-icon></span>
-        <span class="score-item score-item_price icon-right">70<ion-icon name="money-circle"></ion-icon></span>
-      </div>
-      <button ion-button item-end small>
-        Action
-      </button>
-    </ion-item>
-
-
-  </ion-card>
-
-  <ion-card class="card card_action">
-
-    <ion-item text-wrap>
-      <h2 class="card-title">Investissez dans les entreprises étrangères</h2>
-      <p class="card-rewards">(Coût/heure : <span class="score-item score-item_reward icon-right">150<ion-icon name="money-circle"></ion-icon></span>)</p>
-
-      <p class="card-description">Tant de projets à financer et si peu d’argent. Aidez les entreprises à se développer, prenez les dividendes au passage.</p>
-    </ion-item>
-    <ion-item>
-      <div class="card-price" item-right>
-        <span class="score-item score-item_price icon-right">70<ion-icon name="money-circle"></ion-icon></span>
-      </div>
-      <button ion-button item-end small>
-        Action
-      </button>
-    </ion-item>
-
-
-  </ion-card>
-
-  <ion-card class="card card_action">
-
-    <ion-item text-wrap>
-      <!-- <span class="card-status card-status_new">Nouveau</span>-->
-      <h2 class="card-title">Distribuer des tracts</h2>
-      <p class="card-description">Donec id elit non mi porta gravida at eget metus. Duis mollis, est non commodo luctus, nisi erat porttitor ligula, eget lacinia odio sem nec elit. Cum sociis natoque penatibus et magnis dis parturient montes,...</p>
-    </ion-item>
-
-    <div class="card-needs">
-      <ion-item text-wrap>
-        <span item-left class="text-small text-muted">Nécessite</span>
-        <ul class="card-needs-list">
-          <li class="card-needs-item card-needs-item_is-checked"><strong>1x</strong> camionette de campagne</li>
-          <li class="card-needs-item"><strong>1x</strong> valise d’argent sale</li>
-        </ul>
-      </ion-item>
-    </div>
-
-    <ion-item>
-      <div class="card-price" item-right>
-        <span class="score-item score-item_price icon-right">70<ion-icon name="money-circle"></ion-icon></span>
-      </div>
-      <button ion-button icon-left item-end small disabled>
-        <ion-icon name="lock"></ion-icon> Action
-      </button>
-    </ion-item>
 
 
   </ion-card>
 
 
-  </div>
+
 
 </ion-content>
