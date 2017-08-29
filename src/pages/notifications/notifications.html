@@ -15,7 +15,7 @@
 
 <ion-content class="sand-bg">
 
-<ion-list>
+<ion-list class="list list_notifications">
   <button ion-item class="item_notification" text-wrap>
     <ion-avatar item-start>
       <img src="../assets/img/profile-avatar.png">
@@ -28,5 +28,33 @@
     <span item-right class="text-small text-muted">2 hrs ago</span>
   </button>
 </ion-list>
+
+<div class="empty-container empty-container_loading hide" padding>
+
+  <ion-spinner name="crescent"></ion-spinner>
+  <p class="text-muted">Téléchargement des communiqués...</p>
+
+
+</div>
+
+<div class="empty-container empty-container_nosignal hide" padding>
+
+  <ion-icon name="no-signal"></ion-icon>
+  <p class="text-muted">Pas de connexion. Veuillez vérifier votre connexion internet.</p>
+  <button outline ion-button small class="button-icon-left">
+      <ion-icon name="refresh"></ion-icon> Réessayer
+    </button>
+
+</div>
+
+<div class="empty-container empty-container_nextelections hide" padding>
+  <div class="empty-img empty-img_noelections"></div>
+  <h4>Prochaines élections le 10/2 à minuit.</h4>
+  <p class="text-muted">Toutes les semaines se jouent les élections de votre pays. Cum sociis natoque penatibus...</p>
+
+
+</div>
+
+
 
 </ion-content>

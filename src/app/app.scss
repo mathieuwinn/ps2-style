@@ -48,14 +48,14 @@ strong {
 
 .tag {
   &.tag_value {
-    padding: 4px 10px;
+    display: inline-block;
+    padding: 0 7px;
     background: #EFEFEF;
     border-radius: 10px;
     height: 20px;
     line-height: 20px;
     color: color($colors, medium);
     font-size: 1rem;
-
   }
 }
 
@@ -705,13 +705,59 @@ ion-card {
     }
   }
 
-  &.card_list {
-    margin-bottom: 30px;
-  }
+
 
 }
 
+
+
 // lists
+
+
+
+ion-list, .card_list {
+  &.list_notifications {
+    margin : 0 auto 30px;
+    max-width: $max-content-width;
+  }
+  &.card_list {
+    margin : 0 auto 30px;
+    max-width: $max-content-width;
+  }
+  &.modal_user-list {
+    margin-bottom: 0;
+    margin-top: 4px;
+    ion-item-divider {
+      min-height: 2.6rem;
+      color: color($colors, medium);
+      border-bottom: none;
+      font-size: 1.1rem;
+      text-transform: uppercase;
+      ion-label.label-md, ion-label.label-ios {
+        margin: 0;
+      }
+    }
+    ion-item {
+      min-height: 2.6rem;
+      font-size: 1.4rem;
+      ion-label.label-md, ion-label.label-ios {
+        margin: 0;
+      }
+    }
+  }
+
+  ion-badge.badge-ios, ion-badge.badge-md {
+    padding: 0 8px;
+    background: #EFEFEF;
+    border-radius: 10px;
+    height: 20px;
+    line-height: 20px;
+    color: color($colors, medium);
+    font-size: 1.1rem;
+    font-weight: 400;
+  }
+
+}
 
 // Remove right arrow on buttons list
 .item-ios[detail-push] .item-inner, button.item-ios:not([detail-none]) .item-inner, a.item-ios:not([detail-none]) .item-inner {
@@ -856,7 +902,7 @@ ion-modal {
     width: calc(100% - 60px);
 
     height: auto;
-    max-width: $max-content-width;
+    max-width: $max-content-width - 100px;
     border-radius: $alert-md-border-radius;
     background-color: $alert-md-background-color;
     box-shadow: 0 10px 30px rgba(0,0,0,0.2);
@@ -905,6 +951,15 @@ ion-content.modal_user {
 
   .modal_user-profile {
     padding: 0;
+
+
+    .item-inner {
+      border-bottom: none;
+      ion-label {
+        margin-right: 0;
+      }
+    }
+
     ion-avatar {
       min-width: 54px;
       min-height: 54px;
@@ -919,7 +974,6 @@ ion-content.modal_user {
     h2.modal_user-profile-title {
       font-weight: 500;
       font-size: 1.7rem;
-      max-width: 160px;
       white-space: nowrap;
       overflow: hidden;
       text-overflow: ellipsis;
@@ -930,6 +984,19 @@ ion-content.modal_user {
     .modal_user-profile-values {
       .tag_value {
         margin-right: 4px;
+      }
+    }
+
+
+
+  }
+
+  .modal_user-settings {
+    margin: 0;
+    padding: 0;
+    ion-row {
+      ion-col {
+        padding: 2px;
       }
     }
   }
@@ -1009,30 +1076,6 @@ ion-content.modal_user {
     }
 
   }
-
-  .modal_user-list {
-    margin-bottom: 0;
-    margin-top: 4px;
-    ion-item-divider {
-      min-height: 2.6rem;
-      color: color($colors, medium);
-      border-bottom: none;
-      font-size: 1.1rem;
-      text-transform: uppercase;
-      ion-label.label-md, ion-label.label-ios {
-        margin: 0;
-      }
-    }
-    ion-item {
-      min-height: 2.6rem;
-      font-size: 1.4rem;
-      ion-label.label-md, ion-label.label-ios {
-        margin: 0;
-      }
-    }
-  }
-
-
 
 }
 
@@ -1178,6 +1221,40 @@ ion-content.content_splash {
 }
 
 
+// Empty states (loading, no results, no friends yet...) With optional image, title, spinner, paragraph(s) and CTA
+
+.empty-container {
+  z-index: -1;
+  text-align: center;
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 26%;
+  max-width: 380px;
+  margin: auto;
+  h4 {
+    font-size: 1.8rem;
+  }
+  p {
+    font-size: 1.2rem;
+    font-weight: 400;
+  }
+  .ion-md-no-signal, .ion-ios-no-signal {
+    font-size: 2.6em;
+    color: rgba(color($colors, medium),0.2);
+  }
+  .empty-img {
+    margin: 0 auto;
+    &.empty-img_noelections {
+      height: 64px;
+      width: 64px;
+      border-radius: 50%;
+      background-color: rgba(color($colors, medium),0.2);
+
+    }
+
+  }
+}
 
 
 // PS Work Sans font
@@ -1303,4 +1380,12 @@ ion-content.content_splash {
 .ion-md-check-circle:before, .ion-ios-check-circle:before {
   font-family: "ps2font" !important;
   content: "\6f";
+}
+.ion-md-refresh:before, .ion-ios-refresh:before {
+  font-family: "ps2font" !important;
+  content: "\72";
+}
+.ion-md-no-signal:before, .ion-ios-no-signal:before {
+  font-family: "ps2font" !important;
+  content: "\71";
 }

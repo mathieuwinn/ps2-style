@@ -7,13 +7,7 @@
 
 <ion-content padding class="modal modal_user">
 
-<div class="modal_user-options">
-  <button clear ion-button icon-only>
-    <ion-icon name="share"></ion-icon>
-  </button>
 
-
-</div>
 
 
   <ion-item class="modal_user-profile" text-wrap>
@@ -25,11 +19,32 @@
     <div class="modal_user-profile-values">
       <span class="tag tag_value">Social</span><span class="tag tag_value">Patriot</span><span class="tag tag_value">Ecolo</span>
     </div>
-    <button outline ion-button small class="button-icon-left">
-      <ion-icon name="settings"></ion-icon> Réglages
-    </button>
   </ion-item>
 
+  <ion-grid class="modal_user-settings">
+      <ion-row>
+    <ion-col col-2>  <button outline ion-button small block>
+        <ion-icon name="settings"></ion-icon>
+      </button></ion-col>
+    <ion-col col-10>  <button outline ion-button small block class="button-icon-left">
+        <ion-icon name="share"></ion-icon> Partager votre profil
+      </button></ion-col>
+  </ion-row>
+</ion-grid>
+
+<ion-grid class="modal_user-settings">
+    <ion-row>
+  <ion-col col-6>
+    <button outline ion-button small block class="button-icon-left">
+        <ion-icon name="share"></ion-icon> Partager
+      </button>
+  </ion-col>
+  <ion-col col-6>
+    <button ion-button color="secondary" small block> Attaquer
+    </button>
+  </ion-col>
+</ion-row>
+</ion-grid>
 
   <ion-grid class="modal_user-score">
       <ion-row>
@@ -60,33 +75,24 @@
 
     <div class="modal_user-investigations">
       <div class="judge-avatar"></div>
-      <strong>12 affaires judiciaires</strong> lancées contre vous.
+      <strong>12 affaires judiciaires</strong> lancées contre vous. Corrompez les juges dès maintenant !
     </div>
-
-    <p class="modal_user-action-description">Corrompez les juges dès maintenant !</p>
     <button ion-button item-end small>
       Corrompre
     </button>
   </ion-item>
 
-  <ion-item class="modal_user-action" text-wrap>
-    <p class="modal_user-action-description">Diffamations, agressions, saccages de locaux. Tous les moyens sont bons !</p>
-    <button ion-button color="secondary" item-end small>
-      Attaquer
-    </button>
-  </ion-item>
-
     <ion-list no-lines class="modal_user-list modal_user-rssrcs">
       <ion-item-divider color="light">Équipements</ion-item-divider>
-      <ion-item>Voiture (2x)</ion-item>
-      <ion-item>Voiture illégale (1x)</ion-item>
+      <ion-item>Voiture <ion-badge item-end>2x</ion-badge></ion-item>
+      <ion-item>Voiture illégale <ion-badge item-end>1x</ion-badge></ion-item>
     </ion-list>
 
     <ion-list no-lines class="modal_user-list modal_user-investments">
       <ion-item-divider color="light">Investissements</ion-item-divider>
-      <ion-item><span class="flag-icon flag-icon-fr"></span> Association sportive</ion-item>
-      <ion-item><span class="flag-icon flag-icon-us"></span> Investissez dans les entreprises étrangères</ion-item>
-      <ion-item><span class="flag-icon flag-icon-gb"></span> Investissez dans les entreprises étrangères</ion-item>
+      <ion-item><span class="flag-icon flag-icon-fr"></span> Association sportive<ion-badge item-end>4x</ion-badge></ion-item>
+      <ion-item><span class="flag-icon flag-icon-us"></span> Investissez dans les entreprises étrangères<ion-badge item-end>1x</ion-badge></ion-item>
+      <ion-item><span class="flag-icon flag-icon-al"></span> Investissez dans les entreprises étrangères<ion-badge item-end>1x</ion-badge></ion-item>
     </ion-list>
 
 </ion-content>
