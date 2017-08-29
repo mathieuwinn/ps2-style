@@ -44,7 +44,7 @@ constructor(public navCtrl: NavController, public navParams: NavParams, public a
 presentLoading() {
   let loader = this.loadingCtrl.create({
     content: "Logging in...",
-    duration: 3000
+    duration: 3000,
   });
   loader.present();
 }

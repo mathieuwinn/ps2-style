@@ -26,7 +26,7 @@ splashPage = Splash;
   }
 
   ngOnInit(){
-  //  this.navCtrl.push(Notifications);
+  //  this.navCtrl.push(Leaderboard);
   }
 
 }

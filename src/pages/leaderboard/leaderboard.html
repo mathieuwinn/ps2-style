@@ -15,6 +15,12 @@
 
 <ion-content padding class="sand-bg">
 
+  <ion-refresher (ionRefresh)="doRefresh($event)">
+    <ion-refresher-content
+      pullingIcon="arrow-down"
+      refreshingSpinner="crescent">></ion-refresher-content>
+  </ion-refresher>
+
   <div class="card-top-elements">
     <h4 class="card-title-top">Classement général</h4>
   </div>

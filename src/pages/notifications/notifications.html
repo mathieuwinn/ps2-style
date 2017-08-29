@@ -15,6 +15,12 @@
 
 <ion-content class="sand-bg">
 
+  <ion-refresher (ionRefresh)="doRefresh($event)">
+    <ion-refresher-content
+      pullingIcon="arrow-down"
+      refreshingSpinner="crescent">></ion-refresher-content>
+  </ion-refresher>
+
 <ion-list class="list list_notifications">
   <button ion-item class="item_notification" text-wrap>
     <ion-avatar item-start>

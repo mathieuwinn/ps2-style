@@ -1111,6 +1111,11 @@ ion-content.modal_user {
     transform: translateY(600px);
     }
 
+    &.footer_actions_splash {
+      background-color: color($colors, splashbg);
+      padding-top: 0px;
+    }
+
 
 
 }
@@ -1119,7 +1124,7 @@ ion-content.modal_user {
 // Splash page
 
 ion-content.content_splash {
-  background-color: #1A1815;
+  background-color: color($colors, splashbg);
 }
 
 .splash-container {
@@ -1131,6 +1136,7 @@ ion-content.content_splash {
 
   .splash-container-top {
     position: absolute;
+    overflow: hidden;
     top: 0;
     width: 100%;
     height: 85%;
@@ -1188,15 +1194,17 @@ ion-content.content_splash {
   }
 
   .splash-bg-character {
+    overflow: hidden;
     position: absolute;
-    z-index: 101;
+    z-index: 10;
     max-width: 400px;
     width: calc(100% - 100px);
-    bottom: 0;
+    bottom: -10px;
     left: 0;
     right: 0;
     margin: auto;
     img {
+
       width: 100%;
       height: auto;
     }
@@ -1207,7 +1215,7 @@ ion-content.content_splash {
     z-index: 102;
     max-width: 360px;
     width: 50%;
-    top: 0;
+    top: 20px;
     left: 0;
     right: 0;
     margin: auto;
@@ -1220,6 +1228,21 @@ ion-content.content_splash {
 
 
 }
+
+
+  .splash-easter-egg {
+    position: absolute;
+    z-index: 102;
+    max-width: 360px;
+    width: 50%;
+    top: 24px;
+    left: 0;
+    right: 0;
+    margin: auto;
+    text-align: center;
+    color: rgba(255,255,255,0.2);
+    font-size: 1.2rem;
+  }
 
 
 // Empty states (loading, no results, no friends yet...) With optional image, title, spinner, paragraph(s) and CTA
@@ -1389,4 +1412,8 @@ ion-content.content_splash {
 .ion-md-no-signal:before, .ion-ios-no-signal:before {
   font-family: "ps2font" !important;
   content: "\71";
+}
+.ion-md-arrow-down:before, .ion-ios-arrow-down:before {
+  font-family: "ps2font" !important;
+  content: "\73";
 }
