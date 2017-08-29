@@ -92,7 +92,9 @@
     </ion-item>
     <ion-item>
       <div class="card-price" item-right [ngClass]="[buttonActed ? 'is-hidden' : '', buttonSuccess ? 'is-hidden' : '']">
-        <span class="score-item score-item_price score-item_is-touchable score-item_is-set icon-right">4<ion-icon name="heart-circle"></ion-icon></span>
+        <button ion-button clear small (click)="openActionModal()" class="btn-score-item">
+          <span class="score-item score-item_price score-item_is-set icon-right">4<ion-icon name="heart-circle"></ion-icon></span>
+        </button>
         <span class="score-item score-item_price icon-right">120<ion-icon name="users-circle"></ion-icon></span>
         <span class="score-item score-item_price icon-right">200<ion-icon name="money-circle"></ion-icon></span>
       </div>
@@ -116,7 +118,9 @@
     </ion-item>
     <ion-item>
       <div class="card-price" item-right>
-        <span class="score-item score-item_price score-item_is-touchable icon-right">0<ion-icon name="heart-circle"></ion-icon></span>
+        <button ion-button clear small class="btn-score-item" (click)="openActionModal()">
+          <span class="score-item score-item_price icon-right">0<ion-icon name="heart-circle"></ion-icon></span>
+        </button>
         <span class="score-item score-item_price icon-right">70<ion-icon name="money-circle"></ion-icon></span>
       </div>
       <button ion-button item-end small>
@@ -130,7 +134,7 @@
   <ion-card class="card card_action">
 
     <ion-item text-wrap>
-      <h2 class="card-title">Investissez dans les entreprises étrangères</h2>
+      <h2 class="card-title"><span class="card_action-difficulty card_action-difficulty-3"></span>Investissez dans les entreprises étrangères</h2>
       <p class="card-rewards">(Coût/heure : <span class="score-item score-item_reward icon-right">150<ion-icon name="money-circle"></ion-icon></span>)</p>
 
       <p class="card-description">Tant de projets à financer et si peu d’argent. Aidez les entreprises à se développer, prenez les dividendes au passage.</p>
@@ -144,6 +148,43 @@
       </button>
     </ion-item>
 
+
+  </ion-card>
+
+
+  <ion-card class="card card_action">
+
+    <ion-item text-wrap>
+      <h2 class="card-title">Suitcase full of cash</h2>
+      <p class="card-rewards"><span class="score-item score-item_reward icon-right">10k <ion-icon name="dirty-money-circle"></ion-icon></span></p>
+
+      <p class="card-description">Meet up with "the Greek" under the billboard ad on the avenue. He'll supply you.</p>
+    </ion-item>
+    <ion-item text-wrap>
+      <div class="card-action-description">
+        Earn this action <strong>for free</strong> by watching a short ad.
+      </div>
+      <button ion-button item-end small>
+        Watch Ad
+      </button>
+    </ion-item>
+
+  </ion-card>
+
+  <ion-card class="card card_action">
+
+    <ion-item text-wrap>
+      <h2 class="card-title">Corrupt judges</h2>
+      <p class="card-description">Duis mollis, est non commodo luctus, nisi erat porttitor ligula, eget lacinia odio sem nec elit.</p>
+    </ion-item>
+    <ion-item text-wrap>
+      <div class="card-action-description">
+        Pack of <strong>3x corruptions</strong>
+      </div>
+      <button color="secondary" ion-button item-end small>
+        Buy for $0,30
+      </button>
+    </ion-item>
 
   </ion-card>
 

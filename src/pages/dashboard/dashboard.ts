@@ -1,10 +1,11 @@
 import { Component } from '@angular/core';
-import { IonicPage, NavController, NavParams, ActionSheetController, AlertController  } from 'ionic-angular';
+import { IonicPage, NavController, NavParams, ActionSheetController, AlertController, ModalController  } from 'ionic-angular';
 
 import { Leaderboard } from '../leaderboard/leaderboard';
 import { Notifications } from '../notifications/notifications';
 import { Signup } from '../signup/signup';
 import { Splash } from '../splash/splash';
+import { Actionmodal } from '../actionmodal/actionmodal';
 
 
 
@@ -19,12 +20,19 @@ notificationsPage = Notifications;
 signupPage = Signup;
 splashPage = Splash;
 
-  constructor(public navCtrl: NavController, public navParams: NavParams) {
+  constructor(public navCtrl: NavController, public navParams: NavParams,  public modalCtrl: ModalController) {
   }
 
   ngOnInit(){
   //  this.navCtrl.push(Notifications);
+  // this.openActionModal();
+
   }
+  openActionModal() {
+      let actionModal = this.modalCtrl.create(Actionmodal);
+      actionModal.present();
+    }
+
 
 
   bannerShow = true;
