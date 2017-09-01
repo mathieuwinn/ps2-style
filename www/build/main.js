@@ -1,206 +1,12 @@
 webpackJsonp([0],{
 
-/***/ 107:
-/***/ (function(module, exports) {
-
-function webpackEmptyAsyncContext(req) {
-	// Here Promise.resolve().then() is used instead of new Promise() to prevent
-	// uncatched exception popping up in devtools
-	return Promise.resolve().then(function() {
-		throw new Error("Cannot find module '" + req + "'.");
-	});
-}
-webpackEmptyAsyncContext.keys = function() { return []; };
-webpackEmptyAsyncContext.resolve = webpackEmptyAsyncContext;
-module.exports = webpackEmptyAsyncContext;
-webpackEmptyAsyncContext.id = 107;
-
-/***/ }),
-
-/***/ 148:
-/***/ (function(module, exports) {
-
-function webpackEmptyAsyncContext(req) {
-	// Here Promise.resolve().then() is used instead of new Promise() to prevent
-	// uncatched exception popping up in devtools
-	return Promise.resolve().then(function() {
-		throw new Error("Cannot find module '" + req + "'.");
-	});
-}
-webpackEmptyAsyncContext.keys = function() { return []; };
-webpackEmptyAsyncContext.resolve = webpackEmptyAsyncContext;
-module.exports = webpackEmptyAsyncContext;
-webpackEmptyAsyncContext.id = 148;
-
-/***/ }),
-
-/***/ 192:
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
-
-"use strict";
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return HomePage; });
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_ionic_angular__ = __webpack_require__(18);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__dashboard_dashboard__ = __webpack_require__(267);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__leaderboard_leaderboard__ = __webpack_require__(193);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__notifications_notifications__ = __webpack_require__(195);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_5__signup_signup__ = __webpack_require__(98);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_6__splash_splash__ = __webpack_require__(266);
-var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
-    var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
-    if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
-    else for (var i = decorators.length - 1; i >= 0; i--) if (d = decorators[i]) r = (c < 3 ? d(r) : c > 3 ? d(target, key, r) : d(target, key)) || r;
-    return c > 3 && r && Object.defineProperty(target, key, r), r;
-};
-var __metadata = (this && this.__metadata) || function (k, v) {
-    if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
-};
-
-
-
-
-
-
-
-var HomePage = (function () {
-    function HomePage(navCtrl) {
-        this.navCtrl = navCtrl;
-        this.dashboardPage = __WEBPACK_IMPORTED_MODULE_2__dashboard_dashboard__["a" /* Dashboard */];
-        this.leaderboardPage = __WEBPACK_IMPORTED_MODULE_3__leaderboard_leaderboard__["a" /* Leaderboard */];
-        this.notificationsPage = __WEBPACK_IMPORTED_MODULE_4__notifications_notifications__["a" /* Notifications */];
-        this.signupPage = __WEBPACK_IMPORTED_MODULE_5__signup_signup__["a" /* Signup */];
-        this.splashPage = __WEBPACK_IMPORTED_MODULE_6__splash_splash__["a" /* Splash */];
-    }
-    HomePage.prototype.ngOnInit = function () {
-        this.navCtrl.push(__WEBPACK_IMPORTED_MODULE_2__dashboard_dashboard__["a" /* Dashboard */]);
-    };
-    return HomePage;
-}());
-HomePage = __decorate([
-    Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["n" /* Component */])({
-        selector: 'page-home',template:/*ion-inline-start:"/Users/mathieu/Documents/Work/PoliticsSimulator/ionicStyle/src/pages/home/home.html"*/'<ion-header>\n\n  <ion-navbar>\n    <ion-title>Politics Simulator Style</ion-title>\n  </ion-navbar>\n\n</ion-header>\n\n\n<ion-content padding class="sand-bg">\n\n\n\n  <ion-card class="card card_list">\n    <button ion-item class="item_profile" [navPush]="splashPage">\n      <h2>Splash</h2>\n    </button>\n    <button ion-item class="item_profile" [navPush]="dashboardPage">\n      <h2>Dashboard</h2>\n    </button>\n\n\n\n  </ion-card>\n\n\n\n\n</ion-content>\n'/*ion-inline-end:"/Users/mathieu/Documents/Work/PoliticsSimulator/ionicStyle/src/pages/home/home.html"*/
-    }),
-    __metadata("design:paramtypes", [__WEBPACK_IMPORTED_MODULE_1_ionic_angular__["g" /* NavController */]])
-], HomePage);
-
-//# sourceMappingURL=home.js.map
-
-/***/ }),
-
-/***/ 193:
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
-
-"use strict";
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return Leaderboard; });
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_ionic_angular__ = __webpack_require__(18);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__usermodal_usermodal__ = __webpack_require__(194);
-var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
-    var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
-    if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
-    else for (var i = decorators.length - 1; i >= 0; i--) if (d = decorators[i]) r = (c < 3 ? d(r) : c > 3 ? d(target, key, r) : d(target, key)) || r;
-    return c > 3 && r && Object.defineProperty(target, key, r), r;
-};
-var __metadata = (this && this.__metadata) || function (k, v) {
-    if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
-};
-
-
-
-/**
- * Generated class for the Leaderboard page.
- *
- * See http://ionicframework.com/docs/components/#navigation for more info
- * on Ionic pages and navigation.
- */
-var Leaderboard = (function () {
-    function Leaderboard(navCtrl, navParams, modalCtrl) {
-        this.navCtrl = navCtrl;
-        this.navParams = navParams;
-        this.modalCtrl = modalCtrl;
-    }
-    Leaderboard.prototype.ionViewDidLoad = function () {
-        console.log('ionViewDidLoad Leaderboard');
-    };
-    Leaderboard.prototype.openUser1Modal = function () {
-        var activityModal = this.modalCtrl.create(__WEBPACK_IMPORTED_MODULE_2__usermodal_usermodal__["a" /* Usermodal */]);
-        activityModal.present();
-    };
-    Leaderboard.prototype.ngOnInit = function () {
-        this.openUser1Modal();
-    };
-    Leaderboard.prototype.doRefresh = function (refresher) {
-        console.log('Begin async operation', refresher);
-        setTimeout(function () {
-            console.log('Async operation has ended');
-            refresher.complete();
-        }, 2000);
-    };
-    return Leaderboard;
-}());
-Leaderboard = __decorate([
-    Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["n" /* Component */])({
-        selector: 'page-leaderboard',template:/*ion-inline-start:"/Users/mathieu/Documents/Work/PoliticsSimulator/ionicStyle/src/pages/leaderboard/leaderboard.html"*/'<!--\n  Generated template for the Leaderboard page.\n\n  See http://ionicframework.com/docs/components/#navigation for more info on\n  Ionic pages and navigation.\n-->\n<ion-header>\n\n  <ion-navbar>\n    <ion-title>Leaderboard</ion-title>\n  </ion-navbar>\n\n</ion-header>\n\n\n<ion-content padding class="sand-bg">\n\n  <ion-refresher (ionRefresh)="doRefresh($event)">\n    <ion-refresher-content\n      refreshingSpinner="crescent">></ion-refresher-content>\n  </ion-refresher>\n\n  <div class="card-top-elements">\n    <h4 class="card-title-top">Classement général</h4>\n  </div>\n\n  <ion-card class="card card_list">\n    <button ion-item class="item_profile" (click)="openUser1Modal()">\n      <span item-start class="item-position">1.</span>\n      <ion-avatar item-start>\n        <img src="../assets/img/profile-avatar.png">\n      </ion-avatar>\n      <h2>mrobert</h2>\n      <span item-right class="score-item score-item_list text-small text-muted">10k <ion-icon name="money-circle"></ion-icon></span>\n    </button>\n    <button ion-item class="item_profile">\n      <span item-start class="item-position">2.</span>\n      <ion-avatar item-start>\n        <img src="../assets/img/profile-avatar.png">\n      </ion-avatar>\n      <h2>jlavergne</h2>\n      <span item-right class="score-item score-item_list text-small text-muted">10k <ion-icon name="money-circle"></ion-icon></span>\n    </button>\n    <button ion-item class="item_profile">\n      <span item-start class="item-position">3.</span>\n      <ion-avatar item-start>\n        <img src="../assets/img/profile-avatar.png">\n      </ion-avatar>\n      <h2>msalles</h2>\n      <span item-right class="score-item score-item_list text-small text-muted">10k <ion-icon name="money-circle"></ion-icon></span>\n    </button>\n  </ion-card>\n\n  <div class="card-top-elements">\n    <h4 class="card-title-top">Mon parti</h4>\n\n  </div>\n\n  <ion-card class="card card_list">\n    <button ion-item class="item_profile">\n      <span item-start class="item-position">1.</span>\n      <ion-avatar item-start>\n        <img src="../assets/img/profile-avatar.png">\n      </ion-avatar>\n      <h2>mrobert</h2>\n      <span item-right class="score-item score-item_list text-small text-muted">10k <ion-icon name="money-circle"></ion-icon></span>\n    </button>\n    <button ion-item class="item_profile">\n      <span item-start class="item-position">2.</span>\n      <ion-avatar item-start>\n        <img src="../assets/img/profile-avatar.png">\n      </ion-avatar>\n      <h2>jlavergne</h2>\n      <span item-right class="score-item score-item_list text-small text-muted">10k <ion-icon name="money-circle"></ion-icon></span>\n    </button>\n    <button ion-item class="item_profile">\n      <span item-start class="item-position">3.</span>\n      <ion-avatar item-start>\n        <img src="../assets/img/profile-avatar.png">\n      </ion-avatar>\n      <h2>msalles</h2>\n      <span item-right class="score-item score-item_list text-small text-muted">10k <ion-icon name="money-circle"></ion-icon></span>\n    </button>\n  </ion-card>\n\n</ion-content>\n'/*ion-inline-end:"/Users/mathieu/Documents/Work/PoliticsSimulator/ionicStyle/src/pages/leaderboard/leaderboard.html"*/,
-    }),
-    __metadata("design:paramtypes", [__WEBPACK_IMPORTED_MODULE_1_ionic_angular__["g" /* NavController */], __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["h" /* NavParams */], __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["f" /* ModalController */]])
-], Leaderboard);
-
-//# sourceMappingURL=leaderboard.js.map
-
-/***/ }),
-
-/***/ 194:
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
-
-"use strict";
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return Usermodal; });
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_ionic_angular__ = __webpack_require__(18);
-var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
-    var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
-    if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
-    else for (var i = decorators.length - 1; i >= 0; i--) if (d = decorators[i]) r = (c < 3 ? d(r) : c > 3 ? d(target, key, r) : d(target, key)) || r;
-    return c > 3 && r && Object.defineProperty(target, key, r), r;
-};
-var __metadata = (this && this.__metadata) || function (k, v) {
-    if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
-};
-
-
-/**
- * Generated class for the Usermodal page.
- *
- * See http://ionicframework.com/docs/components/#navigation for more info
- * on Ionic pages and navigation.
- */
-var Usermodal = (function () {
-    function Usermodal(navCtrl, navParams) {
-        this.navCtrl = navCtrl;
-        this.navParams = navParams;
-    }
-    Usermodal.prototype.ionViewDidLoad = function () {
-        console.log('ionViewDidLoad Usermodal');
-    };
-    return Usermodal;
-}());
-Usermodal = __decorate([
-    Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["n" /* Component */])({
-        selector: 'page-usermodal',template:/*ion-inline-start:"/Users/mathieu/Documents/Work/PoliticsSimulator/ionicStyle/src/pages/usermodal/usermodal.html"*/'<!--\n  Generated template for the Usermodal page.\n\n  See http://ionicframework.com/docs/components/#navigation for more info on\n  Ionic pages and navigation.\n-->\n\n<ion-content padding class="modal modal_user">\n\n\n\n\n  <ion-item class="modal_user-profile" text-wrap>\n    <ion-avatar item-start>\n      <img src="../assets/img/profile-avatar.png">\n    </ion-avatar>\n    <h2 class="modal_user-profile-title">ironsepultura92</h2>\n    <p class="modal_user-profile-description">Membre du Parti UltraMarine depuis le 1er sept 2017</p>\n    <div class="modal_user-profile-values">\n      <span class="tag tag_value">Social</span><span class="tag tag_value">Patriot</span><span class="tag tag_value">Ecolo</span>\n    </div>\n  </ion-item>\n\n  <ion-grid class="modal_user-settings">\n      <ion-row>\n    <ion-col col-2>  <button outline ion-button small block>\n        <ion-icon name="settings"></ion-icon>\n      </button></ion-col>\n    <ion-col col-10>  <button outline ion-button small block class="button-icon-left">\n        <ion-icon name="share"></ion-icon> Partager votre profil\n      </button></ion-col>\n  </ion-row>\n</ion-grid>\n\n<ion-grid class="modal_user-settings">\n    <ion-row>\n  <ion-col col-6>\n    <button outline ion-button small block class="button-icon-left">\n        <ion-icon name="share"></ion-icon> Partager\n      </button>\n  </ion-col>\n  <ion-col col-6>\n    <button ion-button color="secondary" small block> Attaquer\n    </button>\n  </ion-col>\n</ion-row>\n</ion-grid>\n\n  <ion-grid class="modal_user-score">\n      <ion-row>\n        <ion-col col-6 col-sm-6 col-lg-3>\n          <ion-icon class="modal_user-score-icon" name="heart-circle"></ion-icon>\n          <strong>12</strong> points d’honnêteté\n        </ion-col>\n        <ion-col col-6 col-sm-6 col-lg-3>\n          <ion-icon class="modal_user-score-icon" name="bolt-circle"></ion-icon>\n          <strong>7</strong> actions de jenesaiskoi\n        </ion-col>\n        <ion-col col-6 col-sm-6 col-lg-3>\n          <ion-icon class="modal_user-score-icon" name="money-circle"></ion-icon>\n          <strong>12.2k</strong> de monnaie\n        </ion-col>\n        <ion-col col-6 col-sm-6 col-lg-3>\n          <ion-icon class="modal_user-score-icon" name="dirty-money-circle"></ion-icon>\n          <strong>12.2k</strong> d\'argent sale\n        </ion-col>\n        <ion-col col-6 col-sm-6 col-lg-3>\n          <ion-icon class="modal_user-score-icon" name="users-circle"></ion-icon>\n          <strong>192</strong> militants avec vous\n        </ion-col>\n      </ion-row>\n    </ion-grid>\n\n  <ion-item class="modal_user-action" text-wrap>\n\n    <div class="modal_user-investigations">\n      <div class="judge-avatar"></div>\n      <strong>12 affaires judiciaires</strong> lancées contre vous. Corrompez les juges dès maintenant !\n    </div>\n    <button ion-button item-end small>\n      Corrompre\n    </button>\n  </ion-item>\n\n    <ion-list no-lines class="modal_user-list modal_user-rssrcs">\n      <ion-item-divider color="light">Équipements</ion-item-divider>\n      <ion-item>Voiture <ion-badge item-end>2x</ion-badge></ion-item>\n      <ion-item>Voiture illégale <ion-badge item-end>1x</ion-badge></ion-item>\n    </ion-list>\n\n    <ion-list no-lines class="modal_user-list modal_user-investments">\n      <ion-item-divider color="light">Investissements</ion-item-divider>\n      <ion-item><span class="flag-icon flag-icon-fr"></span> Association sportive<ion-badge item-end>4x</ion-badge></ion-item>\n      <ion-item><span class="flag-icon flag-icon-us"></span> Investissez dans les entreprises étrangères<ion-badge item-end>1x</ion-badge></ion-item>\n      <ion-item><span class="flag-icon flag-icon-al"></span> Investissez dans les entreprises étrangères<ion-badge item-end>1x</ion-badge></ion-item>\n    </ion-list>\n\n</ion-content>\n'/*ion-inline-end:"/Users/mathieu/Documents/Work/PoliticsSimulator/ionicStyle/src/pages/usermodal/usermodal.html"*/,
-    }),
-    __metadata("design:paramtypes", [__WEBPACK_IMPORTED_MODULE_1_ionic_angular__["g" /* NavController */], __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["h" /* NavParams */]])
-], Usermodal);
-
-//# sourceMappingURL=usermodal.js.map
-
-/***/ }),
-
-/***/ 195:
+/***/ 100:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return Notifications; });
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_ionic_angular__ = __webpack_require__(18);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_ionic_angular__ = __webpack_require__(13);
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
     if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
@@ -237,14 +43,14 @@ Notifications = __decorate([
 
 /***/ }),
 
-/***/ 196:
+/***/ 101:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return Login; });
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_ionic_angular__ = __webpack_require__(18);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__signup_signup__ = __webpack_require__(98);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_ionic_angular__ = __webpack_require__(13);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__signup_signup__ = __webpack_require__(39);
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
     if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
@@ -309,164 +115,15 @@ Login = __decorate([
 
 /***/ }),
 
-/***/ 197:
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
-
-"use strict";
-Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_platform_browser_dynamic__ = __webpack_require__(198);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__app_module__ = __webpack_require__(216);
-
-
-Object(__WEBPACK_IMPORTED_MODULE_0__angular_platform_browser_dynamic__["a" /* platformBrowserDynamic */])().bootstrapModule(__WEBPACK_IMPORTED_MODULE_1__app_module__["a" /* AppModule */]);
-//# sourceMappingURL=main.js.map
-
-/***/ }),
-
-/***/ 216:
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
-
-"use strict";
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return AppModule; });
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_platform_browser__ = __webpack_require__(29);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__angular_core__ = __webpack_require__(0);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2_ionic_angular__ = __webpack_require__(18);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__ionic_native_splash_screen__ = __webpack_require__(188);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__ionic_native_status_bar__ = __webpack_require__(191);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_5__app_component__ = __webpack_require__(265);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_6__pages_home_home__ = __webpack_require__(192);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_7__pages_dashboard_dashboard__ = __webpack_require__(267);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_8__pages_leaderboard_leaderboard__ = __webpack_require__(193);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_9__pages_notifications_notifications__ = __webpack_require__(195);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_10__pages_usermodal_usermodal__ = __webpack_require__(194);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_11__pages_actionmodal_actionmodal__ = __webpack_require__(268);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_12__pages_signup_signup__ = __webpack_require__(98);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_13__pages_splash_splash__ = __webpack_require__(266);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_14__pages_login_login__ = __webpack_require__(196);
-var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
-    var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
-    if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
-    else for (var i = decorators.length - 1; i >= 0; i--) if (d = decorators[i]) r = (c < 3 ? d(r) : c > 3 ? d(target, key, r) : d(target, key)) || r;
-    return c > 3 && r && Object.defineProperty(target, key, r), r;
-};
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-var AppModule = (function () {
-    function AppModule() {
-    }
-    return AppModule;
-}());
-AppModule = __decorate([
-    Object(__WEBPACK_IMPORTED_MODULE_1__angular_core__["L" /* NgModule */])({
-        declarations: [
-            __WEBPACK_IMPORTED_MODULE_5__app_component__["a" /* MyApp */],
-            __WEBPACK_IMPORTED_MODULE_6__pages_home_home__["a" /* HomePage */],
-            __WEBPACK_IMPORTED_MODULE_7__pages_dashboard_dashboard__["a" /* Dashboard */],
-            __WEBPACK_IMPORTED_MODULE_8__pages_leaderboard_leaderboard__["a" /* Leaderboard */],
-            __WEBPACK_IMPORTED_MODULE_9__pages_notifications_notifications__["a" /* Notifications */],
-            __WEBPACK_IMPORTED_MODULE_10__pages_usermodal_usermodal__["a" /* Usermodal */],
-            __WEBPACK_IMPORTED_MODULE_11__pages_actionmodal_actionmodal__["a" /* Actionmodal */],
-            __WEBPACK_IMPORTED_MODULE_12__pages_signup_signup__["a" /* Signup */],
-            __WEBPACK_IMPORTED_MODULE_13__pages_splash_splash__["a" /* Splash */],
-            __WEBPACK_IMPORTED_MODULE_14__pages_login_login__["a" /* Login */]
-        ],
-        imports: [
-            __WEBPACK_IMPORTED_MODULE_0__angular_platform_browser__["a" /* BrowserModule */],
-            __WEBPACK_IMPORTED_MODULE_2_ionic_angular__["d" /* IonicModule */].forRoot(__WEBPACK_IMPORTED_MODULE_5__app_component__["a" /* MyApp */])
-        ],
-        bootstrap: [__WEBPACK_IMPORTED_MODULE_2_ionic_angular__["b" /* IonicApp */]],
-        entryComponents: [
-            __WEBPACK_IMPORTED_MODULE_5__app_component__["a" /* MyApp */],
-            __WEBPACK_IMPORTED_MODULE_6__pages_home_home__["a" /* HomePage */],
-            __WEBPACK_IMPORTED_MODULE_7__pages_dashboard_dashboard__["a" /* Dashboard */],
-            __WEBPACK_IMPORTED_MODULE_8__pages_leaderboard_leaderboard__["a" /* Leaderboard */],
-            __WEBPACK_IMPORTED_MODULE_9__pages_notifications_notifications__["a" /* Notifications */],
-            __WEBPACK_IMPORTED_MODULE_10__pages_usermodal_usermodal__["a" /* Usermodal */],
-            __WEBPACK_IMPORTED_MODULE_11__pages_actionmodal_actionmodal__["a" /* Actionmodal */],
-            __WEBPACK_IMPORTED_MODULE_12__pages_signup_signup__["a" /* Signup */],
-            __WEBPACK_IMPORTED_MODULE_13__pages_splash_splash__["a" /* Splash */],
-            __WEBPACK_IMPORTED_MODULE_14__pages_login_login__["a" /* Login */]
-        ],
-        providers: [
-            __WEBPACK_IMPORTED_MODULE_4__ionic_native_status_bar__["a" /* StatusBar */],
-            __WEBPACK_IMPORTED_MODULE_3__ionic_native_splash_screen__["a" /* SplashScreen */],
-            { provide: __WEBPACK_IMPORTED_MODULE_1__angular_core__["v" /* ErrorHandler */], useClass: __WEBPACK_IMPORTED_MODULE_2_ionic_angular__["c" /* IonicErrorHandler */] }
-        ]
-    })
-], AppModule);
-
-//# sourceMappingURL=app.module.js.map
-
-/***/ }),
-
-/***/ 265:
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
-
-"use strict";
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return MyApp; });
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_ionic_angular__ = __webpack_require__(18);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__ionic_native_status_bar__ = __webpack_require__(191);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__ionic_native_splash_screen__ = __webpack_require__(188);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__pages_home_home__ = __webpack_require__(192);
-var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
-    var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
-    if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
-    else for (var i = decorators.length - 1; i >= 0; i--) if (d = decorators[i]) r = (c < 3 ? d(r) : c > 3 ? d(target, key, r) : d(target, key)) || r;
-    return c > 3 && r && Object.defineProperty(target, key, r), r;
-};
-var __metadata = (this && this.__metadata) || function (k, v) {
-    if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
-};
-
-
-
-
-
-var MyApp = (function () {
-    function MyApp(platform, statusBar, splashScreen) {
-        this.rootPage = __WEBPACK_IMPORTED_MODULE_4__pages_home_home__["a" /* HomePage */];
-        platform.ready().then(function () {
-            // Okay, so the platform is ready and our plugins are available.
-            // Here you can do any higher level native things you might need.
-            statusBar.styleDefault();
-            splashScreen.hide();
-        });
-    }
-    return MyApp;
-}());
-MyApp = __decorate([
-    Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["n" /* Component */])({template:/*ion-inline-start:"/Users/mathieu/Documents/Work/PoliticsSimulator/ionicStyle/src/app/app.html"*/'<ion-nav [root]="rootPage"></ion-nav>\n'/*ion-inline-end:"/Users/mathieu/Documents/Work/PoliticsSimulator/ionicStyle/src/app/app.html"*/
-    }),
-    __metadata("design:paramtypes", [__WEBPACK_IMPORTED_MODULE_1_ionic_angular__["i" /* Platform */], __WEBPACK_IMPORTED_MODULE_2__ionic_native_status_bar__["a" /* StatusBar */], __WEBPACK_IMPORTED_MODULE_3__ionic_native_splash_screen__["a" /* SplashScreen */]])
-], MyApp);
-
-//# sourceMappingURL=app.component.js.map
-
-/***/ }),
-
-/***/ 266:
+/***/ 102:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return Splash; });
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_ionic_angular__ = __webpack_require__(18);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__signup_signup__ = __webpack_require__(98);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__login_login__ = __webpack_require__(196);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_ionic_angular__ = __webpack_require__(13);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__signup_signup__ = __webpack_require__(39);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__login_login__ = __webpack_require__(101);
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
     if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
@@ -503,18 +160,106 @@ Splash = __decorate([
 
 /***/ }),
 
-/***/ 267:
+/***/ 111:
+/***/ (function(module, exports) {
+
+function webpackEmptyAsyncContext(req) {
+	// Here Promise.resolve().then() is used instead of new Promise() to prevent
+	// uncatched exception popping up in devtools
+	return Promise.resolve().then(function() {
+		throw new Error("Cannot find module '" + req + "'.");
+	});
+}
+webpackEmptyAsyncContext.keys = function() { return []; };
+webpackEmptyAsyncContext.resolve = webpackEmptyAsyncContext;
+module.exports = webpackEmptyAsyncContext;
+webpackEmptyAsyncContext.id = 111;
+
+/***/ }),
+
+/***/ 152:
+/***/ (function(module, exports) {
+
+function webpackEmptyAsyncContext(req) {
+	// Here Promise.resolve().then() is used instead of new Promise() to prevent
+	// uncatched exception popping up in devtools
+	return Promise.resolve().then(function() {
+		throw new Error("Cannot find module '" + req + "'.");
+	});
+}
+webpackEmptyAsyncContext.keys = function() { return []; };
+webpackEmptyAsyncContext.resolve = webpackEmptyAsyncContext;
+module.exports = webpackEmptyAsyncContext;
+webpackEmptyAsyncContext.id = 152;
+
+/***/ }),
+
+/***/ 196:
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return HomePage; });
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_ionic_angular__ = __webpack_require__(13);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__dashboard_dashboard__ = __webpack_require__(197);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__leaderboard_leaderboard__ = __webpack_require__(99);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__notifications_notifications__ = __webpack_require__(100);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_5__signup_signup__ = __webpack_require__(39);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_6__splash_splash__ = __webpack_require__(102);
+var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
+    var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
+    if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
+    else for (var i = decorators.length - 1; i >= 0; i--) if (d = decorators[i]) r = (c < 3 ? d(r) : c > 3 ? d(target, key, r) : d(target, key)) || r;
+    return c > 3 && r && Object.defineProperty(target, key, r), r;
+};
+var __metadata = (this && this.__metadata) || function (k, v) {
+    if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
+};
+
+
+
+
+
+
+
+var HomePage = (function () {
+    function HomePage(navCtrl) {
+        this.navCtrl = navCtrl;
+        this.dashboardPage = __WEBPACK_IMPORTED_MODULE_2__dashboard_dashboard__["a" /* Dashboard */];
+        this.leaderboardPage = __WEBPACK_IMPORTED_MODULE_3__leaderboard_leaderboard__["a" /* Leaderboard */];
+        this.notificationsPage = __WEBPACK_IMPORTED_MODULE_4__notifications_notifications__["a" /* Notifications */];
+        this.signupPage = __WEBPACK_IMPORTED_MODULE_5__signup_signup__["a" /* Signup */];
+        this.splashPage = __WEBPACK_IMPORTED_MODULE_6__splash_splash__["a" /* Splash */];
+    }
+    HomePage.prototype.ngOnInit = function () {
+        this.navCtrl.push(__WEBPACK_IMPORTED_MODULE_3__leaderboard_leaderboard__["a" /* Leaderboard */]);
+    };
+    return HomePage;
+}());
+HomePage = __decorate([
+    Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["n" /* Component */])({
+        selector: 'page-home',template:/*ion-inline-start:"/Users/mathieu/Documents/Work/PoliticsSimulator/ionicStyle/src/pages/home/home.html"*/'<ion-header>\n\n  <ion-navbar>\n    <ion-title>Politics Simulator Style</ion-title>\n  </ion-navbar>\n\n</ion-header>\n\n\n<ion-content padding class="sand-bg">\n\n\n\n  <ion-card class="card card_list">\n    <button ion-item class="item_profile" [navPush]="splashPage">\n      <h2>Splash</h2>\n    </button>\n    <button ion-item class="item_profile" [navPush]="dashboardPage">\n      <h2>Dashboard</h2>\n    </button>\n\n\n\n  </ion-card>\n\n\n\n\n</ion-content>\n'/*ion-inline-end:"/Users/mathieu/Documents/Work/PoliticsSimulator/ionicStyle/src/pages/home/home.html"*/
+    }),
+    __metadata("design:paramtypes", [typeof (_a = typeof __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["g" /* NavController */] !== "undefined" && __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["g" /* NavController */]) === "function" && _a || Object])
+], HomePage);
+
+var _a;
+//# sourceMappingURL=home.js.map
+
+/***/ }),
+
+/***/ 197:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return Dashboard; });
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_ionic_angular__ = __webpack_require__(18);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__leaderboard_leaderboard__ = __webpack_require__(193);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__notifications_notifications__ = __webpack_require__(195);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__signup_signup__ = __webpack_require__(98);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_5__splash_splash__ = __webpack_require__(266);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_6__actionmodal_actionmodal__ = __webpack_require__(268);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_ionic_angular__ = __webpack_require__(13);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__leaderboard_leaderboard__ = __webpack_require__(99);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__notifications_notifications__ = __webpack_require__(100);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__signup_signup__ = __webpack_require__(39);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_5__splash_splash__ = __webpack_require__(102);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_6__actionmodal_actionmodal__ = __webpack_require__(199);
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
     if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
@@ -582,13 +327,58 @@ Dashboard = __decorate([
 
 /***/ }),
 
-/***/ 268:
+/***/ 198:
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return Usermodal; });
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_ionic_angular__ = __webpack_require__(13);
+var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
+    var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
+    if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
+    else for (var i = decorators.length - 1; i >= 0; i--) if (d = decorators[i]) r = (c < 3 ? d(r) : c > 3 ? d(target, key, r) : d(target, key)) || r;
+    return c > 3 && r && Object.defineProperty(target, key, r), r;
+};
+var __metadata = (this && this.__metadata) || function (k, v) {
+    if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
+};
+
+
+/**
+ * Generated class for the Usermodal page.
+ *
+ * See http://ionicframework.com/docs/components/#navigation for more info
+ * on Ionic pages and navigation.
+ */
+var Usermodal = (function () {
+    function Usermodal(navCtrl, navParams) {
+        this.navCtrl = navCtrl;
+        this.navParams = navParams;
+    }
+    Usermodal.prototype.ionViewDidLoad = function () {
+        console.log('ionViewDidLoad Usermodal');
+    };
+    return Usermodal;
+}());
+Usermodal = __decorate([
+    Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["n" /* Component */])({
+        selector: 'page-usermodal',template:/*ion-inline-start:"/Users/mathieu/Documents/Work/PoliticsSimulator/ionicStyle/src/pages/usermodal/usermodal.html"*/'<!--\n  Generated template for the Usermodal page.\n\n  See http://ionicframework.com/docs/components/#navigation for more info on\n  Ionic pages and navigation.\n-->\n\n<ion-content padding class="modal modal_user">\n\n\n\n\n  <ion-item class="modal_user-profile" text-wrap>\n    <ion-avatar item-start>\n      <img src="../assets/img/profile-avatar.png">\n    </ion-avatar>\n    <h2 class="modal_user-profile-title">ironsepultura92</h2>\n    <p class="modal_user-profile-description">Membre du Parti UltraMarine depuis le 1er sept 2017</p>\n    <div class="modal_user-profile-values">\n      <span class="tag tag_value">Social</span><span class="tag tag_value">Patriot</span><span class="tag tag_value">Ecolo</span>\n    </div>\n  </ion-item>\n\n  <ion-grid class="modal_user-settings">\n      <ion-row>\n    <ion-col col-2>  <button outline ion-button small block>\n        <ion-icon name="settings"></ion-icon>\n      </button></ion-col>\n    <ion-col col-10>  <button outline ion-button small block class="button-icon-left">\n        <ion-icon name="share"></ion-icon> Partager votre profil\n      </button></ion-col>\n  </ion-row>\n</ion-grid>\n\n<ion-grid class="modal_user-settings">\n    <ion-row>\n  <ion-col col-6>\n    <button outline ion-button small block class="button-icon-left">\n        <ion-icon name="share"></ion-icon> Partager\n      </button>\n  </ion-col>\n  <ion-col col-6>\n    <button ion-button color="secondary" small block> Attaquer\n    </button>\n  </ion-col>\n</ion-row>\n</ion-grid>\n\n  <ion-grid class="modal_user-score">\n      <ion-row>\n        <ion-col col-6 col-sm-6 col-lg-3>\n          <ion-icon class="modal_user-score-icon" name="heart-circle"></ion-icon>\n          <strong>12</strong> points d’honnêteté\n        </ion-col>\n        <ion-col col-6 col-sm-6 col-lg-3>\n          <ion-icon class="modal_user-score-icon" name="bolt-circle"></ion-icon>\n          <strong>7</strong> actions de jenesaiskoi\n        </ion-col>\n        <ion-col col-6 col-sm-6 col-lg-3>\n          <ion-icon class="modal_user-score-icon" name="money-circle"></ion-icon>\n          <strong>12.2k</strong> de monnaie\n        </ion-col>\n        <ion-col col-6 col-sm-6 col-lg-3>\n          <ion-icon class="modal_user-score-icon" name="dirty-money-circle"></ion-icon>\n          <strong>12.2k</strong> d\'argent sale\n        </ion-col>\n        <ion-col col-6 col-sm-6 col-lg-3>\n          <ion-icon class="modal_user-score-icon" name="users-circle"></ion-icon>\n          <strong>192</strong> militants avec vous\n        </ion-col>\n      </ion-row>\n    </ion-grid>\n\n  <ion-item class="modal_user-action" text-wrap>\n\n    <div class="modal_user-investigations">\n      <div class="judge-avatar"></div>\n      <strong>12 affaires judiciaires</strong> lancées contre vous. Corrompez les juges dès maintenant !\n    </div>\n    <button ion-button item-end small>\n      Corrompre\n    </button>\n  </ion-item>\n\n    <ion-list no-lines class="modal_user-list modal_user-rssrcs">\n      <ion-item-divider color="light">Équipements</ion-item-divider>\n      <ion-item>Voiture <ion-badge item-end>2x</ion-badge></ion-item>\n      <ion-item>Voiture illégale <ion-badge item-end>1x</ion-badge></ion-item>\n    </ion-list>\n\n    <ion-list no-lines class="modal_user-list modal_user-investments">\n      <ion-item-divider color="light">Investissements</ion-item-divider>\n      <ion-item><span class="flag-icon flag-icon-fr"></span> Association sportive<ion-badge item-end>4x</ion-badge></ion-item>\n      <ion-item><span class="flag-icon flag-icon-us"></span> Investissez dans les entreprises étrangères<ion-badge item-end>1x</ion-badge></ion-item>\n      <ion-item><span class="flag-icon flag-icon-al"></span> Investissez dans les entreprises étrangères<ion-badge item-end>1x</ion-badge></ion-item>\n    </ion-list>\n\n</ion-content>\n'/*ion-inline-end:"/Users/mathieu/Documents/Work/PoliticsSimulator/ionicStyle/src/pages/usermodal/usermodal.html"*/,
+    }),
+    __metadata("design:paramtypes", [__WEBPACK_IMPORTED_MODULE_1_ionic_angular__["g" /* NavController */], __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["h" /* NavParams */]])
+], Usermodal);
+
+//# sourceMappingURL=usermodal.js.map
+
+/***/ }),
+
+/***/ 199:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return Actionmodal; });
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_ionic_angular__ = __webpack_require__(18);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_ionic_angular__ = __webpack_require__(13);
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
     if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
@@ -627,14 +417,207 @@ Actionmodal = __decorate([
 
 /***/ }),
 
-/***/ 98:
+/***/ 200:
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_platform_browser_dynamic__ = __webpack_require__(201);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__app_module__ = __webpack_require__(219);
+
+
+Object(__WEBPACK_IMPORTED_MODULE_0__angular_platform_browser_dynamic__["a" /* platformBrowserDynamic */])().bootstrapModule(__WEBPACK_IMPORTED_MODULE_1__app_module__["a" /* AppModule */]);
+//# sourceMappingURL=main.js.map
+
+/***/ }),
+
+/***/ 219:
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return AppModule; });
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_platform_browser__ = __webpack_require__(29);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__angular_core__ = __webpack_require__(0);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2_ionic_angular__ = __webpack_require__(13);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__ionic_native_splash_screen__ = __webpack_require__(192);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__ionic_native_status_bar__ = __webpack_require__(195);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_5__app_component__ = __webpack_require__(268);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_6__pages_home_home__ = __webpack_require__(196);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_7__pages_dashboard_dashboard__ = __webpack_require__(197);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_8__pages_leaderboard_leaderboard__ = __webpack_require__(99);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_9__pages_notifications_notifications__ = __webpack_require__(100);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_10__pages_usermodal_usermodal__ = __webpack_require__(198);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_11__pages_actionmodal_actionmodal__ = __webpack_require__(199);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_12__pages_countrymodal_countrymodal__ = __webpack_require__(269);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_13__pages_signup_signup__ = __webpack_require__(39);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_14__pages_splash_splash__ = __webpack_require__(102);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_15__pages_login_login__ = __webpack_require__(101);
+var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
+    var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
+    if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
+    else for (var i = decorators.length - 1; i >= 0; i--) if (d = decorators[i]) r = (c < 3 ? d(r) : c > 3 ? d(target, key, r) : d(target, key)) || r;
+    return c > 3 && r && Object.defineProperty(target, key, r), r;
+};
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+var AppModule = (function () {
+    function AppModule() {
+    }
+    return AppModule;
+}());
+AppModule = __decorate([
+    Object(__WEBPACK_IMPORTED_MODULE_1__angular_core__["L" /* NgModule */])({
+        declarations: [
+            __WEBPACK_IMPORTED_MODULE_5__app_component__["a" /* MyApp */],
+            __WEBPACK_IMPORTED_MODULE_6__pages_home_home__["a" /* HomePage */],
+            __WEBPACK_IMPORTED_MODULE_7__pages_dashboard_dashboard__["a" /* Dashboard */],
+            __WEBPACK_IMPORTED_MODULE_8__pages_leaderboard_leaderboard__["a" /* Leaderboard */],
+            __WEBPACK_IMPORTED_MODULE_9__pages_notifications_notifications__["a" /* Notifications */],
+            __WEBPACK_IMPORTED_MODULE_10__pages_usermodal_usermodal__["a" /* Usermodal */],
+            __WEBPACK_IMPORTED_MODULE_11__pages_actionmodal_actionmodal__["a" /* Actionmodal */],
+            __WEBPACK_IMPORTED_MODULE_12__pages_countrymodal_countrymodal__["a" /* Countrymodal */],
+            __WEBPACK_IMPORTED_MODULE_13__pages_signup_signup__["a" /* Signup */],
+            __WEBPACK_IMPORTED_MODULE_14__pages_splash_splash__["a" /* Splash */],
+            __WEBPACK_IMPORTED_MODULE_15__pages_login_login__["a" /* Login */]
+        ],
+        imports: [
+            __WEBPACK_IMPORTED_MODULE_0__angular_platform_browser__["a" /* BrowserModule */],
+            __WEBPACK_IMPORTED_MODULE_2_ionic_angular__["d" /* IonicModule */].forRoot(__WEBPACK_IMPORTED_MODULE_5__app_component__["a" /* MyApp */])
+        ],
+        bootstrap: [__WEBPACK_IMPORTED_MODULE_2_ionic_angular__["b" /* IonicApp */]],
+        entryComponents: [
+            __WEBPACK_IMPORTED_MODULE_5__app_component__["a" /* MyApp */],
+            __WEBPACK_IMPORTED_MODULE_6__pages_home_home__["a" /* HomePage */],
+            __WEBPACK_IMPORTED_MODULE_7__pages_dashboard_dashboard__["a" /* Dashboard */],
+            __WEBPACK_IMPORTED_MODULE_8__pages_leaderboard_leaderboard__["a" /* Leaderboard */],
+            __WEBPACK_IMPORTED_MODULE_9__pages_notifications_notifications__["a" /* Notifications */],
+            __WEBPACK_IMPORTED_MODULE_10__pages_usermodal_usermodal__["a" /* Usermodal */],
+            __WEBPACK_IMPORTED_MODULE_11__pages_actionmodal_actionmodal__["a" /* Actionmodal */],
+            __WEBPACK_IMPORTED_MODULE_12__pages_countrymodal_countrymodal__["a" /* Countrymodal */],
+            __WEBPACK_IMPORTED_MODULE_13__pages_signup_signup__["a" /* Signup */],
+            __WEBPACK_IMPORTED_MODULE_14__pages_splash_splash__["a" /* Splash */],
+            __WEBPACK_IMPORTED_MODULE_15__pages_login_login__["a" /* Login */]
+        ],
+        providers: [
+            __WEBPACK_IMPORTED_MODULE_4__ionic_native_status_bar__["a" /* StatusBar */],
+            __WEBPACK_IMPORTED_MODULE_3__ionic_native_splash_screen__["a" /* SplashScreen */],
+            { provide: __WEBPACK_IMPORTED_MODULE_1__angular_core__["v" /* ErrorHandler */], useClass: __WEBPACK_IMPORTED_MODULE_2_ionic_angular__["c" /* IonicErrorHandler */] }
+        ]
+    })
+], AppModule);
+
+//# sourceMappingURL=app.module.js.map
+
+/***/ }),
+
+/***/ 268:
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return MyApp; });
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_ionic_angular__ = __webpack_require__(13);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__ionic_native_status_bar__ = __webpack_require__(195);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__ionic_native_splash_screen__ = __webpack_require__(192);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__pages_home_home__ = __webpack_require__(196);
+var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
+    var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
+    if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
+    else for (var i = decorators.length - 1; i >= 0; i--) if (d = decorators[i]) r = (c < 3 ? d(r) : c > 3 ? d(target, key, r) : d(target, key)) || r;
+    return c > 3 && r && Object.defineProperty(target, key, r), r;
+};
+var __metadata = (this && this.__metadata) || function (k, v) {
+    if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
+};
+
+
+
+
+
+var MyApp = (function () {
+    function MyApp(platform, statusBar, splashScreen) {
+        this.rootPage = __WEBPACK_IMPORTED_MODULE_4__pages_home_home__["a" /* HomePage */];
+        platform.ready().then(function () {
+            // Okay, so the platform is ready and our plugins are available.
+            // Here you can do any higher level native things you might need.
+            statusBar.styleDefault();
+            splashScreen.hide();
+        });
+    }
+    return MyApp;
+}());
+MyApp = __decorate([
+    Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["n" /* Component */])({template:/*ion-inline-start:"/Users/mathieu/Documents/Work/PoliticsSimulator/ionicStyle/src/app/app.html"*/'<ion-nav [root]="rootPage"></ion-nav>\n'/*ion-inline-end:"/Users/mathieu/Documents/Work/PoliticsSimulator/ionicStyle/src/app/app.html"*/
+    }),
+    __metadata("design:paramtypes", [__WEBPACK_IMPORTED_MODULE_1_ionic_angular__["i" /* Platform */], __WEBPACK_IMPORTED_MODULE_2__ionic_native_status_bar__["a" /* StatusBar */], __WEBPACK_IMPORTED_MODULE_3__ionic_native_splash_screen__["a" /* SplashScreen */]])
+], MyApp);
+
+//# sourceMappingURL=app.component.js.map
+
+/***/ }),
+
+/***/ 269:
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return Countrymodal; });
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_ionic_angular__ = __webpack_require__(13);
+var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
+    var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
+    if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
+    else for (var i = decorators.length - 1; i >= 0; i--) if (d = decorators[i]) r = (c < 3 ? d(r) : c > 3 ? d(target, key, r) : d(target, key)) || r;
+    return c > 3 && r && Object.defineProperty(target, key, r), r;
+};
+var __metadata = (this && this.__metadata) || function (k, v) {
+    if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
+};
+
+
+var Countrymodal = (function () {
+    function Countrymodal(navCtrl, navParams) {
+        this.navCtrl = navCtrl;
+        this.navParams = navParams;
+    }
+    Countrymodal.prototype.ionViewDidLoad = function () {
+        console.log('ionViewDidLoad Countrymodal');
+    };
+    return Countrymodal;
+}());
+Countrymodal = __decorate([
+    Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["n" /* Component */])({
+        selector: 'page-countrymodal',template:/*ion-inline-start:"/Users/mathieu/Documents/Work/PoliticsSimulator/ionicStyle/src/pages/countrymodal/countrymodal.html"*/'\n<ion-content padding class="modal modal_country">\n\n\n\n\n  <ion-item class="modal_country-profile" text-wrap>\n    <ion-avatar item-start>\n        <span class="flag-icon flag-icon-fr"></span>\n    </ion-avatar>\n    <h2 class="modal_user-profile-title">France</h2>\n    <p class="modal_user-profile-description">Pays - 16k joueurs<br/>\n      Présidé par <a href="#">mrobert</a></p>\n  </ion-item>\n\n  <ion-grid class="modal_country-settings">\n      <ion-row>\n    <ion-col col-12>  <button outline ion-button small block class="button-icon-left">\n        <ion-icon name="trophy"></ion-icon> Classement des joueurs\n      </button></ion-col>\n  </ion-row>\n</ion-grid>\n\n\n  <ion-grid class="modal_country-score">\n      <ion-row>\n        <ion-col col-6 col-sm-6 col-lg-3>\n          <span class="modal_country-score-variation modal_country-score-variation_down">-5%\n            <ion-icon class="modal_country-score-variation-icon" name="arrow-down"></ion-icon>\n          </span>\n          <strong>40%</strong> budget <strong>Défense</strong>\n        </ion-col>\n        <ion-col col-6 col-sm-6 col-lg-3>\n          <span class="modal_country-score-variation modal_country-score-variation_up">+10%\n            <ion-icon class="modal_country-score-variation-icon" name="arrow-up"></ion-icon>\n          </span>\n          <strong>20%</strong> budget <strong>Éducation</strong>\n        </ion-col>\n        <ion-col col-6 col-sm-6 col-lg-3>\n          <span class="modal_country-score-variation modal_country-score-variation_up">+3%\n            <ion-icon class="modal_country-score-variation-icon" name="arrow-up"></ion-icon>\n          </span>\n          <strong>10%</strong> budget <strong>Santé</strong>\n        </ion-col>\n        <ion-col col-6 col-sm-6 col-lg-3>\n          <span class="modal_country-score-variation modal_country-score-variation_down">-6%\n            <ion-icon class="modal_country-score-variation-icon" name="arrow-down"></ion-icon>\n          </span>\n          <strong>30%</strong> budget <strong>Agriculture</strong>\n        </ion-col>\n      </ion-row>\n    </ion-grid>\n\n\n\n</ion-content>\n'/*ion-inline-end:"/Users/mathieu/Documents/Work/PoliticsSimulator/ionicStyle/src/pages/countrymodal/countrymodal.html"*/,
+    }),
+    __metadata("design:paramtypes", [typeof (_a = typeof __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["g" /* NavController */] !== "undefined" && __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["g" /* NavController */]) === "function" && _a || Object, typeof (_b = typeof __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["h" /* NavParams */] !== "undefined" && __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["h" /* NavParams */]) === "function" && _b || Object])
+], Countrymodal);
+
+var _a, _b;
+//# sourceMappingURL=countrymodal.js.map
+
+/***/ }),
+
+/***/ 39:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return Signup; });
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_ionic_angular__ = __webpack_require__(18);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__login_login__ = __webpack_require__(196);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_ionic_angular__ = __webpack_require__(13);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__login_login__ = __webpack_require__(101);
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
     if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
@@ -678,7 +661,70 @@ Signup = __decorate([
 
 //# sourceMappingURL=signup.js.map
 
+/***/ }),
+
+/***/ 99:
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return Leaderboard; });
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_ionic_angular__ = __webpack_require__(13);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__usermodal_usermodal__ = __webpack_require__(198);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__countrymodal_countrymodal__ = __webpack_require__(269);
+var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
+    var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
+    if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
+    else for (var i = decorators.length - 1; i >= 0; i--) if (d = decorators[i]) r = (c < 3 ? d(r) : c > 3 ? d(target, key, r) : d(target, key)) || r;
+    return c > 3 && r && Object.defineProperty(target, key, r), r;
+};
+var __metadata = (this && this.__metadata) || function (k, v) {
+    if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
+};
+
+
+
+
+var Leaderboard = (function () {
+    function Leaderboard(navCtrl, navParams, modalCtrl) {
+        this.navCtrl = navCtrl;
+        this.navParams = navParams;
+        this.modalCtrl = modalCtrl;
+    }
+    Leaderboard.prototype.ionViewDidLoad = function () {
+        console.log('ionViewDidLoad Leaderboard');
+    };
+    Leaderboard.prototype.openUser1Modal = function () {
+        var userModal = this.modalCtrl.create(__WEBPACK_IMPORTED_MODULE_2__usermodal_usermodal__["a" /* Usermodal */]);
+        userModal.present();
+    };
+    Leaderboard.prototype.openCountryModal = function () {
+        var countryModal = this.modalCtrl.create(__WEBPACK_IMPORTED_MODULE_3__countrymodal_countrymodal__["a" /* Countrymodal */]);
+        countryModal.present();
+    };
+    Leaderboard.prototype.ngOnInit = function () {
+        this.openCountryModal();
+    };
+    Leaderboard.prototype.doRefresh = function (refresher) {
+        console.log('Begin async operation', refresher);
+        setTimeout(function () {
+            console.log('Async operation has ended');
+            refresher.complete();
+        }, 2000);
+    };
+    return Leaderboard;
+}());
+Leaderboard = __decorate([
+    Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["n" /* Component */])({
+        selector: 'page-leaderboard',template:/*ion-inline-start:"/Users/mathieu/Documents/Work/PoliticsSimulator/ionicStyle/src/pages/leaderboard/leaderboard.html"*/'<!--\n  Generated template for the Leaderboard page.\n\n  See http://ionicframework.com/docs/components/#navigation for more info on\n  Ionic pages and navigation.\n-->\n<ion-header>\n\n  <ion-navbar>\n    <ion-title>Leaderboard</ion-title>\n  </ion-navbar>\n\n</ion-header>\n\n\n<ion-content padding class="sand-bg">\n\n  <ion-refresher (ionRefresh)="doRefresh($event)">\n    <ion-refresher-content\n      refreshingSpinner="crescent">></ion-refresher-content>\n  </ion-refresher>\n\n  <div class="card-top-elements">\n    <h4 class="card-title-top">Classement général</h4>\n  </div>\n\n  <ion-card class="card card_list">\n    <button ion-item class="item_profile" (click)="openUser1Modal()">\n      <span item-start class="item-position">1.</span>\n      <ion-avatar item-start>\n        <img src="../assets/img/profile-avatar.png">\n      </ion-avatar>\n      <h2>mrobert</h2>\n      <span item-right class="score-item score-item_list text-small text-muted">10k <ion-icon name="money-circle"></ion-icon></span>\n    </button>\n    <button ion-item class="item_profile">\n      <span item-start class="item-position">2.</span>\n      <ion-avatar item-start>\n        <img src="../assets/img/profile-avatar.png">\n      </ion-avatar>\n      <h2>jlavergne</h2>\n      <span item-right class="score-item score-item_list text-small text-muted">10k <ion-icon name="money-circle"></ion-icon></span>\n    </button>\n    <button ion-item class="item_profile">\n      <span item-start class="item-position">3.</span>\n      <ion-avatar item-start>\n        <img src="../assets/img/profile-avatar.png">\n      </ion-avatar>\n      <h2>msalles</h2>\n      <span item-right class="score-item score-item_list text-small text-muted">10k <ion-icon name="money-circle"></ion-icon></span>\n    </button>\n  </ion-card>\n\n  <div class="card-top-elements">\n    <h4 class="card-title-top">Mon parti</h4>\n\n  </div>\n\n  <ion-card class="card card_list">\n    <button ion-item class="item_profile">\n      <span item-start class="item-position">1.</span>\n      <ion-avatar item-start>\n        <img src="../assets/img/profile-avatar.png">\n      </ion-avatar>\n      <h2>mrobert</h2>\n      <span item-right class="score-item score-item_list text-small text-muted">10k <ion-icon name="money-circle"></ion-icon></span>\n    </button>\n    <button ion-item class="item_profile">\n      <span item-start class="item-position">2.</span>\n      <ion-avatar item-start>\n        <img src="../assets/img/profile-avatar.png">\n      </ion-avatar>\n      <h2>jlavergne</h2>\n      <span item-right class="score-item score-item_list text-small text-muted">10k <ion-icon name="money-circle"></ion-icon></span>\n    </button>\n    <button ion-item class="item_profile">\n      <span item-start class="item-position">3.</span>\n      <ion-avatar item-start>\n        <img src="../assets/img/profile-avatar.png">\n      </ion-avatar>\n      <h2>msalles</h2>\n      <span item-right class="score-item score-item_list text-small text-muted">10k <ion-icon name="money-circle"></ion-icon></span>\n    </button>\n  </ion-card>\n\n</ion-content>\n'/*ion-inline-end:"/Users/mathieu/Documents/Work/PoliticsSimulator/ionicStyle/src/pages/leaderboard/leaderboard.html"*/,
+    }),
+    __metadata("design:paramtypes", [typeof (_a = typeof __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["g" /* NavController */] !== "undefined" && __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["g" /* NavController */]) === "function" && _a || Object, typeof (_b = typeof __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["h" /* NavParams */] !== "undefined" && __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["h" /* NavParams */]) === "function" && _b || Object, typeof (_c = typeof __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["f" /* ModalController */] !== "undefined" && __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["f" /* ModalController */]) === "function" && _c || Object])
+], Leaderboard);
+
+var _a, _b, _c;
+//# sourceMappingURL=leaderboard.js.map
+
 /***/ })
 
-},[197]);
+},[200]);
 //# sourceMappingURL=main.js.map

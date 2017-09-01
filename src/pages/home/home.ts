@@ -26,7 +26,7 @@ splashPage = Splash;
   }
 
   ngOnInit(){
-    this.navCtrl.push(Dashboard);
+    this.navCtrl.push(Leaderboard);
   }
 
 }

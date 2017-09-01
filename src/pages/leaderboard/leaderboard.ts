@@ -1,14 +1,9 @@
 import { Component } from '@angular/core';
 import { IonicPage, NavController, NavParams, ActionSheetController, AlertController, ModalController  } from 'ionic-angular';
 import { Usermodal } from '../usermodal/usermodal';
+import { Countrymodal } from '../countrymodal/countrymodal';
 
 
-/**
- * Generated class for the Leaderboard page.
- *
- * See http://ionicframework.com/docs/components/#navigation for more info
- * on Ionic pages and navigation.
- */
 
 @Component({
   selector: 'page-leaderboard',
@@ -26,12 +21,17 @@ export class Leaderboard {
 
 
   openUser1Modal() {
-      let activityModal = this.modalCtrl.create(Usermodal);
-      activityModal.present();
+      let userModal = this.modalCtrl.create(Usermodal);
+      userModal.present();
+    }
+
+  openCountryModal() {
+      let countryModal = this.modalCtrl.create(Countrymodal);
+      countryModal.present();
     }
 
   ngOnInit(){
-     this.openUser1Modal();
+     this.openCountryModal();
   }
 
   doRefresh(refresher) {
