@@ -39561,25 +39561,19 @@ ion-navbar.toolbar .buttons-menu button.btn-notif ion-icon:after {
   float: left;
   padding: 0 10px 0 24px;
   z-index: -1;
+  max-width: 360px;
   width: calc(100% - 140px);
   border-radius: 0 17px 17px 0;
   background-color: #242222;
   line-height: 34px;
   color: white;
   overflow: hidden;
+  overflow-x: scroll;
+  -webkit-overflow-scrolling: touch;
 }
 
-.navbar-profile-score .navbar-profile-score-left {
-  position: absolute;
-  left: 0;
-  z-index: 4;
-  height: 100%;
-  width: 40px;
-  background-image: -webkit-gradient(linear, right top, left top, from(rgba(46, 44, 44, 0)), to(#242222));
-  background-image: linear-gradient(-90deg, rgba(46, 44, 44, 0) 0%, #242222 100%);
-}
-
-.navbar-profile-score .navbar-profile-score-right {
+.navbar-profile-score:after {
+  content: "";
   position: absolute;
   right: 0;
   z-index: 4;
@@ -39587,6 +39581,12 @@ ion-navbar.toolbar .buttons-menu button.btn-notif ion-icon:after {
   width: 40px;
   background-image: -webkit-gradient(linear, left top, right top, from(rgba(46, 44, 44, 0)), to(#242222));
   background-image: linear-gradient(90deg, rgba(46, 44, 44, 0) 0%, #242222 100%);
+}
+
+.navbar-profile-score .navbar-profile-score-inner {
+  position: relative;
+  padding-left: 8px;
+  width: 320px;
 }
 
 .navbar-profile-score .navbar-profile-score-inner1 {
