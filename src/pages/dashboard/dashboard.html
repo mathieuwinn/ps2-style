@@ -8,12 +8,22 @@
         </div>
 
         <div class="navbar-profile-score">
-          <span class="score-item icon-right">12<ion-icon name="heart-circle"></ion-icon></span>
-          <span class="score-item icon-right">22.2k<ion-icon name="money-circle"></ion-icon></span>
-          <span class="score-item icon-right">14.3k<ion-icon name="dirty-money-circle"></ion-icon></span>
-
-          <span class="score-item icon-right">120<ion-icon name="users-circle"></ion-icon></span>
-          <span class="score-item icon-right">13<ion-icon name="bolt-circle"></ion-icon></span>
+          <div class="navbar-profile-score-left"></div>
+          <div class="navbar-profile-score-right"></div>
+          <div class="navbar-profile-score-inner1">
+            <span class="score-item icon-right">12<ion-icon name="heart-circle"></ion-icon></span>
+            <span class="score-item icon-right">22.2k<ion-icon name="money-circle"></ion-icon></span>
+            <span class="score-item icon-right">14.3k<ion-icon name="dirty-money-circle"></ion-icon></span>
+            <span class="score-item icon-right">120<ion-icon name="users-circle"></ion-icon></span>
+            <span class="score-item icon-right">13<ion-icon name="bolt-circle"></ion-icon></span>
+          </div>
+          <div class="navbar-profile-score-inner2">
+            <span class="score-item icon-right">12<ion-icon name="heart-circle"></ion-icon></span>
+            <span class="score-item icon-right">22.2k<ion-icon name="money-circle"></ion-icon></span>
+            <span class="score-item icon-right">14.3k<ion-icon name="dirty-money-circle"></ion-icon></span>
+            <span class="score-item icon-right">120<ion-icon name="users-circle"></ion-icon></span>
+            <span class="score-item icon-right">13<ion-icon name="bolt-circle"></ion-icon></span>
+          </div>
         </div>
 
 
@@ -30,11 +40,12 @@
   </ion-navbar>
 
   <div class="header-segment">
-    <ion-segment [(ngModel)]="tripPage" (ionchange)="onSegmentChange($event)">
+    <ion-segment [(ngModel)]="dashboardPage" (ionchange)="onSegmentChange($event)">
       <ion-segment-button value="actions">Activités</ion-segment-button>
       <ion-segment-button value="ressources">Ressources</ion-segment-button>
       <ion-segment-button value="investments">Investissements</ion-segment-button>
       <ion-segment-button value="international">International</ion-segment-button>
+      <ion-segment-button value="partis">Partis</ion-segment-button>
       <ion-segment-button value="president">Président</ion-segment-button>
     </ion-segment>
   </div>
@@ -58,30 +69,59 @@
 
 </ion-header>
 
+
+
+
 <ion-content class="sand-bg">
 
-  <div class="card-top-elements card-top-elements_invest-country" padding-horizontal>
 
-
-        <div class="flag flag_big" (click)="buttonAct();">
-          <span class="flag-icon flag-icon-fr"></span>
-        </div>
-
-      <h6 class="card-title-top" (click)="buttonAct();"><strong>Bonjour !</strong> Vous investissez actuellement en France.</h6>
-
-      <ion-select [(ngModel)]="country" class="card-title-select">
-        <ion-option value="fr" selected><span class="flag-icon flag-icon-fr"></span>France</ion-option>
-        <ion-option value="us"><span class="flag-icon flag-icon-us"></span>USA</ion-option>
-        <ion-option value="en"><span class="flag-icon flag-icon-en"></span>England</ion-option>
-        <ion-option value="br"><span class="flag-icon flag-icon-br"></span>Brazil</ion-option>
-        <ion-option value="tr"><span class="flag-icon flag-icon-tr"></span>Turkey</ion-option>
-        <ion-option value="sw"><span class="flag-icon flag-icon-sw"></span>Sweden</ion-option>
-      </ion-select>
-  </div>
 
 
 
 <div padding-horizontal>
+
+
+
+  <div class="action-container" padding>
+    <div class="empty-img empty-img_noelections"></div>
+    <p class="text-muted">Why not create your own party and invite people to fight with you?</p>
+    <button ion-button item-end small>
+      Créer mon parti
+    </button>
+
+  </div>
+
+
+      <div class="card-top-elements">
+        <h4 class="card-title-top">Partis</h4>
+      </div>
+
+      <ion-card class="card card_list">
+        <button ion-item class="item_profile" (click)="openUser1Modal()">
+          <span item-start class="item-position">1.</span>
+          <ion-avatar item-start>
+            <img src="../assets/img/profile-avatar.png">
+          </ion-avatar>
+          <h2>Parti Libertain</h2>
+          <span item-right class="score-item score-item_list text-small text-muted">10k <ion-icon name="users-circle"></ion-icon></span>
+        </button>
+        <button ion-item class="item_profile">
+          <span item-start class="item-position">2.</span>
+          <ion-avatar item-start>
+            <img src="../assets/img/profile-avatar.png">
+          </ion-avatar>
+          <h2>jlavergne</h2>
+          <span item-right class="score-item score-item_list text-small text-muted">10k <ion-icon name="users-circle"></ion-icon></span>
+        </button>
+        <button ion-item class="item_profile">
+          <span item-start class="item-position">3.</span>
+          <ion-avatar item-start>
+            <img src="../assets/img/profile-avatar.png">
+          </ion-avatar>
+          <h2>msalles</h2>
+          <span item-right class="score-item score-item_list text-small text-muted">10k <ion-icon name="users-circle"></ion-icon></span>
+        </button>
+      </ion-card>
 
   <ion-card class="card card_action">
 
@@ -96,7 +136,6 @@
           <span class="score-item score-item_price score-item_is-set icon-right">4<ion-icon name="heart-circle"></ion-icon></span>
         </button>
         <span class="score-item score-item_price icon-right">120<ion-icon name="users-circle"></ion-icon></span>
-        <span class="score-item score-item_price icon-right">200<ion-icon name="money-circle"></ion-icon></span>
       </div>
       <button ion-button item-end small class="button_action" (click)="buttonAct();" [ngClass]="[buttonActed ? 'button_loading' : '', buttonSuccess ? 'button_success' : '']">
         <ion-spinner class="button-spinner" name="crescent">  </ion-spinner>
@@ -209,6 +248,7 @@
     <ion-item>
       <div class="card-price" item-right>
         <span class="score-item score-item_price icon-right">70<ion-icon name="money-circle"></ion-icon></span>
+        <span class="score-item score-item_price icon-right not-enough">200<ion-icon name="money-circle"></ion-icon></span>
       </div>
       <button ion-button icon-left item-end small disabled>
         <ion-icon name="lock"></ion-icon> Action

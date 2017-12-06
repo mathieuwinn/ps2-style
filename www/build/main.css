@@ -39554,35 +39554,215 @@ ion-navbar.toolbar .buttons-menu button.btn-notif ion-icon:after {
   float: left;
 }
 
-.navbar-profile-space .navbar-profile-score {
+.navbar-profile-score {
   position: absolute;
   margin-left: 20px;
   height: 34px;
   float: left;
   padding: 0 10px 0 24px;
   z-index: -1;
-  width: auto;
-  max-width: calc(100% - 140px);
+  width: calc(100% - 140px);
   border-radius: 0 17px 17px 0;
-  background-color: rgba(0, 0, 0, 0.3);
+  background-color: #242222;
   line-height: 34px;
   color: white;
+  overflow: hidden;
 }
 
-.navbar-profile-space .navbar-profile-score .score-item {
-  margin-right: 4px;
+.navbar-profile-score .navbar-profile-score-left {
+  position: absolute;
+  left: 0;
+  z-index: 4;
+  height: 100%;
+  width: 40px;
+  background-image: -webkit-gradient(linear, right top, left top, from(rgba(46, 44, 44, 0)), to(#242222));
+  background-image: linear-gradient(-90deg, rgba(46, 44, 44, 0) 0%, #242222 100%);
+}
+
+.navbar-profile-score .navbar-profile-score-right {
+  position: absolute;
+  right: 0;
+  z-index: 4;
+  height: 100%;
+  width: 40px;
+  background-image: -webkit-gradient(linear, left top, right top, from(rgba(46, 44, 44, 0)), to(#242222));
+  background-image: linear-gradient(90deg, rgba(46, 44, 44, 0) 0%, #242222 100%);
+}
+
+.navbar-profile-score .navbar-profile-score-inner1 {
+  position: absolute;
+  width: 310px;
+  -webkit-animation: scoreslide1 30s linear infinite;
+  animation: scoreslide1 30s linear infinite;
+}
+
+.navbar-profile-score .navbar-profile-score-inner2 {
+  width: 310px;
+  position: absolute;
+  -webkit-animation: scoreslide2 30s linear infinite;
+  animation: scoreslide2 30s linear infinite;
+}
+
+.navbar-profile-score .score-item {
+  margin-right: 10px;
   font-size: 1.2rem;
   color: rgba(255, 255, 255, 0.86);
 }
 
-.navbar-profile-space .navbar-profile-score .score-item:last-child {
+.navbar-profile-score .score-item:last-child {
   margin-right: 0px;
 }
 
-.navbar-profile-space .navbar-profile-score .score-item ion-icon {
+.navbar-profile-score .score-item ion-icon {
   color: rgba(255, 255, 255, 0.6);
 }
 
+@-webkit-keyframes scoreslide1 {
+  0% {
+    opacity: 1;
+    -webkit-transform: translateX(0px);
+    transform: translateX(0px);
+  }
+  49% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 0;
+    -webkit-transform: translateX(-290px);
+    transform: translateX(-290px);
+  }
+  51% {
+    opacity: 0;
+    -webkit-transform: translateX(290px);
+    transform: translateX(290px);
+  }
+  52% {
+    opacity: 1;
+  }
+  100% {
+    -webkit-transform: translateX(0px);
+    transform: translateX(0px);
+  }
+}
+
+@keyframes scoreslide1 {
+  0% {
+    opacity: 1;
+    -webkit-transform: translateX(0px);
+    transform: translateX(0px);
+  }
+  49% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 0;
+    -webkit-transform: translateX(-290px);
+    transform: translateX(-290px);
+  }
+  51% {
+    opacity: 0;
+    -webkit-transform: translateX(290px);
+    transform: translateX(290px);
+  }
+  52% {
+    opacity: 1;
+  }
+  100% {
+    -webkit-transform: translateX(0px);
+    transform: translateX(0px);
+  }
+}
+
+@-webkit-keyframes scoreslide2 {
+  0% {
+    opacity: 0;
+    -webkit-transform: translateX(-290px);
+    transform: translateX(-290px);
+  }
+  1% {
+    opacity: 0;
+    -webkit-transform: translateX(290px);
+    transform: translateX(290px);
+  }
+  2% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 1;
+    -webkit-transform: translateX(0px);
+    transform: translateX(0px);
+  }
+  99% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+    -webkit-transform: translateX(-290px);
+    transform: translateX(-290px);
+  }
+}
+
+@keyframes scoreslide2 {
+  0% {
+    opacity: 0;
+    -webkit-transform: translateX(-290px);
+    transform: translateX(-290px);
+  }
+  1% {
+    opacity: 0;
+    -webkit-transform: translateX(290px);
+    transform: translateX(290px);
+  }
+  2% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 1;
+    -webkit-transform: translateX(0px);
+    transform: translateX(0px);
+  }
+  99% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+    -webkit-transform: translateX(-290px);
+    transform: translateX(-290px);
+  }
+}
+
+/*
+  .navbar-profile-score {
+    position: absolute;
+    margin-left: 20px;
+    height: 34px;
+    float: left;
+    padding: 0 10px 0 24px;
+    z-index: -1;
+    width: auto;
+    max-width: calc(100% - 140px);
+
+    border-radius: 0 17px 17px 0;
+    background-color: rgba(0,0,0,0.3);
+    line-height: 34px;
+    color: white;
+
+    .score-item {
+      margin-right: 4px;
+      font-size: 1.2rem;
+      color: rgba(255, 255, 255, 0.86);
+      &:last-child {
+        margin-right: 0px;
+      }
+      ion-icon {
+        color: rgba(255, 255, 255, 0.6);
+      }
+    }
+  }
+
+}
+
+*/
 .banner.banner_header-live {
   position: absolute;
   width: 100%;
@@ -39769,6 +39949,15 @@ p.card-rewards {
   color: #629ED8;
 }
 
+.score-item.score-item_price.not-enough {
+  opacity: 0.6;
+  color: #ED4725;
+}
+
+.score-item.score-item_price.not-enough ion-icon {
+  color: #ED4725;
+}
+
 .score-item.score-item_list {
   font-size: 1.2rem;
   color: #626262;
@@ -39848,7 +40037,7 @@ p.card-rewards {
 }
 
 ion-card {
-  padding: 3px 0 2px;
+  padding: 3px 0 5px;
 }
 
 ion-card.card-ios {
@@ -39893,6 +40082,7 @@ ion-card .card-status.card-status_new {
 }
 
 ion-card h2.card-title {
+  margin-top: 6px;
   font-weight: 600;
   font-size: 1.6rem;
 }
@@ -40046,14 +40236,14 @@ ion-list ion-badge.badge-ios, ion-list ion-badge.badge-md, .card_list ion-badge.
   -webkit-align-items: center;
   -ms-flex-align: center;
   align-items: center;
-  -webkit-box-pack: center;
-  -webkit-justify-content: center;
-  -ms-flex-pack: center;
-  justify-content: center;
+  -webkit-justify-content: space-around;
+  -ms-flex-pack: distribute;
+  justify-content: space-around;
 }
 
 .card-top-elements h4.card-title-top {
   font-size: 1.6rem;
+  text-align: left;
 }
 
 .card-top-elements h6.card-title-top {
@@ -40149,6 +40339,7 @@ ion-modal {
 }
 
 ion-modal .modal-wrapper {
+  border-radius: 8px !important;
   z-index: 10;
   display: -webkit-box;
   display: -webkit-flex;
@@ -40191,142 +40382,148 @@ ion-modal .modal-wrapper .ion-page .content .scroll-content {
   padding: 8px 16px;
 }
 
-ion-content.modal_user, ion-content.modal_action, ion-content.modal_country {
+ion-content.modal_user, ion-content.modal_action, ion-content.modal_country, ion-content.modal_create {
   padding: 0 !important;
 }
 
-ion-content.modal_user .scroll-content, ion-content.modal_action .scroll-content, ion-content.modal_country .scroll-content {
+ion-content.modal_user .scroll-content, ion-content.modal_action .scroll-content, ion-content.modal_country .scroll-content, ion-content.modal_create .scroll-content {
   padding: 0;
   padding-top: 0;
 }
 
-ion-content.modal_user ion-item:last-child .item-inner, ion-content.modal_action ion-item:last-child .item-inner, ion-content.modal_country ion-item:last-child .item-inner {
+ion-content.modal_user ion-item:last-child .item-inner, ion-content.modal_action ion-item:last-child .item-inner, ion-content.modal_country ion-item:last-child .item-inner, ion-content.modal_create ion-item:last-child .item-inner {
   border-bottom: none;
 }
 
-ion-content.modal_user .modal_action-header .item-inner, ion-content.modal_action .modal_action-header .item-inner, ion-content.modal_country .modal_action-header .item-inner {
+ion-content.modal_user ion-item.item-md, ion-content.modal_user ion-item.item-ios, ion-content.modal_action ion-item.item-md, ion-content.modal_action ion-item.item-ios, ion-content.modal_country ion-item.item-md, ion-content.modal_country ion-item.item-ios, ion-content.modal_create ion-item.item-md, ion-content.modal_create ion-item.item-ios {
+  padding-left: 0;
+}
+
+ion-content.modal_user .modal_action-header .item-inner, ion-content.modal_action .modal_action-header .item-inner, ion-content.modal_country .modal_action-header .item-inner, ion-content.modal_create .modal_action-header .item-inner {
   border-bottom: none;
 }
 
-ion-content.modal_user .modal_action-header .item-inner ion-label, ion-content.modal_action .modal_action-header .item-inner ion-label, ion-content.modal_country .modal_action-header .item-inner ion-label {
+ion-content.modal_user .modal_action-header .item-inner ion-label, ion-content.modal_action .modal_action-header .item-inner ion-label, ion-content.modal_country .modal_action-header .item-inner ion-label, ion-content.modal_create .modal_action-header .item-inner ion-label {
   margin-right: 0;
 }
 
-ion-content.modal_user .modal_action-header h2, ion-content.modal_action .modal_action-header h2, ion-content.modal_country .modal_action-header h2 {
-  font-weight: 500;
+ion-content.modal_user .modal_action-header h2, ion-content.modal_action .modal_action-header h2, ion-content.modal_country .modal_action-header h2, ion-content.modal_create .modal_action-header h2 {
+  font-weight: 600;
   font-size: 1.7rem;
+  margin-bottom: 4px;
 }
 
-ion-content.modal_user .modal_action-header p, ion-content.modal_action .modal_action-header p, ion-content.modal_country .modal_action-header p {
+ion-content.modal_user .modal_action-header p, ion-content.modal_action .modal_action-header p, ion-content.modal_country .modal_action-header p, ion-content.modal_create .modal_action-header p {
   font-size: 1.2rem;
 }
 
-ion-content.modal_user .modal_action-input, ion-content.modal_action .modal_action-input, ion-content.modal_country .modal_action-input {
+ion-content.modal_user .modal_action-input, ion-content.modal_action .modal_action-input, ion-content.modal_country .modal_action-input, ion-content.modal_create .modal_action-input {
   margin-top: -10px;
   margin-bottom: 10px;
 }
 
-ion-content.modal_user .modal_user-options, ion-content.modal_action .modal_user-options, ion-content.modal_country .modal_user-options {
+ion-content.modal_user .modal_user-options, ion-content.modal_action .modal_user-options, ion-content.modal_country .modal_user-options, ion-content.modal_create .modal_user-options {
   position: absolute;
   right: 10px;
   top: 10px;
   z-index: 10;
 }
 
-ion-content.modal_user .modal_user-options button, ion-content.modal_action .modal_user-options button, ion-content.modal_country .modal_user-options button {
+ion-content.modal_user .modal_user-options button, ion-content.modal_action .modal_user-options button, ion-content.modal_country .modal_user-options button, ion-content.modal_create .modal_user-options button {
   font-size: 1.1rem;
   margin: 0;
   margin-right: 0;
   margin-left: 0;
 }
 
-ion-content.modal_user .modal_user-options button ion-icon, ion-content.modal_action .modal_user-options button ion-icon, ion-content.modal_country .modal_user-options button ion-icon {
+ion-content.modal_user .modal_user-options button ion-icon, ion-content.modal_action .modal_user-options button ion-icon, ion-content.modal_country .modal_user-options button ion-icon, ion-content.modal_create .modal_user-options button ion-icon {
   color: #626262;
   opacity: 0.6;
 }
 
-ion-content.modal_user .modal_user-profile, ion-content.modal_user .modal_country-profile, ion-content.modal_action .modal_user-profile, ion-content.modal_action .modal_country-profile, ion-content.modal_country .modal_user-profile, ion-content.modal_country .modal_country-profile {
+ion-content.modal_user .modal_user-profile, ion-content.modal_user .modal_country-profile, ion-content.modal_action .modal_user-profile, ion-content.modal_action .modal_country-profile, ion-content.modal_country .modal_user-profile, ion-content.modal_country .modal_country-profile, ion-content.modal_create .modal_user-profile, ion-content.modal_create .modal_country-profile {
   padding: 0;
 }
 
-ion-content.modal_user .modal_user-profile .item-inner, ion-content.modal_user .modal_country-profile .item-inner, ion-content.modal_action .modal_user-profile .item-inner, ion-content.modal_action .modal_country-profile .item-inner, ion-content.modal_country .modal_user-profile .item-inner, ion-content.modal_country .modal_country-profile .item-inner {
+ion-content.modal_user .modal_user-profile .item-inner, ion-content.modal_user .modal_country-profile .item-inner, ion-content.modal_action .modal_user-profile .item-inner, ion-content.modal_action .modal_country-profile .item-inner, ion-content.modal_country .modal_user-profile .item-inner, ion-content.modal_country .modal_country-profile .item-inner, ion-content.modal_create .modal_user-profile .item-inner, ion-content.modal_create .modal_country-profile .item-inner {
   border-bottom: none;
 }
 
-ion-content.modal_user .modal_user-profile .item-inner ion-label, ion-content.modal_user .modal_country-profile .item-inner ion-label, ion-content.modal_action .modal_user-profile .item-inner ion-label, ion-content.modal_action .modal_country-profile .item-inner ion-label, ion-content.modal_country .modal_user-profile .item-inner ion-label, ion-content.modal_country .modal_country-profile .item-inner ion-label {
+ion-content.modal_user .modal_user-profile .item-inner ion-label, ion-content.modal_user .modal_country-profile .item-inner ion-label, ion-content.modal_action .modal_user-profile .item-inner ion-label, ion-content.modal_action .modal_country-profile .item-inner ion-label, ion-content.modal_country .modal_user-profile .item-inner ion-label, ion-content.modal_country .modal_country-profile .item-inner ion-label, ion-content.modal_create .modal_user-profile .item-inner ion-label, ion-content.modal_create .modal_country-profile .item-inner ion-label {
   margin-right: 0;
 }
 
-ion-content.modal_user .modal_user-profile ion-avatar, ion-content.modal_user .modal_country-profile ion-avatar, ion-content.modal_action .modal_user-profile ion-avatar, ion-content.modal_action .modal_country-profile ion-avatar, ion-content.modal_country .modal_user-profile ion-avatar, ion-content.modal_country .modal_country-profile ion-avatar {
+ion-content.modal_user .modal_user-profile ion-avatar, ion-content.modal_user .modal_country-profile ion-avatar, ion-content.modal_action .modal_user-profile ion-avatar, ion-content.modal_action .modal_country-profile ion-avatar, ion-content.modal_country .modal_user-profile ion-avatar, ion-content.modal_country .modal_country-profile ion-avatar, ion-content.modal_create .modal_user-profile ion-avatar, ion-content.modal_create .modal_country-profile ion-avatar {
   min-width: 54px;
   min-height: 54px;
 }
 
-ion-content.modal_user .modal_user-profile ion-avatar[item-start], ion-content.modal_user .modal_country-profile ion-avatar[item-start], ion-content.modal_action .modal_user-profile ion-avatar[item-start], ion-content.modal_action .modal_country-profile ion-avatar[item-start], ion-content.modal_country .modal_user-profile ion-avatar[item-start], ion-content.modal_country .modal_country-profile ion-avatar[item-start] {
+ion-content.modal_user .modal_user-profile ion-avatar[item-start], ion-content.modal_user .modal_country-profile ion-avatar[item-start], ion-content.modal_action .modal_user-profile ion-avatar[item-start], ion-content.modal_action .modal_country-profile ion-avatar[item-start], ion-content.modal_country .modal_user-profile ion-avatar[item-start], ion-content.modal_country .modal_country-profile ion-avatar[item-start], ion-content.modal_create .modal_user-profile ion-avatar[item-start], ion-content.modal_create .modal_country-profile ion-avatar[item-start] {
   margin: 8px 12px 8px 0;
 }
 
-ion-content.modal_user .modal_user-profile ion-avatar img, ion-content.modal_user .modal_country-profile ion-avatar img, ion-content.modal_action .modal_user-profile ion-avatar img, ion-content.modal_action .modal_country-profile ion-avatar img, ion-content.modal_country .modal_user-profile ion-avatar img, ion-content.modal_country .modal_country-profile ion-avatar img {
+ion-content.modal_user .modal_user-profile ion-avatar img, ion-content.modal_user .modal_country-profile ion-avatar img, ion-content.modal_action .modal_user-profile ion-avatar img, ion-content.modal_action .modal_country-profile ion-avatar img, ion-content.modal_country .modal_user-profile ion-avatar img, ion-content.modal_country .modal_country-profile ion-avatar img, ion-content.modal_create .modal_user-profile ion-avatar img, ion-content.modal_create .modal_country-profile ion-avatar img {
   height: 54px;
   width: 54px;
 }
 
-ion-content.modal_user .modal_user-profile ion-avatar .flag-icon, ion-content.modal_user .modal_country-profile ion-avatar .flag-icon, ion-content.modal_action .modal_user-profile ion-avatar .flag-icon, ion-content.modal_action .modal_country-profile ion-avatar .flag-icon, ion-content.modal_country .modal_user-profile ion-avatar .flag-icon, ion-content.modal_country .modal_country-profile ion-avatar .flag-icon {
+ion-content.modal_user .modal_user-profile ion-avatar .flag-icon, ion-content.modal_user .modal_country-profile ion-avatar .flag-icon, ion-content.modal_action .modal_user-profile ion-avatar .flag-icon, ion-content.modal_action .modal_country-profile ion-avatar .flag-icon, ion-content.modal_country .modal_user-profile ion-avatar .flag-icon, ion-content.modal_country .modal_country-profile ion-avatar .flag-icon, ion-content.modal_create .modal_user-profile ion-avatar .flag-icon, ion-content.modal_create .modal_country-profile ion-avatar .flag-icon {
   height: 48px;
   width: 46px;
 }
 
-ion-content.modal_user .modal_user-profile h2.modal_user-profile-title, ion-content.modal_user .modal_country-profile h2.modal_user-profile-title, ion-content.modal_action .modal_user-profile h2.modal_user-profile-title, ion-content.modal_action .modal_country-profile h2.modal_user-profile-title, ion-content.modal_country .modal_user-profile h2.modal_user-profile-title, ion-content.modal_country .modal_country-profile h2.modal_user-profile-title {
-  font-weight: 500;
+ion-content.modal_user .modal_user-profile h2.modal_user-profile-title, ion-content.modal_user .modal_country-profile h2.modal_user-profile-title, ion-content.modal_action .modal_user-profile h2.modal_user-profile-title, ion-content.modal_action .modal_country-profile h2.modal_user-profile-title, ion-content.modal_country .modal_user-profile h2.modal_user-profile-title, ion-content.modal_country .modal_country-profile h2.modal_user-profile-title, ion-content.modal_create .modal_user-profile h2.modal_user-profile-title, ion-content.modal_create .modal_country-profile h2.modal_user-profile-title {
+  font-weight: 600;
   font-size: 1.7rem;
+  margin-top: 6px;
   white-space: nowrap;
   overflow: hidden;
   text-overflow: ellipsis;
 }
 
-ion-content.modal_user .modal_user-profile p.modal_user-profile-description, ion-content.modal_user .modal_country-profile p.modal_user-profile-description, ion-content.modal_action .modal_user-profile p.modal_user-profile-description, ion-content.modal_action .modal_country-profile p.modal_user-profile-description, ion-content.modal_country .modal_user-profile p.modal_user-profile-description, ion-content.modal_country .modal_country-profile p.modal_user-profile-description {
+ion-content.modal_user .modal_user-profile p.modal_user-profile-description, ion-content.modal_user .modal_country-profile p.modal_user-profile-description, ion-content.modal_action .modal_user-profile p.modal_user-profile-description, ion-content.modal_action .modal_country-profile p.modal_user-profile-description, ion-content.modal_country .modal_user-profile p.modal_user-profile-description, ion-content.modal_country .modal_country-profile p.modal_user-profile-description, ion-content.modal_create .modal_user-profile p.modal_user-profile-description, ion-content.modal_create .modal_country-profile p.modal_user-profile-description {
   font-size: 1.2rem;
 }
 
-ion-content.modal_user .modal_user-profile .modal_user-profile-values .tag_value, ion-content.modal_user .modal_country-profile .modal_user-profile-values .tag_value, ion-content.modal_action .modal_user-profile .modal_user-profile-values .tag_value, ion-content.modal_action .modal_country-profile .modal_user-profile-values .tag_value, ion-content.modal_country .modal_user-profile .modal_user-profile-values .tag_value, ion-content.modal_country .modal_country-profile .modal_user-profile-values .tag_value {
+ion-content.modal_user .modal_user-profile .modal_user-profile-values .tag_value, ion-content.modal_user .modal_country-profile .modal_user-profile-values .tag_value, ion-content.modal_action .modal_user-profile .modal_user-profile-values .tag_value, ion-content.modal_action .modal_country-profile .modal_user-profile-values .tag_value, ion-content.modal_country .modal_user-profile .modal_user-profile-values .tag_value, ion-content.modal_country .modal_country-profile .modal_user-profile-values .tag_value, ion-content.modal_create .modal_user-profile .modal_user-profile-values .tag_value, ion-content.modal_create .modal_country-profile .modal_user-profile-values .tag_value {
   margin-right: 4px;
 }
 
-ion-content.modal_user .modal_user-settings, ion-content.modal_user .modal_country-settings, ion-content.modal_action .modal_user-settings, ion-content.modal_action .modal_country-settings, ion-content.modal_country .modal_user-settings, ion-content.modal_country .modal_country-settings {
+ion-content.modal_user .modal_user-settings, ion-content.modal_user .modal_country-settings, ion-content.modal_action .modal_user-settings, ion-content.modal_action .modal_country-settings, ion-content.modal_country .modal_user-settings, ion-content.modal_country .modal_country-settings, ion-content.modal_create .modal_user-settings, ion-content.modal_create .modal_country-settings {
   margin: 0;
   padding: 0;
 }
 
-ion-content.modal_user .modal_user-settings ion-row ion-col, ion-content.modal_user .modal_country-settings ion-row ion-col, ion-content.modal_action .modal_user-settings ion-row ion-col, ion-content.modal_action .modal_country-settings ion-row ion-col, ion-content.modal_country .modal_user-settings ion-row ion-col, ion-content.modal_country .modal_country-settings ion-row ion-col {
+ion-content.modal_user .modal_user-settings ion-row ion-col, ion-content.modal_user .modal_country-settings ion-row ion-col, ion-content.modal_action .modal_user-settings ion-row ion-col, ion-content.modal_action .modal_country-settings ion-row ion-col, ion-content.modal_country .modal_user-settings ion-row ion-col, ion-content.modal_country .modal_country-settings ion-row ion-col, ion-content.modal_create .modal_user-settings ion-row ion-col, ion-content.modal_create .modal_country-settings ion-row ion-col {
   padding: 2px;
 }
 
-ion-content.modal_user .modal_user-score, ion-content.modal_action .modal_user-score, ion-content.modal_country .modal_user-score {
+ion-content.modal_user .modal_user-score, ion-content.modal_action .modal_user-score, ion-content.modal_country .modal_user-score, ion-content.modal_create .modal_user-score {
   border-bottom: 0.55px solid #EFEFEF;
   margin-bottom: 4px;
 }
 
-ion-content.modal_user .modal_user-score ion-row ion-col, ion-content.modal_action .modal_user-score ion-row ion-col, ion-content.modal_country .modal_user-score ion-row ion-col {
+ion-content.modal_user .modal_user-score ion-row ion-col, ion-content.modal_action .modal_user-score ion-row ion-col, ion-content.modal_country .modal_user-score ion-row ion-col, ion-content.modal_create .modal_user-score ion-row ion-col {
   color: #626262;
   font-weight: normal;
   font-size: 1.2rem;
 }
 
-ion-content.modal_user .modal_user-score ion-row ion-col strong, ion-content.modal_action .modal_user-score ion-row ion-col strong, ion-content.modal_country .modal_user-score ion-row ion-col strong {
+ion-content.modal_user .modal_user-score ion-row ion-col strong, ion-content.modal_action .modal_user-score ion-row ion-col strong, ion-content.modal_country .modal_user-score ion-row ion-col strong, ion-content.modal_create .modal_user-score ion-row ion-col strong {
   font-size: 1.6rem;
   color: #222;
 }
 
-ion-content.modal_user .modal_user-score ion-row ion-col .text-small, ion-content.modal_action .modal_user-score ion-row ion-col .text-small, ion-content.modal_country .modal_user-score ion-row ion-col .text-small {
+ion-content.modal_user .modal_user-score ion-row ion-col .text-small, ion-content.modal_action .modal_user-score ion-row ion-col .text-small, ion-content.modal_country .modal_user-score ion-row ion-col .text-small, ion-content.modal_create .modal_user-score ion-row ion-col .text-small {
   display: block;
 }
 
-ion-content.modal_user .modal_user-score ion-row ion-col .text-small strong, ion-content.modal_action .modal_user-score ion-row ion-col .text-small strong, ion-content.modal_country .modal_user-score ion-row ion-col .text-small strong {
+ion-content.modal_user .modal_user-score ion-row ion-col .text-small strong, ion-content.modal_action .modal_user-score ion-row ion-col .text-small strong, ion-content.modal_country .modal_user-score ion-row ion-col .text-small strong, ion-content.modal_create .modal_user-score ion-row ion-col .text-small strong {
   font-size: 1.2rem;
   color: #222;
 }
 
-ion-content.modal_user .modal_user-score ion-row ion-col .modal_user-score-icon, ion-content.modal_action .modal_user-score ion-row ion-col .modal_user-score-icon, ion-content.modal_country .modal_user-score ion-row ion-col .modal_user-score-icon {
+ion-content.modal_user .modal_user-score ion-row ion-col .modal_user-score-icon, ion-content.modal_action .modal_user-score ion-row ion-col .modal_user-score-icon, ion-content.modal_country .modal_user-score ion-row ion-col .modal_user-score-icon, ion-content.modal_create .modal_user-score ion-row ion-col .modal_user-score-icon {
   display: block;
   height: 120%;
   padding-top: 4px;
@@ -40338,31 +40535,31 @@ ion-content.modal_user .modal_user-score ion-row ion-col .modal_user-score-icon,
   opacity: 0.6;
 }
 
-ion-content.modal_user .modal_country-score, ion-content.modal_action .modal_country-score, ion-content.modal_country .modal_country-score {
+ion-content.modal_user .modal_country-score, ion-content.modal_action .modal_country-score, ion-content.modal_country .modal_country-score, ion-content.modal_create .modal_country-score {
   border-bottom: 0;
   margin-bottom: 4px;
 }
 
-ion-content.modal_user .modal_country-score ion-row ion-col, ion-content.modal_action .modal_country-score ion-row ion-col, ion-content.modal_country .modal_country-score ion-row ion-col {
+ion-content.modal_user .modal_country-score ion-row ion-col, ion-content.modal_action .modal_country-score ion-row ion-col, ion-content.modal_country .modal_country-score ion-row ion-col, ion-content.modal_create .modal_country-score ion-row ion-col {
   color: #626262;
   font-weight: normal;
   font-size: 1.3rem;
 }
 
-ion-content.modal_user .modal_country-score ion-row ion-col strong, ion-content.modal_action .modal_country-score ion-row ion-col strong, ion-content.modal_country .modal_country-score ion-row ion-col strong {
+ion-content.modal_user .modal_country-score ion-row ion-col strong, ion-content.modal_action .modal_country-score ion-row ion-col strong, ion-content.modal_country .modal_country-score ion-row ion-col strong, ion-content.modal_create .modal_country-score ion-row ion-col strong {
   color: #222;
 }
 
-ion-content.modal_user .modal_country-score ion-row ion-col .text-small, ion-content.modal_action .modal_country-score ion-row ion-col .text-small, ion-content.modal_country .modal_country-score ion-row ion-col .text-small {
+ion-content.modal_user .modal_country-score ion-row ion-col .text-small, ion-content.modal_action .modal_country-score ion-row ion-col .text-small, ion-content.modal_country .modal_country-score ion-row ion-col .text-small, ion-content.modal_create .modal_country-score ion-row ion-col .text-small {
   display: block;
 }
 
-ion-content.modal_user .modal_country-score ion-row ion-col .text-small strong, ion-content.modal_action .modal_country-score ion-row ion-col .text-small strong, ion-content.modal_country .modal_country-score ion-row ion-col .text-small strong {
+ion-content.modal_user .modal_country-score ion-row ion-col .text-small strong, ion-content.modal_action .modal_country-score ion-row ion-col .text-small strong, ion-content.modal_country .modal_country-score ion-row ion-col .text-small strong, ion-content.modal_create .modal_country-score ion-row ion-col .text-small strong {
   font-size: 1.2rem;
   color: #222;
 }
 
-ion-content.modal_user .modal_country-score ion-row ion-col .modal_country-score-variation, ion-content.modal_action .modal_country-score ion-row ion-col .modal_country-score-variation, ion-content.modal_country .modal_country-score ion-row ion-col .modal_country-score-variation {
+ion-content.modal_user .modal_country-score ion-row ion-col .modal_country-score-variation, ion-content.modal_action .modal_country-score ion-row ion-col .modal_country-score-variation, ion-content.modal_country .modal_country-score ion-row ion-col .modal_country-score-variation, ion-content.modal_create .modal_country-score ion-row ion-col .modal_country-score-variation {
   display: block;
   height: 120%;
   padding-top: 4px;
@@ -40374,17 +40571,17 @@ ion-content.modal_user .modal_country-score ion-row ion-col .modal_country-score
   color: #626262;
 }
 
-ion-content.modal_user .modal_country-score ion-row ion-col .modal_country-score-variation ion-icon, ion-content.modal_action .modal_country-score ion-row ion-col .modal_country-score-variation ion-icon, ion-content.modal_country .modal_country-score ion-row ion-col .modal_country-score-variation ion-icon {
+ion-content.modal_user .modal_country-score ion-row ion-col .modal_country-score-variation ion-icon, ion-content.modal_action .modal_country-score ion-row ion-col .modal_country-score-variation ion-icon, ion-content.modal_country .modal_country-score ion-row ion-col .modal_country-score-variation ion-icon, ion-content.modal_create .modal_country-score ion-row ion-col .modal_country-score-variation ion-icon {
   display: block;
   -webkit-animation: updown 1.2s linear infinite;
   animation: updown 1.2s linear infinite;
 }
 
-ion-content.modal_user .modal_country-score ion-row ion-col .modal_country-score-variation.modal_country-score-variation_down, ion-content.modal_action .modal_country-score ion-row ion-col .modal_country-score-variation.modal_country-score-variation_down, ion-content.modal_country .modal_country-score ion-row ion-col .modal_country-score-variation.modal_country-score-variation_down {
+ion-content.modal_user .modal_country-score ion-row ion-col .modal_country-score-variation.modal_country-score-variation_down, ion-content.modal_action .modal_country-score ion-row ion-col .modal_country-score-variation.modal_country-score-variation_down, ion-content.modal_country .modal_country-score ion-row ion-col .modal_country-score-variation.modal_country-score-variation_down, ion-content.modal_create .modal_country-score ion-row ion-col .modal_country-score-variation.modal_country-score-variation_down {
   color: #F23D3D;
 }
 
-ion-content.modal_user .modal_country-score ion-row ion-col .modal_country-score-variation.modal_country-score-variation_up, ion-content.modal_action .modal_country-score ion-row ion-col .modal_country-score-variation.modal_country-score-variation_up, ion-content.modal_country .modal_country-score ion-row ion-col .modal_country-score-variation.modal_country-score-variation_up {
+ion-content.modal_user .modal_country-score ion-row ion-col .modal_country-score-variation.modal_country-score-variation_up, ion-content.modal_action .modal_country-score ion-row ion-col .modal_country-score-variation.modal_country-score-variation_up, ion-content.modal_country .modal_country-score ion-row ion-col .modal_country-score-variation.modal_country-score-variation_up, ion-content.modal_create .modal_country-score ion-row ion-col .modal_country-score-variation.modal_country-score-variation_up {
   color: #79BD8F;
 }
 
@@ -40426,51 +40623,51 @@ ion-content.modal_user .modal_country-score ion-row ion-col .modal_country-score
   }
 }
 
-ion-content.modal_user .item-md, ion-content.modal_user .item-ios, ion-content.modal_action .item-md, ion-content.modal_action .item-ios, ion-content.modal_country .item-md, ion-content.modal_country .item-ios {
+ion-content.modal_user .item-md, ion-content.modal_user .item-ios, ion-content.modal_action .item-md, ion-content.modal_action .item-ios, ion-content.modal_country .item-md, ion-content.modal_country .item-ios, ion-content.modal_create .item-md, ion-content.modal_create .item-ios {
   background-color: transparent;
   padding-left: 0;
   padding-right: 0;
 }
 
-ion-content.modal_user .item-md .item-inner, ion-content.modal_user .item-ios .item-inner, ion-content.modal_action .item-md .item-inner, ion-content.modal_action .item-ios .item-inner, ion-content.modal_country .item-md .item-inner, ion-content.modal_country .item-ios .item-inner {
+ion-content.modal_user .item-md .item-inner, ion-content.modal_user .item-ios .item-inner, ion-content.modal_action .item-md .item-inner, ion-content.modal_action .item-ios .item-inner, ion-content.modal_country .item-md .item-inner, ion-content.modal_country .item-ios .item-inner, ion-content.modal_create .item-md .item-inner, ion-content.modal_create .item-ios .item-inner {
   padding-right: 0;
 }
 
-ion-content.modal_user .item-md [item-end], ion-content.modal_user .item-ios [item-end], ion-content.modal_action .item-md [item-end], ion-content.modal_action .item-ios [item-end], ion-content.modal_country .item-md [item-end], ion-content.modal_country .item-ios [item-end] {
+ion-content.modal_user .item-md [item-end], ion-content.modal_user .item-ios [item-end], ion-content.modal_action .item-md [item-end], ion-content.modal_action .item-ios [item-end], ion-content.modal_country .item-md [item-end], ion-content.modal_country .item-ios [item-end], ion-content.modal_create .item-md [item-end], ion-content.modal_create .item-ios [item-end] {
   margin: 0px 0 0 4px;
 }
 
-ion-content.modal_user .modal_user-action .modal_user-action-description, ion-content.modal_user .modal_action-action .modal_user-action-description, ion-content.modal_action .modal_user-action .modal_user-action-description, ion-content.modal_action .modal_action-action .modal_user-action-description, ion-content.modal_country .modal_user-action .modal_user-action-description, ion-content.modal_country .modal_action-action .modal_user-action-description {
+ion-content.modal_user .modal_user-action .modal_user-action-description, ion-content.modal_user .modal_action-action .modal_user-action-description, ion-content.modal_action .modal_user-action .modal_user-action-description, ion-content.modal_action .modal_action-action .modal_user-action-description, ion-content.modal_country .modal_user-action .modal_user-action-description, ion-content.modal_country .modal_action-action .modal_user-action-description, ion-content.modal_create .modal_user-action .modal_user-action-description, ion-content.modal_create .modal_action-action .modal_user-action-description {
   color: #626262;
   font-size: 1.2rem;
 }
 
-ion-content.modal_user .modal_user-action .modal_user-action-description ion-icon, ion-content.modal_user .modal_action-action .modal_user-action-description ion-icon, ion-content.modal_action .modal_user-action .modal_user-action-description ion-icon, ion-content.modal_action .modal_action-action .modal_user-action-description ion-icon, ion-content.modal_country .modal_user-action .modal_user-action-description ion-icon, ion-content.modal_country .modal_action-action .modal_user-action-description ion-icon {
+ion-content.modal_user .modal_user-action .modal_user-action-description ion-icon, ion-content.modal_user .modal_action-action .modal_user-action-description ion-icon, ion-content.modal_action .modal_user-action .modal_user-action-description ion-icon, ion-content.modal_action .modal_action-action .modal_user-action-description ion-icon, ion-content.modal_country .modal_user-action .modal_user-action-description ion-icon, ion-content.modal_country .modal_action-action .modal_user-action-description ion-icon, ion-content.modal_create .modal_user-action .modal_user-action-description ion-icon, ion-content.modal_create .modal_action-action .modal_user-action-description ion-icon {
   display: inline-block;
   vertical-align: middle;
 }
 
-ion-content.modal_user .modal_user-action .modal_action-action-description, ion-content.modal_user .modal_action-action .modal_action-action-description, ion-content.modal_action .modal_user-action .modal_action-action-description, ion-content.modal_action .modal_action-action .modal_action-action-description, ion-content.modal_country .modal_user-action .modal_action-action-description, ion-content.modal_country .modal_action-action .modal_action-action-description {
+ion-content.modal_user .modal_user-action .modal_action-action-description, ion-content.modal_user .modal_action-action .modal_action-action-description, ion-content.modal_action .modal_user-action .modal_action-action-description, ion-content.modal_action .modal_action-action .modal_action-action-description, ion-content.modal_country .modal_user-action .modal_action-action-description, ion-content.modal_country .modal_action-action .modal_action-action-description, ion-content.modal_create .modal_user-action .modal_action-action-description, ion-content.modal_create .modal_action-action .modal_action-action-description {
   color: #626262;
   font-size: 1.2rem;
 }
 
-ion-content.modal_user .modal_user-action .modal_action-action-description ion-icon, ion-content.modal_user .modal_action-action .modal_action-action-description ion-icon, ion-content.modal_action .modal_user-action .modal_action-action-description ion-icon, ion-content.modal_action .modal_action-action .modal_action-action-description ion-icon, ion-content.modal_country .modal_user-action .modal_action-action-description ion-icon, ion-content.modal_country .modal_action-action .modal_action-action-description ion-icon {
+ion-content.modal_user .modal_user-action .modal_action-action-description ion-icon, ion-content.modal_user .modal_action-action .modal_action-action-description ion-icon, ion-content.modal_action .modal_user-action .modal_action-action-description ion-icon, ion-content.modal_action .modal_action-action .modal_action-action-description ion-icon, ion-content.modal_country .modal_user-action .modal_action-action-description ion-icon, ion-content.modal_country .modal_action-action .modal_action-action-description ion-icon, ion-content.modal_create .modal_user-action .modal_action-action-description ion-icon, ion-content.modal_create .modal_action-action .modal_action-action-description ion-icon {
   display: inline-block;
   vertical-align: middle;
 }
 
-ion-content.modal_user .modal_user-action .modal_user-investigations, ion-content.modal_user .modal_action-action .modal_user-investigations, ion-content.modal_action .modal_user-action .modal_user-investigations, ion-content.modal_action .modal_action-action .modal_user-investigations, ion-content.modal_country .modal_user-action .modal_user-investigations, ion-content.modal_country .modal_action-action .modal_user-investigations {
+ion-content.modal_user .modal_user-action .modal_user-investigations, ion-content.modal_user .modal_action-action .modal_user-investigations, ion-content.modal_action .modal_user-action .modal_user-investigations, ion-content.modal_action .modal_action-action .modal_user-investigations, ion-content.modal_country .modal_user-action .modal_user-investigations, ion-content.modal_country .modal_action-action .modal_user-investigations, ion-content.modal_create .modal_user-action .modal_user-investigations, ion-content.modal_create .modal_action-action .modal_user-investigations {
   font-size: 1.2rem;
   color: #626262;
   margin-bottom: 10px;
 }
 
-ion-content.modal_user .modal_user-action .modal_user-investigations strong, ion-content.modal_user .modal_action-action .modal_user-investigations strong, ion-content.modal_action .modal_user-action .modal_user-investigations strong, ion-content.modal_action .modal_action-action .modal_user-investigations strong, ion-content.modal_country .modal_user-action .modal_user-investigations strong, ion-content.modal_country .modal_action-action .modal_user-investigations strong {
+ion-content.modal_user .modal_user-action .modal_user-investigations strong, ion-content.modal_user .modal_action-action .modal_user-investigations strong, ion-content.modal_action .modal_user-action .modal_user-investigations strong, ion-content.modal_action .modal_action-action .modal_user-investigations strong, ion-content.modal_country .modal_user-action .modal_user-investigations strong, ion-content.modal_country .modal_action-action .modal_user-investigations strong, ion-content.modal_create .modal_user-action .modal_user-investigations strong, ion-content.modal_create .modal_action-action .modal_user-investigations strong {
   color: #222;
 }
 
-ion-content.modal_user .modal_user-action .modal_user-investigations .judge-avatar, ion-content.modal_user .modal_action-action .modal_user-investigations .judge-avatar, ion-content.modal_action .modal_user-action .modal_user-investigations .judge-avatar, ion-content.modal_action .modal_action-action .modal_user-investigations .judge-avatar, ion-content.modal_country .modal_user-action .modal_user-investigations .judge-avatar, ion-content.modal_country .modal_action-action .modal_user-investigations .judge-avatar {
+ion-content.modal_user .modal_user-action .modal_user-investigations .judge-avatar, ion-content.modal_user .modal_action-action .modal_user-investigations .judge-avatar, ion-content.modal_action .modal_user-action .modal_user-investigations .judge-avatar, ion-content.modal_action .modal_action-action .modal_user-investigations .judge-avatar, ion-content.modal_country .modal_user-action .modal_user-investigations .judge-avatar, ion-content.modal_country .modal_action-action .modal_user-investigations .judge-avatar, ion-content.modal_create .modal_user-action .modal_user-investigations .judge-avatar, ion-content.modal_create .modal_action-action .modal_user-investigations .judge-avatar {
   float: left;
   margin: 0 10px 0 0;
   height: 22px;
@@ -40713,39 +40910,48 @@ ion-content.content_splash {
   background-color: rgba(98, 98, 98, 0.2);
 }
 
+.action-container {
+  position: relative;
+  max-width: 380px;
+  margin: auto;
+  text-align: center;
+}
+
+.action-container h4 {
+  font-size: 1.8rem;
+}
+
+.action-container p {
+  font-size: 1.2rem;
+  font-weight: 400;
+}
+
 @font-face {
   font-family: "";
   font-style: normal;
   font-weight: 300;
-  src: local("Work Sans"), local("WorkSans-Light"), url("../assets/fonts/WorkSans-Light.woff") format("woff"), url("../assets/fonts/WorkSans-Light.ttf") format("truetype");
-}
-
-@font-face {
-  font-family: "Work Sans";
-  font-style: normal;
-  font-weight: 300;
-  src: local("Work Sans"), local("WorkSans-Light"), url("../assets/fonts/WorkSans-Light.woff") format("woff"), url("../assets/fonts/WorkSans-Light.ttf") format("truetype");
+  src: local("Work Sans Light"), local("WorkSans-Light"), url("../assets/fonts/WorkSans-Light.woff") format("woff"), url("../assets/fonts/WorkSans-Light.ttf") format("truetype");
 }
 
 @font-face {
   font-family: "Work Sans";
   font-style: normal;
   font-weight: 400;
-  src: local("Work Sans"), local("WorkSans-Regular"), url("../assets/fonts/WorkSans-Regular.woff") format("woff"), url("../assets/fonts/WorkSans-Regular.ttf") format("truetype");
+  src: local("Work Sans Regular"), local("WorkSans-Regular"), url("../assets/fonts/WorkSans-Regular.woff") format("woff"), url("../assets/fonts/WorkSans-Regular.ttf") format("truetype");
 }
 
 @font-face {
   font-family: "Work Sans";
   font-style: normal;
   font-weight: 500;
-  src: local("Work Sans"), local("WorkSans-Medium"), url("../assets/fonts/WorkSans-Medium.woff") format("woff"), url("../assets/fonts/Nunito-Medium.ttf") format("truetype");
+  src: local("Work Sans Medium"), local("WorkSans-Medium"), url("../assets/fonts/WorkSans-Medium.woff") format("woff"), url("../assets/fonts/Nunito-Medium.ttf") format("truetype");
 }
 
 @font-face {
   font-family: "Work Sans";
   font-style: normal;
   font-weight: 600;
-  src: local("Work Sans"), local("WorkSans-SemiBold"), url("../assets/fonts/WorkSans-SemiBold.woff") format("woff"), url("../assets/fonts/Nunito-SemiBold.ttf") format("truetype");
+  src: local("Work Sans Semibold"), local("WorkSans-SemiBold"), url("../assets/fonts/WorkSans-SemiBold.woff") format("woff"), url("../assets/fonts/Nunito-SemiBold.ttf") format("truetype");
 }
 
 @font-face {

@@ -31,7 +31,7 @@ export class Leaderboard {
     }
 
   ngOnInit(){
-     this.openCountryModal();
+  //   this.openCountryModal();
   }
 
   doRefresh(refresher) {

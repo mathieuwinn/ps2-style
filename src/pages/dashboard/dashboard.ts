@@ -6,6 +6,7 @@ import { Notifications } from '../notifications/notifications';
 import { Signup } from '../signup/signup';
 import { Splash } from '../splash/splash';
 import { Actionmodal } from '../actionmodal/actionmodal';
+import { Createpartymodal } from '../createpartymodal/createpartymodal';
 
 
 
@@ -25,14 +26,17 @@ splashPage = Splash;
 
   ngOnInit(){
   //  this.navCtrl.push(Notifications);
-  // this.openActionModal();
+  // this.openCreatePartyModal();
 
   }
   openActionModal() {
       let actionModal = this.modalCtrl.create(Actionmodal);
       actionModal.present();
     }
-
+    openCreatePartyModal() {
+        let createpartyModal = this.modalCtrl.create(Createpartymodal);
+        createpartyModal.present();
+      }
 
 
   bannerShow = true;

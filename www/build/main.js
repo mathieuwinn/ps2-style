@@ -6,7 +6,7 @@ webpackJsonp([0],{
 "use strict";
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return Notifications; });
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_ionic_angular__ = __webpack_require__(13);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_ionic_angular__ = __webpack_require__(12);
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
     if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
@@ -49,7 +49,7 @@ Notifications = __decorate([
 "use strict";
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return Login; });
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_ionic_angular__ = __webpack_require__(13);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_ionic_angular__ = __webpack_require__(12);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__signup_signup__ = __webpack_require__(39);
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
@@ -121,7 +121,7 @@ Login = __decorate([
 "use strict";
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return Splash; });
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_ionic_angular__ = __webpack_require__(13);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_ionic_angular__ = __webpack_require__(12);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__signup_signup__ = __webpack_require__(39);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__login_login__ = __webpack_require__(101);
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
@@ -200,7 +200,7 @@ webpackEmptyAsyncContext.id = 152;
 "use strict";
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return HomePage; });
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_ionic_angular__ = __webpack_require__(13);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_ionic_angular__ = __webpack_require__(12);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__dashboard_dashboard__ = __webpack_require__(197);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__leaderboard_leaderboard__ = __webpack_require__(99);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__notifications_notifications__ = __webpack_require__(100);
@@ -232,7 +232,7 @@ var HomePage = (function () {
         this.splashPage = __WEBPACK_IMPORTED_MODULE_6__splash_splash__["a" /* Splash */];
     }
     HomePage.prototype.ngOnInit = function () {
-        this.navCtrl.push(__WEBPACK_IMPORTED_MODULE_3__leaderboard_leaderboard__["a" /* Leaderboard */]);
+        this.navCtrl.push(__WEBPACK_IMPORTED_MODULE_2__dashboard_dashboard__["a" /* Dashboard */]);
     };
     return HomePage;
 }());
@@ -240,10 +240,9 @@ HomePage = __decorate([
     Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["n" /* Component */])({
         selector: 'page-home',template:/*ion-inline-start:"/Users/mathieu/Documents/Work/PoliticsSimulator/ionicStyle/src/pages/home/home.html"*/'<ion-header>\n\n  <ion-navbar>\n    <ion-title>Politics Simulator Style</ion-title>\n  </ion-navbar>\n\n</ion-header>\n\n\n<ion-content padding class="sand-bg">\n\n\n\n  <ion-card class="card card_list">\n    <button ion-item class="item_profile" [navPush]="splashPage">\n      <h2>Splash</h2>\n    </button>\n    <button ion-item class="item_profile" [navPush]="dashboardPage">\n      <h2>Dashboard</h2>\n    </button>\n\n\n\n  </ion-card>\n\n\n\n\n</ion-content>\n'/*ion-inline-end:"/Users/mathieu/Documents/Work/PoliticsSimulator/ionicStyle/src/pages/home/home.html"*/
     }),
-    __metadata("design:paramtypes", [typeof (_a = typeof __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["g" /* NavController */] !== "undefined" && __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["g" /* NavController */]) === "function" && _a || Object])
+    __metadata("design:paramtypes", [__WEBPACK_IMPORTED_MODULE_1_ionic_angular__["g" /* NavController */]])
 ], HomePage);
 
-var _a;
 //# sourceMappingURL=home.js.map
 
 /***/ }),
@@ -254,12 +253,13 @@ var _a;
 "use strict";
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return Dashboard; });
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_ionic_angular__ = __webpack_require__(13);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_ionic_angular__ = __webpack_require__(12);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__leaderboard_leaderboard__ = __webpack_require__(99);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__notifications_notifications__ = __webpack_require__(100);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__signup_signup__ = __webpack_require__(39);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_5__splash_splash__ = __webpack_require__(102);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_6__actionmodal_actionmodal__ = __webpack_require__(199);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_6__actionmodal_actionmodal__ = __webpack_require__(200);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_7__createpartymodal_createpartymodal__ = __webpack_require__(201);
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
     if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
@@ -269,6 +269,7 @@ var __decorate = (this && this.__decorate) || function (decorators, target, key,
 var __metadata = (this && this.__metadata) || function (k, v) {
     if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
 };
+
 
 
 
@@ -292,11 +293,15 @@ var Dashboard = (function () {
     }
     Dashboard.prototype.ngOnInit = function () {
         //  this.navCtrl.push(Notifications);
-        // this.openActionModal();
+        // this.openCreatePartyModal();
     };
     Dashboard.prototype.openActionModal = function () {
         var actionModal = this.modalCtrl.create(__WEBPACK_IMPORTED_MODULE_6__actionmodal_actionmodal__["a" /* Actionmodal */]);
         actionModal.present();
+    };
+    Dashboard.prototype.openCreatePartyModal = function () {
+        var createpartyModal = this.modalCtrl.create(__WEBPACK_IMPORTED_MODULE_7__createpartymodal_createpartymodal__["a" /* Createpartymodal */]);
+        createpartyModal.present();
     };
     Dashboard.prototype.closeBanner = function () {
         this.bannerShow = !this.bannerShow;
@@ -318,11 +323,12 @@ var Dashboard = (function () {
 }());
 Dashboard = __decorate([
     Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["n" /* Component */])({
-        selector: 'page-dashboard',template:/*ion-inline-start:"/Users/mathieu/Documents/Work/PoliticsSimulator/ionicStyle/src/pages/dashboard/dashboard.html"*/'\n<ion-header>\n  <ion-navbar hideBackButton>\n    <div class="navbar-profile-space">\n\n        <div class="profile-avatar profile-avatar_navbar">\n          <div class="party-avatar"></div>\n        </div>\n\n        <div class="navbar-profile-score">\n          <span class="score-item icon-right">12<ion-icon name="heart-circle"></ion-icon></span>\n          <span class="score-item icon-right">22.2k<ion-icon name="money-circle"></ion-icon></span>\n          <span class="score-item icon-right">14.3k<ion-icon name="dirty-money-circle"></ion-icon></span>\n\n          <span class="score-item icon-right">120<ion-icon name="users-circle"></ion-icon></span>\n          <span class="score-item icon-right">13<ion-icon name="bolt-circle"></ion-icon></span>\n        </div>\n\n\n      </div>\n\n      <ion-buttons end class="buttons-menu">\n        <button ion-button icon-only [navPush]="notificationsPage" class="btn-notif">\n          <ion-icon name="bell"></ion-icon>\n        </button>\n        <button ion-button icon-only [navPush]="leaderboardPage">\n          <ion-icon name="trophy"></ion-icon>\n        </button>\n    </ion-buttons>\n  </ion-navbar>\n\n  <div class="header-segment">\n    <ion-segment [(ngModel)]="tripPage" (ionchange)="onSegmentChange($event)">\n      <ion-segment-button value="actions">Activités</ion-segment-button>\n      <ion-segment-button value="ressources">Ressources</ion-segment-button>\n      <ion-segment-button value="investments">Investissements</ion-segment-button>\n      <ion-segment-button value="international">International</ion-segment-button>\n      <ion-segment-button value="president">Président</ion-segment-button>\n    </ion-segment>\n  </div>\n\n  <div class="banner banner_header-live hide" padding-horizontal [ngClass]="bannerShow ? \'is-shown\' : \'\'">\n    <button ion-button clear icon-only class="banner_btn-close" (click)="closeBanner();">\n      <ion-icon name="chevron-up"></ion-icon>\n    </button>\n    <ion-item text-wrap>\n      <h4 class="banner-title">Super ! 👍</h4>\n      <p class="banner-text"><strong>Bravo !</strong> L’opération de tractage s’est bien passée! Vous recevez beaucoup d’<strong>encouragements </strong> et de <strong>nouveaux militants</strong> vous rejoignent ! </p>\n      <div class="banner-rewards">\n        <span item-right class="score-item score-item_price icon-right">+12<ion-icon name="heart-circle"></ion-icon></span>\n        <span item-right class="score-item score-item_price icon-right">+188<ion-icon name="users-circle"></ion-icon></span>\n      </div>\n    </ion-item>\n  </div>\n\n\n\n\n</ion-header>\n\n<ion-content class="sand-bg">\n\n  <div class="card-top-elements card-top-elements_invest-country" padding-horizontal>\n\n\n        <div class="flag flag_big" (click)="buttonAct();">\n          <span class="flag-icon flag-icon-fr"></span>\n        </div>\n\n      <h6 class="card-title-top" (click)="buttonAct();"><strong>Bonjour !</strong> Vous investissez actuellement en France.</h6>\n\n      <ion-select [(ngModel)]="country" class="card-title-select">\n        <ion-option value="fr" selected><span class="flag-icon flag-icon-fr"></span>France</ion-option>\n        <ion-option value="us"><span class="flag-icon flag-icon-us"></span>USA</ion-option>\n        <ion-option value="en"><span class="flag-icon flag-icon-en"></span>England</ion-option>\n        <ion-option value="br"><span class="flag-icon flag-icon-br"></span>Brazil</ion-option>\n        <ion-option value="tr"><span class="flag-icon flag-icon-tr"></span>Turkey</ion-option>\n        <ion-option value="sw"><span class="flag-icon flag-icon-sw"></span>Sweden</ion-option>\n      </ion-select>\n  </div>\n\n\n\n<div padding-horizontal>\n\n  <ion-card class="card card_action">\n\n    <ion-item text-wrap>\n      <h2 class="card-title">Distribuer des tracts</h2>\n      <p class="card-rewards"><span class="score-item score-item_reward icon-left"><ion-icon name="users-circle"></ion-icon>++</span></p>\n      <p class="card-description">Donec id elit non mi porta gravida at eget metus. Duis mollis, est non commodo luctus, nisi erat porttitor ligula, eget lacinia odio sem nec elit. Cum sociis natoque penatibus et magnis dis parturient montes,...</p>\n    </ion-item>\n    <ion-item>\n      <div class="card-price" item-right [ngClass]="[buttonActed ? \'is-hidden\' : \'\', buttonSuccess ? \'is-hidden\' : \'\']">\n        <button ion-button clear small (click)="openActionModal()" class="btn-score-item">\n          <span class="score-item score-item_price score-item_is-set icon-right">4<ion-icon name="heart-circle"></ion-icon></span>\n        </button>\n        <span class="score-item score-item_price icon-right">120<ion-icon name="users-circle"></ion-icon></span>\n        <span class="score-item score-item_price icon-right">200<ion-icon name="money-circle"></ion-icon></span>\n      </div>\n      <button ion-button item-end small class="button_action" (click)="buttonAct();" [ngClass]="[buttonActed ? \'button_loading\' : \'\', buttonSuccess ? \'button_success\' : \'\']">\n        <ion-spinner class="button-spinner" name="crescent">  </ion-spinner>\n        <span class="button_action-text">Click me</span>\n        <span class="button_action-text_success"><span class="emoji-thumb-up">👍</span> Success!</span>\n        <span class="button_action-text_fail"><span class="emoji-thumb-down">👎</span> Failed</span>\n      </button>\n    </ion-item>\n\n\n  </ion-card>\n\n  <ion-card class="card card_action">\n\n    <ion-item text-wrap>\n      <h2 class="card-title">Distribuer des tracts</h2>\n       <p class="card-rewards"><span class="score-item score-item_reward icon-left"><ion-icon name="users-circle"></ion-icon>++</span> (Coût/heure : <span class="score-item score-item_reward icon-right">150<ion-icon name="money-circle"></ion-icon></span>)</p>\n      <p class="card-description">Donec id elit non mi porta gravida at eget metus. Duis mollis, est non commodo luctus, nisi erat porttitor ligula, eget lacinia odio sem nec elit. Cum sociis natoque penatibus et magnis dis parturient montes,...</p>\n    </ion-item>\n    <ion-item>\n      <div class="card-price" item-right>\n        <button ion-button clear small class="btn-score-item" (click)="openActionModal()">\n          <span class="score-item score-item_price icon-right">0<ion-icon name="heart-circle"></ion-icon></span>\n        </button>\n        <span class="score-item score-item_price icon-right">70<ion-icon name="money-circle"></ion-icon></span>\n      </div>\n      <button ion-button item-end small>\n        Action\n      </button>\n    </ion-item>\n\n\n  </ion-card>\n\n  <ion-card class="card card_action">\n\n    <ion-item text-wrap>\n      <h2 class="card-title"><span class="card_action-difficulty card_action-difficulty-3"></span>Investissez dans les entreprises étrangères</h2>\n      <p class="card-rewards">(Coût/heure : <span class="score-item score-item_reward icon-right">150<ion-icon name="money-circle"></ion-icon></span>)</p>\n\n      <p class="card-description">Tant de projets à financer et si peu d’argent. Aidez les entreprises à se développer, prenez les dividendes au passage.</p>\n    </ion-item>\n    <ion-item>\n      <div class="card-price" item-right>\n        <span class="score-item score-item_price icon-right">70<ion-icon name="money-circle"></ion-icon></span>\n      </div>\n      <button ion-button item-end small>\n        Action\n      </button>\n    </ion-item>\n\n\n  </ion-card>\n\n\n  <ion-card class="card card_action">\n\n    <ion-item text-wrap>\n      <h2 class="card-title">Suitcase full of cash</h2>\n      <p class="card-rewards"><span class="score-item score-item_reward icon-right">10k <ion-icon name="dirty-money-circle"></ion-icon></span></p>\n\n      <p class="card-description">Meet up with "the Greek" under the billboard ad on the avenue. He\'ll supply you.</p>\n    </ion-item>\n    <ion-item text-wrap>\n      <div class="card-action-description">\n        Earn this action <strong>for free</strong> by watching a short ad.\n      </div>\n      <button ion-button item-end small>\n        Watch Ad\n      </button>\n    </ion-item>\n\n  </ion-card>\n\n  <ion-card class="card card_action">\n\n    <ion-item text-wrap>\n      <h2 class="card-title">Corrupt judges</h2>\n      <p class="card-description">Duis mollis, est non commodo luctus, nisi erat porttitor ligula, eget lacinia odio sem nec elit.</p>\n    </ion-item>\n    <ion-item text-wrap>\n      <div class="card-action-description">\n        Pack of <strong>3x corruptions</strong>\n      </div>\n      <button color="secondary" ion-button item-end small>\n        Buy for $0,30\n      </button>\n    </ion-item>\n\n  </ion-card>\n\n  <ion-card class="card card_action">\n\n    <ion-item text-wrap>\n      <!-- <span class="card-status card-status_new">Nouveau</span>-->\n      <h2 class="card-title">Distribuer des tracts</h2>\n      <p class="card-description">Donec id elit non mi porta gravida at eget metus. Duis mollis, est non commodo luctus, nisi erat porttitor ligula, eget lacinia odio sem nec elit. Cum sociis natoque penatibus et magnis dis parturient montes,...</p>\n    </ion-item>\n\n    <div class="card-needs">\n      <ion-item text-wrap>\n        <span item-left class="text-small text-muted">Nécessite</span>\n        <ul class="card-needs-list">\n          <li class="card-needs-item card-needs-item_is-checked"><strong>1x</strong> camionette de campagne</li>\n          <li class="card-needs-item"><strong>1x</strong> valise d’argent sale</li>\n        </ul>\n      </ion-item>\n    </div>\n\n    <ion-item>\n      <div class="card-price" item-right>\n        <span class="score-item score-item_price icon-right">70<ion-icon name="money-circle"></ion-icon></span>\n      </div>\n      <button ion-button icon-left item-end small disabled>\n        <ion-icon name="lock"></ion-icon> Action\n      </button>\n    </ion-item>\n\n\n  </ion-card>\n\n\n  </div>\n\n</ion-content>\n'/*ion-inline-end:"/Users/mathieu/Documents/Work/PoliticsSimulator/ionicStyle/src/pages/dashboard/dashboard.html"*/,
+        selector: 'page-dashboard',template:/*ion-inline-start:"/Users/mathieu/Documents/Work/PoliticsSimulator/ionicStyle/src/pages/dashboard/dashboard.html"*/'\n<ion-header>\n  <ion-navbar hideBackButton>\n    <div class="navbar-profile-space">\n\n        <div class="profile-avatar profile-avatar_navbar">\n          <div class="party-avatar"></div>\n        </div>\n\n        <div class="navbar-profile-score">\n          <div class="navbar-profile-score-left"></div>\n          <div class="navbar-profile-score-right"></div>\n          <div class="navbar-profile-score-inner1">\n            <span class="score-item icon-right">12<ion-icon name="heart-circle"></ion-icon></span>\n            <span class="score-item icon-right">22.2k<ion-icon name="money-circle"></ion-icon></span>\n            <span class="score-item icon-right">14.3k<ion-icon name="dirty-money-circle"></ion-icon></span>\n            <span class="score-item icon-right">120<ion-icon name="users-circle"></ion-icon></span>\n            <span class="score-item icon-right">13<ion-icon name="bolt-circle"></ion-icon></span>\n          </div>\n          <div class="navbar-profile-score-inner2">\n            <span class="score-item icon-right">12<ion-icon name="heart-circle"></ion-icon></span>\n            <span class="score-item icon-right">22.2k<ion-icon name="money-circle"></ion-icon></span>\n            <span class="score-item icon-right">14.3k<ion-icon name="dirty-money-circle"></ion-icon></span>\n            <span class="score-item icon-right">120<ion-icon name="users-circle"></ion-icon></span>\n            <span class="score-item icon-right">13<ion-icon name="bolt-circle"></ion-icon></span>\n          </div>\n        </div>\n\n\n      </div>\n\n      <ion-buttons end class="buttons-menu">\n        <button ion-button icon-only [navPush]="notificationsPage" class="btn-notif">\n          <ion-icon name="bell"></ion-icon>\n        </button>\n        <button ion-button icon-only [navPush]="leaderboardPage">\n          <ion-icon name="trophy"></ion-icon>\n        </button>\n    </ion-buttons>\n  </ion-navbar>\n\n  <div class="header-segment">\n    <ion-segment [(ngModel)]="dashboardPage" (ionchange)="onSegmentChange($event)">\n      <ion-segment-button value="actions">Activités</ion-segment-button>\n      <ion-segment-button value="ressources">Ressources</ion-segment-button>\n      <ion-segment-button value="investments">Investissements</ion-segment-button>\n      <ion-segment-button value="international">International</ion-segment-button>\n      <ion-segment-button value="partis">Partis</ion-segment-button>\n      <ion-segment-button value="president">Président</ion-segment-button>\n    </ion-segment>\n  </div>\n\n  <div class="banner banner_header-live hide" padding-horizontal [ngClass]="bannerShow ? \'is-shown\' : \'\'">\n    <button ion-button clear icon-only class="banner_btn-close" (click)="closeBanner();">\n      <ion-icon name="chevron-up"></ion-icon>\n    </button>\n    <ion-item text-wrap>\n      <h4 class="banner-title">Super ! 👍</h4>\n      <p class="banner-text"><strong>Bravo !</strong> L’opération de tractage s’est bien passée! Vous recevez beaucoup d’<strong>encouragements </strong> et de <strong>nouveaux militants</strong> vous rejoignent ! </p>\n      <div class="banner-rewards">\n        <span item-right class="score-item score-item_price icon-right">+12<ion-icon name="heart-circle"></ion-icon></span>\n        <span item-right class="score-item score-item_price icon-right">+188<ion-icon name="users-circle"></ion-icon></span>\n      </div>\n    </ion-item>\n  </div>\n\n\n\n\n</ion-header>\n\n\n\n\n<ion-content class="sand-bg">\n\n\n\n\n\n<div padding-horizontal>\n\n\n\n  <div class="action-container" padding>\n    <div class="empty-img empty-img_noelections"></div>\n    <p class="text-muted">Why not create your own party and invite people to fight with you?</p>\n    <button ion-button item-end small>\n      Créer mon parti\n    </button>\n\n  </div>\n\n\n      <div class="card-top-elements">\n        <h4 class="card-title-top">Partis</h4>\n      </div>\n\n      <ion-card class="card card_list">\n        <button ion-item class="item_profile" (click)="openUser1Modal()">\n          <span item-start class="item-position">1.</span>\n          <ion-avatar item-start>\n            <img src="../assets/img/profile-avatar.png">\n          </ion-avatar>\n          <h2>Parti Libertain</h2>\n          <span item-right class="score-item score-item_list text-small text-muted">10k <ion-icon name="users-circle"></ion-icon></span>\n        </button>\n        <button ion-item class="item_profile">\n          <span item-start class="item-position">2.</span>\n          <ion-avatar item-start>\n            <img src="../assets/img/profile-avatar.png">\n          </ion-avatar>\n          <h2>jlavergne</h2>\n          <span item-right class="score-item score-item_list text-small text-muted">10k <ion-icon name="users-circle"></ion-icon></span>\n        </button>\n        <button ion-item class="item_profile">\n          <span item-start class="item-position">3.</span>\n          <ion-avatar item-start>\n            <img src="../assets/img/profile-avatar.png">\n          </ion-avatar>\n          <h2>msalles</h2>\n          <span item-right class="score-item score-item_list text-small text-muted">10k <ion-icon name="users-circle"></ion-icon></span>\n        </button>\n      </ion-card>\n\n  <ion-card class="card card_action">\n\n    <ion-item text-wrap>\n      <h2 class="card-title">Distribuer des tracts</h2>\n      <p class="card-rewards"><span class="score-item score-item_reward icon-left"><ion-icon name="users-circle"></ion-icon>++</span></p>\n      <p class="card-description">Donec id elit non mi porta gravida at eget metus. Duis mollis, est non commodo luctus, nisi erat porttitor ligula, eget lacinia odio sem nec elit. Cum sociis natoque penatibus et magnis dis parturient montes,...</p>\n    </ion-item>\n    <ion-item>\n      <div class="card-price" item-right [ngClass]="[buttonActed ? \'is-hidden\' : \'\', buttonSuccess ? \'is-hidden\' : \'\']">\n        <button ion-button clear small (click)="openActionModal()" class="btn-score-item">\n          <span class="score-item score-item_price score-item_is-set icon-right">4<ion-icon name="heart-circle"></ion-icon></span>\n        </button>\n        <span class="score-item score-item_price icon-right">120<ion-icon name="users-circle"></ion-icon></span>\n      </div>\n      <button ion-button item-end small class="button_action" (click)="buttonAct();" [ngClass]="[buttonActed ? \'button_loading\' : \'\', buttonSuccess ? \'button_success\' : \'\']">\n        <ion-spinner class="button-spinner" name="crescent">  </ion-spinner>\n        <span class="button_action-text">Click me</span>\n        <span class="button_action-text_success"><span class="emoji-thumb-up">👍</span> Success!</span>\n        <span class="button_action-text_fail"><span class="emoji-thumb-down">👎</span> Failed</span>\n      </button>\n    </ion-item>\n\n\n  </ion-card>\n\n  <ion-card class="card card_action">\n\n    <ion-item text-wrap>\n      <h2 class="card-title">Distribuer des tracts</h2>\n       <p class="card-rewards"><span class="score-item score-item_reward icon-left"><ion-icon name="users-circle"></ion-icon>++</span> (Coût/heure : <span class="score-item score-item_reward icon-right">150<ion-icon name="money-circle"></ion-icon></span>)</p>\n      <p class="card-description">Donec id elit non mi porta gravida at eget metus. Duis mollis, est non commodo luctus, nisi erat porttitor ligula, eget lacinia odio sem nec elit. Cum sociis natoque penatibus et magnis dis parturient montes,...</p>\n    </ion-item>\n    <ion-item>\n      <div class="card-price" item-right>\n        <button ion-button clear small class="btn-score-item" (click)="openActionModal()">\n          <span class="score-item score-item_price icon-right">0<ion-icon name="heart-circle"></ion-icon></span>\n        </button>\n        <span class="score-item score-item_price icon-right">70<ion-icon name="money-circle"></ion-icon></span>\n      </div>\n      <button ion-button item-end small>\n        Action\n      </button>\n    </ion-item>\n\n\n  </ion-card>\n\n  <ion-card class="card card_action">\n\n    <ion-item text-wrap>\n      <h2 class="card-title"><span class="card_action-difficulty card_action-difficulty-3"></span>Investissez dans les entreprises étrangères</h2>\n      <p class="card-rewards">(Coût/heure : <span class="score-item score-item_reward icon-right">150<ion-icon name="money-circle"></ion-icon></span>)</p>\n\n      <p class="card-description">Tant de projets à financer et si peu d’argent. Aidez les entreprises à se développer, prenez les dividendes au passage.</p>\n    </ion-item>\n    <ion-item>\n      <div class="card-price" item-right>\n        <span class="score-item score-item_price icon-right">70<ion-icon name="money-circle"></ion-icon></span>\n      </div>\n      <button ion-button item-end small>\n        Action\n      </button>\n    </ion-item>\n\n\n  </ion-card>\n\n\n  <ion-card class="card card_action">\n\n    <ion-item text-wrap>\n      <h2 class="card-title">Suitcase full of cash</h2>\n      <p class="card-rewards"><span class="score-item score-item_reward icon-right">10k <ion-icon name="dirty-money-circle"></ion-icon></span></p>\n\n      <p class="card-description">Meet up with "the Greek" under the billboard ad on the avenue. He\'ll supply you.</p>\n    </ion-item>\n    <ion-item text-wrap>\n      <div class="card-action-description">\n        Earn this action <strong>for free</strong> by watching a short ad.\n      </div>\n      <button ion-button item-end small>\n        Watch Ad\n      </button>\n    </ion-item>\n\n  </ion-card>\n\n  <ion-card class="card card_action">\n\n    <ion-item text-wrap>\n      <h2 class="card-title">Corrupt judges</h2>\n      <p class="card-description">Duis mollis, est non commodo luctus, nisi erat porttitor ligula, eget lacinia odio sem nec elit.</p>\n    </ion-item>\n    <ion-item text-wrap>\n      <div class="card-action-description">\n        Pack of <strong>3x corruptions</strong>\n      </div>\n      <button color="secondary" ion-button item-end small>\n        Buy for $0,30\n      </button>\n    </ion-item>\n\n  </ion-card>\n\n  <ion-card class="card card_action">\n\n    <ion-item text-wrap>\n      <!-- <span class="card-status card-status_new">Nouveau</span>-->\n      <h2 class="card-title">Distribuer des tracts</h2>\n      <p class="card-description">Donec id elit non mi porta gravida at eget metus. Duis mollis, est non commodo luctus, nisi erat porttitor ligula, eget lacinia odio sem nec elit. Cum sociis natoque penatibus et magnis dis parturient montes,...</p>\n    </ion-item>\n\n    <div class="card-needs">\n      <ion-item text-wrap>\n        <span item-left class="text-small text-muted">Nécessite</span>\n        <ul class="card-needs-list">\n          <li class="card-needs-item card-needs-item_is-checked"><strong>1x</strong> camionette de campagne</li>\n          <li class="card-needs-item"><strong>1x</strong> valise d’argent sale</li>\n        </ul>\n      </ion-item>\n    </div>\n\n    <ion-item>\n      <div class="card-price" item-right>\n        <span class="score-item score-item_price icon-right">70<ion-icon name="money-circle"></ion-icon></span>\n        <span class="score-item score-item_price icon-right not-enough">200<ion-icon name="money-circle"></ion-icon></span>\n      </div>\n      <button ion-button icon-left item-end small disabled>\n        <ion-icon name="lock"></ion-icon> Action\n      </button>\n    </ion-item>\n\n\n  </ion-card>\n\n\n  </div>\n\n</ion-content>\n'/*ion-inline-end:"/Users/mathieu/Documents/Work/PoliticsSimulator/ionicStyle/src/pages/dashboard/dashboard.html"*/,
     }),
-    __metadata("design:paramtypes", [__WEBPACK_IMPORTED_MODULE_1_ionic_angular__["g" /* NavController */], __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["h" /* NavParams */], __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["f" /* ModalController */]])
+    __metadata("design:paramtypes", [typeof (_a = typeof __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["g" /* NavController */] !== "undefined" && __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["g" /* NavController */]) === "function" && _a || Object, typeof (_b = typeof __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["h" /* NavParams */] !== "undefined" && __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["h" /* NavParams */]) === "function" && _b || Object, typeof (_c = typeof __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["f" /* ModalController */] !== "undefined" && __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["f" /* ModalController */]) === "function" && _c || Object])
 ], Dashboard);
 
+var _a, _b, _c;
 //# sourceMappingURL=dashboard.js.map
 
 /***/ }),
@@ -333,7 +339,7 @@ Dashboard = __decorate([
 "use strict";
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return Usermodal; });
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_ionic_angular__ = __webpack_require__(13);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_ionic_angular__ = __webpack_require__(12);
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
     if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
@@ -376,9 +382,48 @@ Usermodal = __decorate([
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return Countrymodal; });
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_ionic_angular__ = __webpack_require__(12);
+var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
+    var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
+    if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
+    else for (var i = decorators.length - 1; i >= 0; i--) if (d = decorators[i]) r = (c < 3 ? d(r) : c > 3 ? d(target, key, r) : d(target, key)) || r;
+    return c > 3 && r && Object.defineProperty(target, key, r), r;
+};
+var __metadata = (this && this.__metadata) || function (k, v) {
+    if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
+};
+
+
+var Countrymodal = (function () {
+    function Countrymodal(navCtrl, navParams) {
+        this.navCtrl = navCtrl;
+        this.navParams = navParams;
+    }
+    Countrymodal.prototype.ionViewDidLoad = function () {
+        console.log('ionViewDidLoad Countrymodal');
+    };
+    return Countrymodal;
+}());
+Countrymodal = __decorate([
+    Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["n" /* Component */])({
+        selector: 'page-countrymodal',template:/*ion-inline-start:"/Users/mathieu/Documents/Work/PoliticsSimulator/ionicStyle/src/pages/countrymodal/countrymodal.html"*/'\n<ion-content padding class="modal modal_country">\n\n\n\n\n  <ion-item class="modal_country-profile" text-wrap>\n    <ion-avatar item-start>\n        <span class="flag-icon flag-icon-fr"></span>\n    </ion-avatar>\n    <h2 class="modal_user-profile-title">France</h2>\n    <p class="modal_user-profile-description">Pays - 16k joueurs<br/>\n      Présidé par <a href="#">mrobert</a></p>\n  </ion-item>\n\n  <ion-grid class="modal_country-settings">\n      <ion-row>\n    <ion-col col-12>  <button outline ion-button small block class="button-icon-left">\n        <ion-icon name="trophy"></ion-icon> Classement des joueurs\n      </button></ion-col>\n  </ion-row>\n</ion-grid>\n\n\n  <ion-grid class="modal_country-score">\n      <ion-row>\n        <ion-col col-6 col-sm-6 col-lg-3>\n          <span class="modal_country-score-variation modal_country-score-variation_down">-5%\n            <ion-icon class="modal_country-score-variation-icon" name="arrow-down"></ion-icon>\n          </span>\n          <strong>40%</strong> budget <strong>Défense</strong>\n        </ion-col>\n        <ion-col col-6 col-sm-6 col-lg-3>\n          <span class="modal_country-score-variation modal_country-score-variation_up">+10%\n            <ion-icon class="modal_country-score-variation-icon" name="arrow-up"></ion-icon>\n          </span>\n          <strong>20%</strong> budget <strong>Éducation</strong>\n        </ion-col>\n        <ion-col col-6 col-sm-6 col-lg-3>\n          <span class="modal_country-score-variation modal_country-score-variation_up">+3%\n            <ion-icon class="modal_country-score-variation-icon" name="arrow-up"></ion-icon>\n          </span>\n          <strong>10%</strong> budget <strong>Santé</strong>\n        </ion-col>\n        <ion-col col-6 col-sm-6 col-lg-3>\n          <span class="modal_country-score-variation modal_country-score-variation_down">-6%\n            <ion-icon class="modal_country-score-variation-icon" name="arrow-down"></ion-icon>\n          </span>\n          <strong>30%</strong> budget <strong>Agriculture</strong>\n        </ion-col>\n      </ion-row>\n    </ion-grid>\n\n\n\n</ion-content>\n'/*ion-inline-end:"/Users/mathieu/Documents/Work/PoliticsSimulator/ionicStyle/src/pages/countrymodal/countrymodal.html"*/,
+    }),
+    __metadata("design:paramtypes", [__WEBPACK_IMPORTED_MODULE_1_ionic_angular__["g" /* NavController */], __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["h" /* NavParams */]])
+], Countrymodal);
+
+//# sourceMappingURL=countrymodal.js.map
+
+/***/ }),
+
+/***/ 200:
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return Actionmodal; });
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_ionic_angular__ = __webpack_require__(13);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_ionic_angular__ = __webpack_require__(12);
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
     if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
@@ -417,13 +462,52 @@ Actionmodal = __decorate([
 
 /***/ }),
 
-/***/ 200:
+/***/ 201:
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return Createpartymodal; });
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_ionic_angular__ = __webpack_require__(12);
+var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
+    var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
+    if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
+    else for (var i = decorators.length - 1; i >= 0; i--) if (d = decorators[i]) r = (c < 3 ? d(r) : c > 3 ? d(target, key, r) : d(target, key)) || r;
+    return c > 3 && r && Object.defineProperty(target, key, r), r;
+};
+var __metadata = (this && this.__metadata) || function (k, v) {
+    if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
+};
+
+
+var Createpartymodal = (function () {
+    function Createpartymodal(navCtrl, navParams) {
+        this.navCtrl = navCtrl;
+        this.navParams = navParams;
+    }
+    Createpartymodal.prototype.ionViewDidLoad = function () {
+        console.log('ionViewDidLoad Createpartymodal');
+    };
+    return Createpartymodal;
+}());
+Createpartymodal = __decorate([
+    Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["n" /* Component */])({
+        selector: 'page-createpartymodal',template:/*ion-inline-start:"/Users/mathieu/Documents/Work/PoliticsSimulator/ionicStyle/src/pages/createpartymodal/createpartymodal.html"*/'\n<ion-content padding class="modal modal_create modal_create-party">\n\n\n    <ion-item class="modal_action-header" text-wrap>\n      <h2>Créer mon parti </h2>\n      <p>"En marche !"" est déjà pris, soyez original...</p>\n    </ion-item>\n      <ion-item>\n        <ion-input type="text" placeholder="Le nom de votre parti..."></ion-input>\n      <!--  <ion-icon name="cancel-circle" item-right class="input-icon input-icon_right input-icon_invalid"></ion-icon> -->\n      </ion-item>\n\n      <ion-item>\n        <ion-label>Vos Valeurs</ion-label>\n\n      </ion-item>\n\n\n\n</ion-content>\n'/*ion-inline-end:"/Users/mathieu/Documents/Work/PoliticsSimulator/ionicStyle/src/pages/createpartymodal/createpartymodal.html"*/,
+    }),
+    __metadata("design:paramtypes", [__WEBPACK_IMPORTED_MODULE_1_ionic_angular__["g" /* NavController */], __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["h" /* NavParams */]])
+], Createpartymodal);
+
+//# sourceMappingURL=createpartymodal.js.map
+
+/***/ }),
+
+/***/ 202:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_platform_browser_dynamic__ = __webpack_require__(201);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__app_module__ = __webpack_require__(219);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_platform_browser_dynamic__ = __webpack_require__(203);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__app_module__ = __webpack_require__(221);
 
 
 Object(__WEBPACK_IMPORTED_MODULE_0__angular_platform_browser_dynamic__["a" /* platformBrowserDynamic */])().bootstrapModule(__WEBPACK_IMPORTED_MODULE_1__app_module__["a" /* AppModule */]);
@@ -431,33 +515,35 @@ Object(__WEBPACK_IMPORTED_MODULE_0__angular_platform_browser_dynamic__["a" /* pl
 
 /***/ }),
 
-/***/ 219:
+/***/ 221:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return AppModule; });
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_platform_browser__ = __webpack_require__(29);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__angular_core__ = __webpack_require__(0);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2_ionic_angular__ = __webpack_require__(13);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2_ionic_angular__ = __webpack_require__(12);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__ionic_native_splash_screen__ = __webpack_require__(192);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__ionic_native_status_bar__ = __webpack_require__(195);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_5__app_component__ = __webpack_require__(268);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_5__app_component__ = __webpack_require__(270);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_6__pages_home_home__ = __webpack_require__(196);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_7__pages_dashboard_dashboard__ = __webpack_require__(197);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_8__pages_leaderboard_leaderboard__ = __webpack_require__(99);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_9__pages_notifications_notifications__ = __webpack_require__(100);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_10__pages_usermodal_usermodal__ = __webpack_require__(198);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_11__pages_actionmodal_actionmodal__ = __webpack_require__(199);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_12__pages_countrymodal_countrymodal__ = __webpack_require__(269);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_13__pages_signup_signup__ = __webpack_require__(39);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_14__pages_splash_splash__ = __webpack_require__(102);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_15__pages_login_login__ = __webpack_require__(101);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_11__pages_actionmodal_actionmodal__ = __webpack_require__(200);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_12__pages_countrymodal_countrymodal__ = __webpack_require__(199);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_13__pages_createpartymodal_createpartymodal__ = __webpack_require__(201);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_14__pages_signup_signup__ = __webpack_require__(39);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_15__pages_splash_splash__ = __webpack_require__(102);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_16__pages_login_login__ = __webpack_require__(101);
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
     if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
     else for (var i = decorators.length - 1; i >= 0; i--) if (d = decorators[i]) r = (c < 3 ? d(r) : c > 3 ? d(target, key, r) : d(target, key)) || r;
     return c > 3 && r && Object.defineProperty(target, key, r), r;
 };
+
 
 
 
@@ -490,9 +576,10 @@ AppModule = __decorate([
             __WEBPACK_IMPORTED_MODULE_10__pages_usermodal_usermodal__["a" /* Usermodal */],
             __WEBPACK_IMPORTED_MODULE_11__pages_actionmodal_actionmodal__["a" /* Actionmodal */],
             __WEBPACK_IMPORTED_MODULE_12__pages_countrymodal_countrymodal__["a" /* Countrymodal */],
-            __WEBPACK_IMPORTED_MODULE_13__pages_signup_signup__["a" /* Signup */],
-            __WEBPACK_IMPORTED_MODULE_14__pages_splash_splash__["a" /* Splash */],
-            __WEBPACK_IMPORTED_MODULE_15__pages_login_login__["a" /* Login */]
+            __WEBPACK_IMPORTED_MODULE_13__pages_createpartymodal_createpartymodal__["a" /* Createpartymodal */],
+            __WEBPACK_IMPORTED_MODULE_14__pages_signup_signup__["a" /* Signup */],
+            __WEBPACK_IMPORTED_MODULE_15__pages_splash_splash__["a" /* Splash */],
+            __WEBPACK_IMPORTED_MODULE_16__pages_login_login__["a" /* Login */]
         ],
         imports: [
             __WEBPACK_IMPORTED_MODULE_0__angular_platform_browser__["a" /* BrowserModule */],
@@ -508,9 +595,10 @@ AppModule = __decorate([
             __WEBPACK_IMPORTED_MODULE_10__pages_usermodal_usermodal__["a" /* Usermodal */],
             __WEBPACK_IMPORTED_MODULE_11__pages_actionmodal_actionmodal__["a" /* Actionmodal */],
             __WEBPACK_IMPORTED_MODULE_12__pages_countrymodal_countrymodal__["a" /* Countrymodal */],
-            __WEBPACK_IMPORTED_MODULE_13__pages_signup_signup__["a" /* Signup */],
-            __WEBPACK_IMPORTED_MODULE_14__pages_splash_splash__["a" /* Splash */],
-            __WEBPACK_IMPORTED_MODULE_15__pages_login_login__["a" /* Login */]
+            __WEBPACK_IMPORTED_MODULE_13__pages_createpartymodal_createpartymodal__["a" /* Createpartymodal */],
+            __WEBPACK_IMPORTED_MODULE_14__pages_signup_signup__["a" /* Signup */],
+            __WEBPACK_IMPORTED_MODULE_15__pages_splash_splash__["a" /* Splash */],
+            __WEBPACK_IMPORTED_MODULE_16__pages_login_login__["a" /* Login */]
         ],
         providers: [
             __WEBPACK_IMPORTED_MODULE_4__ionic_native_status_bar__["a" /* StatusBar */],
@@ -524,13 +612,13 @@ AppModule = __decorate([
 
 /***/ }),
 
-/***/ 268:
+/***/ 270:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return MyApp; });
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_ionic_angular__ = __webpack_require__(13);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_ionic_angular__ = __webpack_require__(12);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__ionic_native_status_bar__ = __webpack_require__(195);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__ionic_native_splash_screen__ = __webpack_require__(192);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__pages_home_home__ = __webpack_require__(196);
@@ -570,53 +658,13 @@ MyApp = __decorate([
 
 /***/ }),
 
-/***/ 269:
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
-
-"use strict";
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return Countrymodal; });
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_ionic_angular__ = __webpack_require__(13);
-var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
-    var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
-    if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
-    else for (var i = decorators.length - 1; i >= 0; i--) if (d = decorators[i]) r = (c < 3 ? d(r) : c > 3 ? d(target, key, r) : d(target, key)) || r;
-    return c > 3 && r && Object.defineProperty(target, key, r), r;
-};
-var __metadata = (this && this.__metadata) || function (k, v) {
-    if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
-};
-
-
-var Countrymodal = (function () {
-    function Countrymodal(navCtrl, navParams) {
-        this.navCtrl = navCtrl;
-        this.navParams = navParams;
-    }
-    Countrymodal.prototype.ionViewDidLoad = function () {
-        console.log('ionViewDidLoad Countrymodal');
-    };
-    return Countrymodal;
-}());
-Countrymodal = __decorate([
-    Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["n" /* Component */])({
-        selector: 'page-countrymodal',template:/*ion-inline-start:"/Users/mathieu/Documents/Work/PoliticsSimulator/ionicStyle/src/pages/countrymodal/countrymodal.html"*/'\n<ion-content padding class="modal modal_country">\n\n\n\n\n  <ion-item class="modal_country-profile" text-wrap>\n    <ion-avatar item-start>\n        <span class="flag-icon flag-icon-fr"></span>\n    </ion-avatar>\n    <h2 class="modal_user-profile-title">France</h2>\n    <p class="modal_user-profile-description">Pays - 16k joueurs<br/>\n      Présidé par <a href="#">mrobert</a></p>\n  </ion-item>\n\n  <ion-grid class="modal_country-settings">\n      <ion-row>\n    <ion-col col-12>  <button outline ion-button small block class="button-icon-left">\n        <ion-icon name="trophy"></ion-icon> Classement des joueurs\n      </button></ion-col>\n  </ion-row>\n</ion-grid>\n\n\n  <ion-grid class="modal_country-score">\n      <ion-row>\n        <ion-col col-6 col-sm-6 col-lg-3>\n          <span class="modal_country-score-variation modal_country-score-variation_down">-5%\n            <ion-icon class="modal_country-score-variation-icon" name="arrow-down"></ion-icon>\n          </span>\n          <strong>40%</strong> budget <strong>Défense</strong>\n        </ion-col>\n        <ion-col col-6 col-sm-6 col-lg-3>\n          <span class="modal_country-score-variation modal_country-score-variation_up">+10%\n            <ion-icon class="modal_country-score-variation-icon" name="arrow-up"></ion-icon>\n          </span>\n          <strong>20%</strong> budget <strong>Éducation</strong>\n        </ion-col>\n        <ion-col col-6 col-sm-6 col-lg-3>\n          <span class="modal_country-score-variation modal_country-score-variation_up">+3%\n            <ion-icon class="modal_country-score-variation-icon" name="arrow-up"></ion-icon>\n          </span>\n          <strong>10%</strong> budget <strong>Santé</strong>\n        </ion-col>\n        <ion-col col-6 col-sm-6 col-lg-3>\n          <span class="modal_country-score-variation modal_country-score-variation_down">-6%\n            <ion-icon class="modal_country-score-variation-icon" name="arrow-down"></ion-icon>\n          </span>\n          <strong>30%</strong> budget <strong>Agriculture</strong>\n        </ion-col>\n      </ion-row>\n    </ion-grid>\n\n\n\n</ion-content>\n'/*ion-inline-end:"/Users/mathieu/Documents/Work/PoliticsSimulator/ionicStyle/src/pages/countrymodal/countrymodal.html"*/,
-    }),
-    __metadata("design:paramtypes", [typeof (_a = typeof __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["g" /* NavController */] !== "undefined" && __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["g" /* NavController */]) === "function" && _a || Object, typeof (_b = typeof __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["h" /* NavParams */] !== "undefined" && __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["h" /* NavParams */]) === "function" && _b || Object])
-], Countrymodal);
-
-var _a, _b;
-//# sourceMappingURL=countrymodal.js.map
-
-/***/ }),
-
 /***/ 39:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return Signup; });
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_ionic_angular__ = __webpack_require__(13);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_ionic_angular__ = __webpack_require__(12);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__login_login__ = __webpack_require__(101);
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
@@ -669,9 +717,9 @@ Signup = __decorate([
 "use strict";
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return Leaderboard; });
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_ionic_angular__ = __webpack_require__(13);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_ionic_angular__ = __webpack_require__(12);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__usermodal_usermodal__ = __webpack_require__(198);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__countrymodal_countrymodal__ = __webpack_require__(269);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__countrymodal_countrymodal__ = __webpack_require__(199);
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
     if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
@@ -703,7 +751,7 @@ var Leaderboard = (function () {
         countryModal.present();
     };
     Leaderboard.prototype.ngOnInit = function () {
-        this.openCountryModal();
+        //   this.openCountryModal();
     };
     Leaderboard.prototype.doRefresh = function (refresher) {
         console.log('Begin async operation', refresher);
@@ -718,13 +766,12 @@ Leaderboard = __decorate([
     Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["n" /* Component */])({
         selector: 'page-leaderboard',template:/*ion-inline-start:"/Users/mathieu/Documents/Work/PoliticsSimulator/ionicStyle/src/pages/leaderboard/leaderboard.html"*/'<!--\n  Generated template for the Leaderboard page.\n\n  See http://ionicframework.com/docs/components/#navigation for more info on\n  Ionic pages and navigation.\n-->\n<ion-header>\n\n  <ion-navbar>\n    <ion-title>Leaderboard</ion-title>\n  </ion-navbar>\n\n</ion-header>\n\n\n<ion-content padding class="sand-bg">\n\n  <ion-refresher (ionRefresh)="doRefresh($event)">\n    <ion-refresher-content\n      refreshingSpinner="crescent">></ion-refresher-content>\n  </ion-refresher>\n\n  <div class="card-top-elements">\n    <h4 class="card-title-top">Classement général</h4>\n  </div>\n\n  <ion-card class="card card_list">\n    <button ion-item class="item_profile" (click)="openUser1Modal()">\n      <span item-start class="item-position">1.</span>\n      <ion-avatar item-start>\n        <img src="../assets/img/profile-avatar.png">\n      </ion-avatar>\n      <h2>mrobert</h2>\n      <span item-right class="score-item score-item_list text-small text-muted">10k <ion-icon name="money-circle"></ion-icon></span>\n    </button>\n    <button ion-item class="item_profile">\n      <span item-start class="item-position">2.</span>\n      <ion-avatar item-start>\n        <img src="../assets/img/profile-avatar.png">\n      </ion-avatar>\n      <h2>jlavergne</h2>\n      <span item-right class="score-item score-item_list text-small text-muted">10k <ion-icon name="money-circle"></ion-icon></span>\n    </button>\n    <button ion-item class="item_profile">\n      <span item-start class="item-position">3.</span>\n      <ion-avatar item-start>\n        <img src="../assets/img/profile-avatar.png">\n      </ion-avatar>\n      <h2>msalles</h2>\n      <span item-right class="score-item score-item_list text-small text-muted">10k <ion-icon name="money-circle"></ion-icon></span>\n    </button>\n  </ion-card>\n\n  <div class="card-top-elements">\n    <h4 class="card-title-top">Mon parti</h4>\n\n  </div>\n\n  <ion-card class="card card_list">\n    <button ion-item class="item_profile">\n      <span item-start class="item-position">1.</span>\n      <ion-avatar item-start>\n        <img src="../assets/img/profile-avatar.png">\n      </ion-avatar>\n      <h2>mrobert</h2>\n      <span item-right class="score-item score-item_list text-small text-muted">10k <ion-icon name="money-circle"></ion-icon></span>\n    </button>\n    <button ion-item class="item_profile">\n      <span item-start class="item-position">2.</span>\n      <ion-avatar item-start>\n        <img src="../assets/img/profile-avatar.png">\n      </ion-avatar>\n      <h2>jlavergne</h2>\n      <span item-right class="score-item score-item_list text-small text-muted">10k <ion-icon name="money-circle"></ion-icon></span>\n    </button>\n    <button ion-item class="item_profile">\n      <span item-start class="item-position">3.</span>\n      <ion-avatar item-start>\n        <img src="../assets/img/profile-avatar.png">\n      </ion-avatar>\n      <h2>msalles</h2>\n      <span item-right class="score-item score-item_list text-small text-muted">10k <ion-icon name="money-circle"></ion-icon></span>\n    </button>\n  </ion-card>\n\n</ion-content>\n'/*ion-inline-end:"/Users/mathieu/Documents/Work/PoliticsSimulator/ionicStyle/src/pages/leaderboard/leaderboard.html"*/,
     }),
-    __metadata("design:paramtypes", [typeof (_a = typeof __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["g" /* NavController */] !== "undefined" && __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["g" /* NavController */]) === "function" && _a || Object, typeof (_b = typeof __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["h" /* NavParams */] !== "undefined" && __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["h" /* NavParams */]) === "function" && _b || Object, typeof (_c = typeof __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["f" /* ModalController */] !== "undefined" && __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["f" /* ModalController */]) === "function" && _c || Object])
+    __metadata("design:paramtypes", [__WEBPACK_IMPORTED_MODULE_1_ionic_angular__["g" /* NavController */], __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["h" /* NavParams */], __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["f" /* ModalController */]])
 ], Leaderboard);
 
-var _a, _b, _c;
 //# sourceMappingURL=leaderboard.js.map
 
 /***/ })
 
-},[200]);
+},[202]);
 //# sourceMappingURL=main.js.map

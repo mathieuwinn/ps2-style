@@ -12,6 +12,7 @@ import { Notifications } from '../pages/notifications/notifications';
 import { Usermodal } from '../pages/usermodal/usermodal';
 import { Actionmodal } from '../pages/actionmodal/actionmodal';
 import { Countrymodal } from '../pages/countrymodal/countrymodal';
+import { Createpartymodal } from '../pages/createpartymodal/createpartymodal';
 
 import { Signup } from '../pages/signup/signup';
 import { Splash } from '../pages/splash/splash';
@@ -28,6 +29,7 @@ import { Login } from '../pages/login/login';
     Usermodal,
     Actionmodal,
     Countrymodal,
+    Createpartymodal,
     Signup,
     Splash,
     Login
@@ -46,6 +48,7 @@ import { Login } from '../pages/login/login';
     Usermodal,
     Actionmodal,
     Countrymodal,
+    Createpartymodal, 
     Signup,
     Splash,
     Login

@@ -288,7 +288,129 @@ ion-navbar.toolbar {
   .profile-avatar_navbar {
     float: left;
   }
+}
 
+
+
+  // Navbar Profile Score
+
+  .navbar-profile-score {
+    position: absolute;
+    margin-left: 20px;
+    height: 34px;
+    float: left;
+    padding: 0 10px 0 24px;
+    z-index: -1;
+
+    width: calc(100% - 140px);
+
+    border-radius: 0 17px 17px 0;
+    background-color: darken(color($colors, brown),4%);
+    line-height: 34px;
+    color: white;
+    overflow: hidden;
+
+    .navbar-profile-score-left {
+      position: absolute;
+      left: 0;
+            z-index: 4;
+      height: 100%;
+      width: 40px;
+      background-image: linear-gradient(-90deg, rgba(color($colors, brown),0) 0%, darken(color($colors, brown),4%) 100%);
+
+    }
+
+    .navbar-profile-score-right {
+      position: absolute;
+      right: 0;
+      z-index: 4;
+      height: 100%;
+      width: 40px;
+      background-image: linear-gradient(90deg, rgba(color($colors, brown),0) 0%, darken(color($colors, brown),4%) 100%);
+
+    }
+
+    .navbar-profile-score-inner1 {
+      position: absolute;
+      width: 310px;
+      animation: scoreslide1 30s linear infinite;
+
+    }
+    .navbar-profile-score-inner2 {
+      width: 310px;
+      position: absolute;
+      animation: scoreslide2 30s linear infinite;
+
+    }
+    .score-item {
+      margin-right: 10px;
+      font-size: 1.2rem;
+      color: rgba(255, 255, 255, 0.86);
+      &:last-child {
+        margin-right: 0px;
+      }
+      ion-icon {
+        color: rgba(255, 255, 255, 0.6);
+      }
+    }
+
+
+}
+
+@keyframes scoreslide1 {
+  0% {
+    opacity: 1;
+    transform: translateX(0px);
+  }
+  49% {
+    opacity: 1;
+  }
+  50% {
+      opacity: 0;
+      transform: translateX(-290px);
+  }
+  51% {
+    opacity: 0;
+    transform: translateX(290px);
+  }
+  52% {
+    opacity: 1;
+  }
+  100% {
+      transform: translateX(0px);
+  }
+}
+
+@keyframes scoreslide2 {
+
+  0% {
+      opacity: 0;
+      transform: translateX(-290px);
+  }
+  1% {
+    opacity: 0;
+    transform: translateX(290px);
+  }
+  2% {
+    opacity: 1;
+  }
+
+  50% {
+    opacity: 1;
+    transform: translateX(0px);
+  }
+
+  99% {
+    opacity: 1;
+  }
+
+  100% {
+      opacity: 0;
+      transform: translateX(-290px);
+  }
+}
+
+  /*
   .navbar-profile-score {
     position: absolute;
     margin-left: 20px;
@@ -318,6 +440,8 @@ ion-navbar.toolbar {
   }
 
 }
+
+*/
 
 .banner {
   &.banner_header-live {
@@ -510,6 +634,13 @@ ion-navbar.toolbar {
     ion-icon {
       color: color($colors, primary);
     }
+    &.not-enough {
+      opacity: 0.6;
+      color: color($colors, secondary);
+      ion-icon {
+        color: color($colors, secondary);
+      }
+    }
   }
 
   &.score-item_reward {
@@ -605,7 +736,7 @@ ion-navbar.toolbar {
 // CARDS
 ion-card {
 
-  padding: 3px 0 2px;
+  padding: 3px 0 5px;
 
 
   &.card-ios {
@@ -653,6 +784,7 @@ ion-card {
     }
 
     h2.card-title {
+      margin-top: 6px;
       font-weight: 600;
       font-size: 1.6rem;
     }
@@ -826,10 +958,11 @@ ion-list, .card_list {
   margin-bottom: -4px;
   display: flex;
   align-items: center;
-  justify-content: center;
+  justify-content: space-around;
 
   h4.card-title-top {
     font-size: 1.6rem;
+    text-align: left;
   }
 
   h6.card-title-top {
@@ -934,6 +1067,9 @@ ion-modal {
 
   contain: strict;
   .modal-wrapper {
+
+    border-radius: 8px !important;
+
     &,
     .ion-page,
     .ion-page .content,
@@ -975,7 +1111,7 @@ ion-modal {
 }
 
 
-ion-content.modal_user, ion-content.modal_action, ion-content.modal_country {
+ion-content.modal_user, ion-content.modal_action, ion-content.modal_country, ion-content.modal_create {
   padding: 0 !important;
 
   .scroll-content {
@@ -983,12 +1119,17 @@ ion-content.modal_user, ion-content.modal_action, ion-content.modal_country {
     padding-top: 0;
   }
 
+
+
   ion-item:last-child .item-inner {
     border-bottom: none;
   }
 
-  .modal_action-header {
+  ion-item.item-md, ion-item.item-ios {
+    padding-left: 0;
+  }
 
+  .modal_action-header {
     .item-inner {
       border-bottom: none;
       ion-label {
@@ -997,8 +1138,9 @@ ion-content.modal_user, ion-content.modal_action, ion-content.modal_country {
     }
 
     h2 {
-      font-weight: 500;
+      font-weight: 600;
       font-size: 1.7rem;
+      margin-bottom: 4px;
     }
     p {
       font-size: 1.2rem;
@@ -1057,8 +1199,9 @@ ion-content.modal_user, ion-content.modal_action, ion-content.modal_country {
       }
     }
     h2.modal_user-profile-title {
-      font-weight: 500;
+      font-weight: 600;
       font-size: 1.7rem;
+      margin-top: 6px;
       white-space: nowrap;
       overflow: hidden;
       text-overflow: ellipsis;
@@ -1462,6 +1605,25 @@ ion-content.content_splash {
 }
 
 
+.action-container {
+  position: relative;
+  max-width: 380px;
+  margin: auto;
+  text-align: center;
+  h4 {
+    font-size: 1.8rem;
+  }
+  p {
+    font-size: 1.2rem;
+    font-weight: 400;
+  }
+
+  ion-button {
+
+  }
+
+}
+
 // PS Work Sans font
 
 
@@ -1469,28 +1631,22 @@ ion-content.content_splash {
   font-family: "";
   font-style: normal;
   font-weight: 300;
-  src: local("Work Sans"), local("WorkSans-Light"), url("../assets/fonts/WorkSans-Light.woff") format("woff"), url("../assets/fonts/WorkSans-Light.ttf") format("truetype");
+  src: local("Work Sans Light"), local("WorkSans-Light"), url("../assets/fonts/WorkSans-Light.woff") format("woff"), url("../assets/fonts/WorkSans-Light.ttf") format("truetype");
 }
 
-@font-face {
-  font-family: "Work Sans";
-  font-style: normal;
-  font-weight: 300;
-  src: local("Work Sans"), local("WorkSans-Light"), url("../assets/fonts/WorkSans-Light.woff") format("woff"), url("../assets/fonts/WorkSans-Light.ttf") format("truetype");
-}
 
 @font-face {
   font-family: "Work Sans";
   font-style: normal;
   font-weight: 400;
-  src: local("Work Sans"), local("WorkSans-Regular"), url("../assets/fonts/WorkSans-Regular.woff") format("woff"), url("../assets/fonts/WorkSans-Regular.ttf") format("truetype");
+  src: local("Work Sans Regular"), local("WorkSans-Regular"), url("../assets/fonts/WorkSans-Regular.woff") format("woff"), url("../assets/fonts/WorkSans-Regular.ttf") format("truetype");
 }
 
 @font-face {
   font-family: "Work Sans";
   font-style: normal;
   font-weight: 500;
-  src: local("Work Sans"), local("WorkSans-Medium"), url("../assets/fonts/WorkSans-Medium.woff") format("woff"), url("../assets/fonts/Nunito-Medium.ttf") format("truetype");
+  src: local("Work Sans Medium"), local("WorkSans-Medium"), url("../assets/fonts/WorkSans-Medium.woff") format("woff"), url("../assets/fonts/Nunito-Medium.ttf") format("truetype");
 }
 
 
@@ -1498,7 +1654,7 @@ ion-content.content_splash {
   font-family: "Work Sans";
   font-style: normal;
   font-weight: 600;
-  src: local("Work Sans"), local("WorkSans-SemiBold"), url("../assets/fonts/WorkSans-SemiBold.woff") format("woff"), url("../assets/fonts/Nunito-SemiBold.ttf") format("truetype");
+  src: local("Work Sans Semibold"), local("WorkSans-SemiBold"), url("../assets/fonts/WorkSans-SemiBold.woff") format("woff"), url("../assets/fonts/Nunito-SemiBold.ttf") format("truetype");
 }
 
 
