@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="320px" height="220px" viewBox="0 0 320 220" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 47.1 (45422) - http://www.bohemiancoding.com/sketch -->
+    <title>assembly-bg-mask</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="PartySelector" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="assembly-bg-mask" fill="#000000">
+            <g id="Group-5" transform="translate(4.000000, 2.000000)">
+                <path d="M12.1180507,216.387306 C4.31318553,197.813273 2.84217094e-14,177.410336 2.84217094e-14,156 C2.84217094e-14,69.843579 69.843579,0 156,0 C242.156421,0 312,69.843579 312,156 C312,177.410336 307.686814,197.813273 299.881949,216.387306 L231.974604,189.076743 C236.492268,178.802073 239,167.443893 239,155.5 C239,109.384223 201.615777,72 155.5,72 C109.384223,72 72,109.384223 72,155.5 C72,167.576347 74.5636605,179.05392 79.1764364,189.418172 L12.1180507,216.387306 Z" id="Combined-Shape"></path>
+            </g>
+        </g>
+    </g>
+</svg>

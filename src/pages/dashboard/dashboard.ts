@@ -7,6 +7,8 @@ import { Signup } from '../signup/signup';
 import { Splash } from '../splash/splash';
 import { Actionmodal } from '../actionmodal/actionmodal';
 import { Createpartymodal } from '../createpartymodal/createpartymodal';
+import { Partysignup } from '../partysignup/partysignup';
+
 
 
 
@@ -25,7 +27,6 @@ splashPage = Splash;
   }
 
   ngOnInit(){
-  //  this.navCtrl.push(Notifications);
   // this.openCreatePartyModal();
 
   }

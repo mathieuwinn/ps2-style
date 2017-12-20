@@ -13,6 +13,7 @@ import { Usermodal } from '../pages/usermodal/usermodal';
 import { Actionmodal } from '../pages/actionmodal/actionmodal';
 import { Countrymodal } from '../pages/countrymodal/countrymodal';
 import { Createpartymodal } from '../pages/createpartymodal/createpartymodal';
+import { Partysignup } from '../pages/partysignup/partysignup';
 
 import { Signup } from '../pages/signup/signup';
 import { Splash } from '../pages/splash/splash';
@@ -32,7 +33,8 @@ import { Login } from '../pages/login/login';
     Createpartymodal,
     Signup,
     Splash,
-    Login
+    Login,
+    Partysignup
   ],
   imports: [
     BrowserModule,
@@ -48,10 +50,11 @@ import { Login } from '../pages/login/login';
     Usermodal,
     Actionmodal,
     Countrymodal,
-    Createpartymodal, 
+    Createpartymodal,
     Signup,
     Splash,
-    Login
+    Login,
+    Partysignup
   ],
   providers: [
     StatusBar,

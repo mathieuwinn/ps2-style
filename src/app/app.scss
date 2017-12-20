@@ -269,6 +269,30 @@ ion-navbar.toolbar {
         right: -4px;
       }
     }
+    &.profile-avatar_modal {
+      position: relative;
+      height: 54px;
+      width: 54px;
+      & > .party-avatar {
+        position: absolute;
+        height: 36px;
+        width: 36px;
+        bottom: -10px;
+        right: -10px;
+      }
+    }
+    &.profile-avatar_list {
+      position: relative;
+      height: 28px;
+      width: 28px;
+      & > .party-avatar {
+        position: absolute;
+        height: 18px;
+        width: 18px;
+        bottom: -4px;
+        right: -6px;
+      }
+    }
 }
 
 .party-avatar {
@@ -276,11 +300,22 @@ ion-navbar.toolbar {
   width: 100px;
   border-radius: 50%;
   background-image: url(../assets/img/party-avatar.png);
-  -webkit-background-size: cover;
-  -moz-background-size: cover;
-  -o-background-size: cover;
   background-size: cover;
-  background-position: center center;
+  &.party-avatar-1 {
+    background-image: url(../assets/img/party-icon-1_big.png);
+  }
+  &.party-avatar-2 {
+    background-image: url(../assets/img/party-icon-2_big.png);
+  }
+  &.party-avatar-3 {
+    background-image: url(../assets/img/party-icon-3_big.png);
+  }
+  &.party-avatar-4 {
+    background-image: url(../assets/img/party-icon-4_big.png);
+  }
+  &.party-avatar-5 {
+    background-image: url(../assets/img/party-icon-5_big.png);
+  }
 }
 
 
@@ -1619,6 +1654,224 @@ ion-content.content_splash {
   }
 
 }
+
+
+// Signup Parti Picker
+
+ion-content.content_dark {
+  background-color: color($colors, brown);
+}
+
+.assembly-container {
+  position: relative;
+  margin: 50px auto 100px;
+  width: 320px;
+  height: 240px;
+}
+
+.assembly-seats {
+  position: absolute;
+  left: 0;
+  right: 0;
+  width: 320px;
+  height: 220px;
+  background-image: url(../assets/img/assembly-bg.svg);
+
+    -webkit-mask: url(../assets/img/assembly-bg-mask.svg) center bottom no-repeat;
+  mask: url(../assets/img/assembly-bg-mask.svg);
+  mask-size: cover;
+  -webkit-mask-size: cover;
+  color: white;
+}
+
+.assembly-selector-bg {
+  position: absolute;
+  z-index: 1;
+  height: 154px;
+  width: 130px;
+  background-image: url(../assets/img/assembly-selector-bg.png);
+  background-size: 130px 154px;
+  transform: translate(-30px, 84px);
+  transition: transform 400ms cubic-bezier(1, 0, 0, 1);
+
+  &.assembly-selector-1 {
+    transform: translate(-30px, 84px);
+  }
+  &.assembly-selector-2 {
+    transform: translate(7px, 3px) rotate(45deg);
+  }
+  &.assembly-selector-3 {
+    transform: translate(94px, -20px) rotate(90deg);
+  }
+  &.assembly-selector-4 {
+    transform: translate(180px, 0px) rotate(135deg);
+  }
+  &.assembly-selector-5 {
+    transform: translate(215px, 84px) rotate(180deg);
+  }
+}
+
+.assembly-seats-1 {
+  position: absolute;
+  z-index: 2;
+  height: 100px;
+  width: 100px;
+  background-image: url(../assets/img/assembly-seats-1.png);
+  background-size: 100px 100px;
+  top: 114px;
+  left: -6px;
+  opacity: 0.3;
+  transition: opacity 400ms cubic-bezier(1, 0, 0, 1);
+  &.active {
+    opacity: 1;
+  }
+}
+.assembly-seats-2 {
+  position: absolute;
+  z-index: 2;
+  height: 100px;
+  width: 100px;
+  background-image: url(../assets/img/assembly-seats-2.png);
+  background-size: 100px 100px;
+  top: 22px;
+  left: 21px;
+  opacity: 0.3;
+  &.active {
+    opacity: 1;
+  }
+}
+.assembly-seats-3 {
+  position: absolute;
+  z-index: 2;
+  height: 100px;
+  width: 100px;
+  background-image: url(../assets/img/assembly-seats-3.png);
+  background-size: 100px 100px;
+  top: -6px;
+  left: 110px;
+  opacity: 0.3;
+  transition: opacity 400ms cubic-bezier(1, 0, 0, 1);
+  &.active {
+    opacity: 1;
+  }
+}
+.assembly-seats-4 {
+  position: absolute;
+  z-index: 2;
+  height: 100px;
+  width: 100px;
+  background-image: url(../assets/img/assembly-seats-4.png);
+  background-size: 100px 100px;
+  top: 18px;
+  left: 200px;
+  opacity: 0.3;
+  transition: opacity 400ms cubic-bezier(1, 0, 0, 1);
+  &.active {
+    opacity: 1;
+  }
+}
+.assembly-seats-5 {
+  position: absolute;
+  z-index: 2;
+  height: 100px;
+  width: 100px;
+  background-image: url(../assets/img/assembly-seats-5.png);
+  background-size: 100px 100px;
+  top: 108px;
+  left: 226px;
+  opacity: 0.3;
+  transition: opacity 400ms cubic-bezier(1, 0, 0, 1);
+
+  &.active {
+    opacity: 1;
+  }
+}
+
+
+.assembly-party-logo {
+  height: 130px;
+  width: 130px;
+  position: absolute;
+  top: 90px;
+  left: 0;
+  right: 0;
+  margin: 0 auto 20px;
+  div {
+
+      position: absolute;
+      top: 0;
+      left: 0;
+      right: 0;
+      height: 130px;
+      width: 130px;
+      display: block;
+      margin: 0 auto;
+      margin-top:0;
+      opacity: 0;
+      transform: translateY(10px) scale(0.6);
+      transition: all 150ms ease-in;
+
+      &.active {
+        opacity: 1;
+        transition-delay: 0.1s;
+        transform:  translateY(0px) scale(1);
+      }
+  }
+  .assembly-party-logo-1 {
+    background-image: url(../assets/img/party-icon-1_big.png);
+    background-size: 130px 130px;
+  }
+  .assembly-party-logo-2 {
+    background-image: url(../assets/img/party-icon-2_big.png);
+    background-size: 130px 130px;
+  }
+  .assembly-party-logo-3 {
+    background-image: url(../assets/img/party-icon-3_big.png);
+    background-size: 130px 130px;
+  }
+  .assembly-party-logo-4 {
+    background-image: url(../assets/img/party-icon-4_big.png);
+    background-size: 130px 130px;
+  }
+  .assembly-party-logo-5 {
+    background-image: url(../assets/img/party-icon-5_big.png);
+    background-size: 130px 130px;
+  }
+}
+
+.assembly-party-title {
+  width: 80%;
+  position: absolute;
+  top: 220px;
+  left: 20px;
+  right: 20px;
+  margin: 0 auto 20px;
+  text-align: center;
+  color: white;
+  h5 {
+    position: absolute;top: 0;
+left: 0; right: 0;
+   display: block;
+    margin: 0 auto;
+    margin-top:0;
+    opacity: 0;
+    transform: translateY(20px);
+    transition: all 200ms ease-in;
+
+    &:first-child {
+      margin-top: 0;
+    }
+    &.active {
+      opacity: 1;
+      transition-delay: 0.2s;
+      transform: translateY(0);
+    }
+  }
+
+}
+
+
+
 
 // PS Work Sans font
 

@@ -6,6 +6,7 @@ import { Leaderboard } from '../leaderboard/leaderboard';
 import { Notifications } from '../notifications/notifications';
 import { Signup } from '../signup/signup';
 import { Splash } from '../splash/splash';
+import { Partysignup } from '../partysignup/partysignup';
 
 
 @Component({
@@ -26,7 +27,8 @@ splashPage = Splash;
   }
 
   ngOnInit(){
-    this.navCtrl.push(Dashboard);
+    this.navCtrl.push(Partysignup);
+
   }
 
 }

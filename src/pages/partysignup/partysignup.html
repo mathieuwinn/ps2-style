@@ -1,0 +1,54 @@
+<!--
+  Generated template for the Partysignup page.
+
+  See http://ionicframework.com/docs/components/#navigation for more info on
+  Ionic pages and navigation.
+-->
+<ion-header>
+
+  <ion-navbar>
+    <ion-title>Choisi ton parti</ion-title>
+  </ion-navbar>
+
+</ion-header>
+
+
+
+<ion-content padding class="content_dark">
+
+  <div class="assembly-container">
+
+    <div class="assembly-seats">
+      <div class="assembly-seats-1" [ngClass]="selectedSeats == 1 ? 'active' : ''" (click)="selectedSeats = 1"></div>
+      <div class="assembly-seats-2" [ngClass]="selectedSeats == 2 ? 'active' : ''" (click)="selectedSeats = 2"></div>
+      <div class="assembly-seats-3" [ngClass]="selectedSeats == 3 ? 'active' : ''" (click)="selectedSeats = 3"></div>
+      <div class="assembly-seats-4" [ngClass]="selectedSeats == 4 ? 'active' : ''" (click)="selectedSeats = 4"></div>
+      <div class="assembly-seats-5" [ngClass]="selectedSeats == 5 ? 'active' : ''" (click)="selectedSeats = 5"></div>
+      <div class="assembly-selector-bg assembly-selector-{{selectedSeats}}"></div>
+    </div>
+
+    <div class="assembly-party-logo">
+      <div class="assembly-party-logo-1" [ngClass]="selectedSeats == 1 ? 'active' : ''" ></div>
+      <div class="assembly-party-logo-2" [ngClass]="selectedSeats == 2 ? 'active' : ''" ></div>
+      <div class="assembly-party-logo-3" [ngClass]="selectedSeats == 3 ? 'active' : ''" ></div>
+      <div class="assembly-party-logo-4" [ngClass]="selectedSeats == 4 ? 'active' : ''" ></div>
+      <div class="assembly-party-logo-5" [ngClass]="selectedSeats == 5 ? 'active' : ''" ></div>
+    </div>
+    <div class="assembly-party-title">
+      <h5 class="assembly-party-title-1" [ngClass]="selectedSeats == 1 ? 'active' : ''" >Les Eco-Anarchistes</h5>
+      <h5 class="assembly-party-title-2" [ngClass]="selectedSeats == 2 ? 'active' : ''" >Les Socialocrates</h5>
+      <h5 class="assembly-party-title-3" [ngClass]="selectedSeats == 3 ? 'active' : ''" >Les Centriques</h5>
+      <h5 class="assembly-party-title-4" [ngClass]="selectedSeats == 4 ? 'active' : ''" >Les Rationalistes</h5>
+      <h5 class="assembly-party-title-5" [ngClass]="selectedSeats == 5 ? 'active' : ''" >Les Nationautes</h5>
+    </div>
+
+  </div>
+
+    <div margin text-center>
+      <button ion-button  primary class="btn-validate-party">
+        Valider mon choix
+      </button>      </div>
+
+
+
+</ion-content>
